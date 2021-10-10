@@ -4,5 +4,5 @@ export type TGetStartedScreenProps = {
 
 export type TGetStartedScreenViewProps = {
   goToLogin: Function;
-  goToSignUp?: Function;
+  goToSignUp: Function;
 };

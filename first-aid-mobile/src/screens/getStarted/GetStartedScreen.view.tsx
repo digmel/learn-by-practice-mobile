@@ -6,6 +6,7 @@ import {View, TouchableOpacity, ListRenderItemInfo} from 'react-native';
 
 export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
   goToLogin,
+  goToSignUp,
 }) => {
   return (
     <Screen isScrollViewDisabled>
@@ -14,6 +15,10 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
       </Section>
       <Section>
         <Button text="Login" onPress={goToLogin} />
+      </Section>
+
+      <Section>
+        <Button text="Sign Up" onPress={goToSignUp} />
       </Section>
     </Screen>
   );
