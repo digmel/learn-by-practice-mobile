@@ -12,7 +12,9 @@ import {
   TextInput,
 } from '@components';
 
-export const LoginScreenView: FC<TLoginScreenViewProps> = ({}) => {
+export const LoginScreenView: FC<TLoginScreenViewProps> = ({
+  goToResetPasswordScreen,
+}) => {
   return (
     <Screen isScrollViewDisabled>
       <View style={styles.container}>
@@ -22,6 +24,12 @@ export const LoginScreenView: FC<TLoginScreenViewProps> = ({}) => {
 
         <Section>
           <TextInput label="Password" secureTextEntry />
+        </Section>
+        <Section>
+          <Button
+            variation="tertiary"
+            text="Reset Password"
+            onPress={goToResetPasswordScreen}></Button>
         </Section>
 
         <Section>
