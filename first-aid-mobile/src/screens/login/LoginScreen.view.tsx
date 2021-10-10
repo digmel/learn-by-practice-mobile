@@ -1,66 +1,52 @@
 import React, {FC} from 'react';
 import {styles} from './LoginScreen.style';
 import {TLoginScreenViewProps} from './LoginScreen.type';
-import {Platform} from 'react-native';
-import {Section, Button, Text, Screen, color, size} from '@components';
+import {View} from 'react-native';
+import {
+  Section,
+  Button,
+  Text,
+  Screen,
+  color,
+  size,
+  TextInput,
+} from '@components';
 
 export const LoginScreenView: FC<TLoginScreenViewProps> = ({}) => {
   return (
     <Screen isScrollViewDisabled>
-      <Section>
-        <Button
-          variation="google"
-          iconLeft="google"
-          text="Continue with Google"
-          iconContainerStyle={styles.iconContainer}
-          textContainerStyle={styles.textContainer}
-        />
-      </Section>
+      <View style={styles.container}>
+        <Section>
+          <TextInput label="Email" />
+        </Section>
 
-      <Section>
-        <Button
-          variation="facebook"
-          iconLeft="facebook"
-          text="Continue with Facebook"
-          iconContainerStyle={styles.iconContainer}
-          textContainerStyle={styles.textContainer}
-        />
-      </Section>
+        <Section>
+          <TextInput label="Password" secureTextEntry />
+        </Section>
 
-      {Platform.OS === 'ios' && (
         <Section>
           <Button
-            variation="apple"
-            iconLeft="apple"
-            text="Continue with Apple ID"
+            variation="login"
+            text="Login with Email"
+            iconLeft="email"
             iconContainerStyle={styles.iconContainer}
             textContainerStyle={styles.textContainer}
           />
         </Section>
-      )}
 
-      <Section>
-        <Button
-          variation="login"
-          text="Login with Email"
-          iconLeft="email"
-          iconContainerStyle={styles.iconContainer}
-          textContainerStyle={styles.textContainer}
-        />
-      </Section>
+        <Section
+          bottomSpace={size.l}
+          topSpace={size.l}
+          containerStyle={styles.textSection}>
+          <Text variation="subtitle" color={color.gray500}>
+            Or
+          </Text>
+        </Section>
 
-      <Section
-        bottomSpace={size.l}
-        topSpace={size.l}
-        containerStyle={styles.textSection}>
-        <Text variation="subtitle" color={color.gray500}>
-          Or
-        </Text>
-      </Section>
-
-      <Section>
-        <Button text="Sign Up" variation="secondary" />
-      </Section>
+        <Section>
+          <Button text="Continue with Google" variation="secondary" />
+        </Section>
+      </View>
     </Screen>
   );
 };
