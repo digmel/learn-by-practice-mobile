@@ -18,3 +18,6 @@ export * from './screen/Screen.type';
 
 export * from './section/Section';
 export * from './section/Section.type';
+
+export * from './loader/Loader';
+export * from './loader/Loader.type';
