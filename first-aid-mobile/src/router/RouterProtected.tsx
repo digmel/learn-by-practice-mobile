@@ -1,13 +1,15 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Temp} from './temp';
+import {Some1} from './some1';
 
-const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
 export const RouterProtected = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="temp" component={Temp} />
-    </Stack.Navigator>
+    <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Screen name="Home" component={Temp} />
+      <Drawer.Screen name="Notifications" component={Some1} />
+    </Drawer.Navigator>
   );
 };
