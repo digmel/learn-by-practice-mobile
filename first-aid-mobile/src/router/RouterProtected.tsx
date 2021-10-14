@@ -12,7 +12,7 @@ export const RouterProtected = () => {
       screenOptions={{
         drawerPosition: 'right',
         headerShown: false,
-        swipeEnabled: true,
+        swipeEnabled: false,
         drawerActiveBackgroundColor: color.light,
       }}>
       <Drawer.Screen name="Home" component={DashboardScreen} />
