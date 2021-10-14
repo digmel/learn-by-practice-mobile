@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {TDashboardScreenViewProps} from './DashboardScreen.type';
 import {styles} from './DashboardScreen.style';
-import {Section, Screen, Text, Header} from '@components';
+import {Section, Screen, Text, Header, Card} from '@components';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = () => {
   return (
@@ -14,6 +14,9 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = () => {
       }>
       <Section containerStyle={styles.banner}>
         <Text variation="H2">Welcome</Text>
+      </Section>
+      <Section>
+        <Card></Card>
       </Section>
     </Screen>
   );
