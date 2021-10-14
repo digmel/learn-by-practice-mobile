@@ -18,7 +18,7 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
         </Section>
 
         <Section>
-          <Button text="Sign Up" onPress={goToSignUp} />
+          <Button text="Sign Up" variation="secondary" onPress={goToSignUp} />
         </Section>
       </ScreenUnprotected>
     </Screen>
