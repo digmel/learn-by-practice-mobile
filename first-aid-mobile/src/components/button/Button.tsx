@@ -4,7 +4,7 @@ import {styles} from './Button.style';
 import type {TButtonProps} from './Button.type';
 import {
   color,
-  //Icon,
+  Icon,
   Loader,
   Text,
   size as configSize,
@@ -150,11 +150,11 @@ export const Button: FC<TButtonProps> = ({
           <View style={styles.contentContainer}>
             {!!iconLeft && (
               <View style={[iconContainerDynamicStyle, iconContainerStyle]}>
-                {/* <Icon
+                <Icon
                   name={iconLeft}
                   color={dynamicProperties.iconColor}
                   iconStyle={iconContainerDynamicStyle}
-                /> */}
+                />
               </View>
             )}
             <View style={[textContainerStyle]}>
@@ -167,11 +167,11 @@ export const Button: FC<TButtonProps> = ({
             </View>
             {!!iconRight && (
               <View style={[iconContainerDynamicStyle, iconContainerStyle]}>
-                {/* <Icon
+                <Icon
                   name={iconRight}
                   color={dynamicProperties.iconColor}
                   iconStyle={iconContainerDynamicStyle}
-                /> */}
+                />
               </View>
             )}
           </View>
