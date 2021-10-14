@@ -10,13 +10,20 @@ import {
   color,
   size,
   TextInput,
+  Header,
 } from '@components';
 
 export const LoginScreenView: FC<TLoginScreenViewProps> = ({
   goToResetPasswordScreen,
 }) => {
   return (
-    <Screen isScrollViewDisabled>
+    <Screen
+      isScrollViewDisabled
+      header={
+        <Header hasBack>
+          <Text>header</Text>
+        </Header>
+      }>
       <View style={styles.container}>
         <Section>
           <TextInput label="Email" />

@@ -21,3 +21,8 @@ export * from './section/Section.type';
 
 export * from './loader/Loader';
 export * from './loader/Loader.type';
+
+export * from './header/Header';
+export * from './header/Header.type';
+
+export * from './icon/Icon';

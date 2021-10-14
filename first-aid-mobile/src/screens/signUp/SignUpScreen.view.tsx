@@ -2,11 +2,17 @@ import React, {FC} from 'react';
 import {styles} from './SignUpScreen.style';
 import {TSignUpScreenViewProps} from './SignUpScreen.type';
 import {View} from 'react-native';
-import {Section, Button, Screen, TextInput} from '@components';
+import {Section, Button, Screen, TextInput, Header, Text} from '@components';
 
 export const SignUpScreenView: FC<TSignUpScreenViewProps> = ({}) => {
   return (
-    <Screen isScrollViewDisabled>
+    <Screen
+      isScrollViewDisabled
+      header={
+        <Header hasBack>
+          <Text>header</Text>
+        </Header>
+      }>
       <View style={styles.container}>
         <Section>
           <TextInput label="Email" />
