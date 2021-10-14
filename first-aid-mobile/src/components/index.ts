@@ -26,3 +26,7 @@ export * from './header/Header';
 export * from './header/Header.type';
 
 export * from './icon/Icon';
+
+export * from './screenUnprotected/ScreenUnprotected';
+
+export * from './svg/Logo';
