@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {TResetPasswordScreenViewProps} from './ResetPasswordScreen.type';
-import {Section, Screen, TextInput, Button} from '@components';
+import {Section, Screen, TextInput, Button, Header, Text} from '@components';
 
 export const ResetPasswordScreenView: FC<TResetPasswordScreenViewProps> = ({
   userEmail,
@@ -9,7 +9,13 @@ export const ResetPasswordScreenView: FC<TResetPasswordScreenViewProps> = ({
   onPressSendResetPassword,
 }) => {
   return (
-    <Screen isScrollViewDisabled>
+    <Screen
+      isScrollViewDisabled
+      header={
+        <Header hasBack>
+          <Text>header</Text>
+        </Header>
+      }>
       <Section>
         <TextInput
           label="E-mail address"
