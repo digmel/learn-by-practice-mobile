@@ -5,10 +5,16 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: color.primary500,
   },
-  banner: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 2 * size.xxl,
+
+  questionContainer: {
+    backgroundColor: 'red',
+    marginBottom: 50,
+  },
+
+  answerContainer: {
+    backgroundColor: 'green',
     flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
   },
 });
