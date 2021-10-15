@@ -29,4 +29,10 @@ export * from './icon/Icon';
 
 export * from './screenUnprotected/ScreenUnprotected';
 
+export * from './card/Card';
+export * from './card/Card.type';
+
+export * from './cardSlider/CardSlider';
+export * from './cardSlider/CardSlider.type';
+
 export * from './svg/Logo';

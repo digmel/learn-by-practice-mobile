@@ -3,7 +3,7 @@ import type {ViewStyle, StyleProp} from 'react-native';
 
 export type THeaderProps = {
   containerStyle?: StyleProp<ViewStyle>;
-  children: ReactNode;
+  children?: ReactNode;
 
   containerLeftStyle?: StyleProp<ViewStyle>;
   containerRightStyle?: StyleProp<ViewStyle>;
