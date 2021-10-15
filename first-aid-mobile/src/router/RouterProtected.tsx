@@ -1,6 +1,6 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {DashboardScreen} from '@screens';
+import {DashboardScreen, ExamScreen} from '@screens';
 import {color} from '@components';
 
 const Drawer = createDrawerNavigator();
@@ -15,7 +15,8 @@ export const RouterProtected = () => {
         swipeEnabled: false,
         drawerActiveBackgroundColor: color.light,
       }}>
-      <Drawer.Screen name="Home" component={DashboardScreen} />
+      <Drawer.Screen name="DashboardScreen" component={DashboardScreen} />
+      <Drawer.Screen name="ExamScreen" component={ExamScreen} />
     </Drawer.Navigator>
   );
 };

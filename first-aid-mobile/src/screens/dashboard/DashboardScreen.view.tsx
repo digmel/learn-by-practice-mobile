@@ -3,12 +3,14 @@ import {TDashboardScreenViewProps} from './DashboardScreen.type';
 import {styles} from './DashboardScreen.style';
 import {Section, Screen, Text, Header, Card, CardSlider} from '@components';
 
-export const DashboardScreenView: FC<TDashboardScreenViewProps> = () => {
+export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
+  goToExam,
+}) => {
   return (
     <Screen containerStyle={styles.container} header={<Header hasMenu />}>
       <Section>
         <CardSlider title="Test">
-          <Card title="Easy" />
+          <Card title="Easy" onPress={goToExam} />
           <Card title="Medium" />
           <Card title="Hard" />
         </CardSlider>
