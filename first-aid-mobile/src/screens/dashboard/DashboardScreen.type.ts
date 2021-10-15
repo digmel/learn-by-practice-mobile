@@ -1,1 +1,7 @@
-export type TDashboardScreenViewProps = {};
+export type TDashboardScreenViewProps = {
+  goToExam?: Function;
+};
+
+export type TDashboardScreenProps = {
+  navigation: any;
+};
