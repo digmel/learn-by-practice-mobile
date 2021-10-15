@@ -3,9 +3,20 @@ import {size, color} from '@components';
 
 export const styles = StyleSheet.create({
   container: {
-    height: 220,
-    width: 180,
-    marginRight: 10,
-    backgroundColor: color.accent500,
+    height: 240,
+    width: 200,
+    marginRight: size.m,
+    backgroundColor: color.accent100,
+  },
+
+  imageContainer: {
+    backgroundColor: color.error100,
+    flexBasis: '85%',
+  },
+
+  titleContainer: {
+    flexBasis: '15%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

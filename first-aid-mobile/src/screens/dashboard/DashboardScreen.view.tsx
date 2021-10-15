@@ -8,29 +8,20 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = () => {
     <Screen containerStyle={styles.container} header={<Header hasMenu />}>
       <Section>
         <CardSlider title="Test">
-          <Card>
-            <Text>1</Text>
-          </Card>
-          <Card>
-            <Text>2</Text>
-          </Card>
-          <Card>
-            <Text>3</Text>
-          </Card>
+          <Card title="Easy" />
+          <Card title="Medium" />
+          <Card title="Hard" />
         </CardSlider>
       </Section>
 
       <Section>
         <CardSlider title="Learn">
-          <Card>
-            <Text>1</Text>
-          </Card>
-          <Card>
-            <Text>2</Text>
-          </Card>
-          <Card>
-            <Text>3</Text>
-          </Card>
+          <Card title="Topic 1" />
+          <Card title="Topic 2" />
+          <Card title="Topic 3" />
+          <Card title="Topic 4" />
+          <Card title="Topic 5" />
+          <Card title="Topic 6" />
         </CardSlider>
       </Section>
     </Screen>
