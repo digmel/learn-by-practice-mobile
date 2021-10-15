@@ -6,6 +6,5 @@ export const styles = StyleSheet.create({
   imageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    flexBasis: '40%',
   },
 });

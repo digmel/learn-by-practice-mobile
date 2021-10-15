@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {styles} from './GetStartedScreen.style';
 import {TGetStartedScreenViewProps} from './GetStartedScreen.type';
-import {Screen, Button, Section, Text, color} from '@components';
+import {Screen, Button, Section, Text, color, size} from '@components';
 import {Image} from 'react-native';
 
 export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
@@ -12,13 +12,13 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
     <Screen isScrollViewDisabled>
       <Section
         containerStyle={styles.imageContainer}
-        topSpace={32}
-        bottomSpace={64}>
+        topSpace={size.xl}
+        bottomSpace={size.xxl}>
         <Image
           source={require('../../assets/images/get-started-screen.png')}></Image>
       </Section>
 
-      <Section bottomSpace={64}>
+      <Section bottomSpace={size.xxl}>
         <Text variation="H1" fontWeight="extraBold" color={color.primary100}>
           Learn how to act
         </Text>

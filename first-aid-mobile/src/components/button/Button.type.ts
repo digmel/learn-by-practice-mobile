@@ -4,11 +4,9 @@ import type {size} from '@components';
 export type TButtonVariation =
   | 'primary'
   | 'secondary'
-  | 'tertiary'
+  | 'link'
   | 'google'
-  | 'facebook'
-  | 'apple'
-  | 'login';
+  | 'facebook';
 
 export type TButtonSize = 'large' | 'medium' | 'small';
 
