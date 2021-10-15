@@ -64,7 +64,7 @@ export const Button: FC<TButtonProps> = ({
       dynamicProperties.borderColor = color.primary500;
       dynamicProperties.iconColor = color.primary500;
       break;
-    case 'tertiary':
+    case 'link':
       dynamicProperties.backgroundColor = isDisabled
         ? color.primary100
         : 'transparent';
@@ -72,29 +72,13 @@ export const Button: FC<TButtonProps> = ({
       dynamicProperties.iconColor = color.primary500;
       break;
     case 'google':
-      dynamicProperties.backgroundColor = color.gray100;
-      dynamicProperties.textColor = color.gray500;
+      dynamicProperties.backgroundColor = color.google;
+      dynamicProperties.textColor = color.light;
       dynamicProperties.textVariation = 'caption';
       dynamicProperties.fontWeight = 'medium';
       break;
     case 'facebook':
       dynamicProperties.backgroundColor = color.facebook;
-      dynamicProperties.textColor = color.light;
-      dynamicProperties.iconColor = color.light;
-      dynamicProperties.textVariation = 'caption';
-      dynamicProperties.fontWeight = 'medium';
-      break;
-    case 'apple':
-      dynamicProperties.backgroundColor = color.apple;
-      dynamicProperties.textColor = color.light;
-      dynamicProperties.iconColor = color.light;
-      dynamicProperties.textVariation = 'caption';
-      dynamicProperties.fontWeight = 'medium';
-      break;
-    case 'login':
-      dynamicProperties.backgroundColor = isDisabled
-        ? color.primary100
-        : color.primary500;
       dynamicProperties.textColor = color.light;
       dynamicProperties.iconColor = color.light;
       dynamicProperties.textVariation = 'caption';

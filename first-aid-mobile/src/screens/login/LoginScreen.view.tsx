@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import {styles} from './LoginScreen.style';
 import {TLoginScreenViewProps} from './LoginScreen.type';
-import {View} from 'react-native';
 import {
   Section,
   Button,
@@ -17,51 +16,51 @@ export const LoginScreenView: FC<TLoginScreenViewProps> = ({
   goToResetPasswordScreen,
 }) => {
   return (
-    <Screen
-      isScrollViewDisabled
-      header={
-        <Header hasBack>
-          <Text>header</Text>
-        </Header>
-      }>
-      <View style={styles.container}>
-        <Section>
-          <TextInput label="Email" />
-        </Section>
+    <Screen isScrollViewDisabled header={<Header hasBack></Header>}>
+      <Section>
+        <Button
+          text="Continue with Google"
+          iconLeft="google"
+          variation="google"
+          textContainerStyle={styles.textContainer}
+          iconContainerStyle={styles.iconContainer}
+        />
+      </Section>
 
-        <Section>
-          <TextInput label="Password" secureTextEntry />
-        </Section>
-        <Section>
-          <Button
-            variation="tertiary"
-            text="Reset Password"
-            onPress={goToResetPasswordScreen}></Button>
-        </Section>
+      <Section>
+        <Button
+          iconLeft="facebook"
+          text="Continue with Facebook"
+          variation="facebook"
+          textContainerStyle={styles.textContainer}
+          iconContainerStyle={styles.iconContainer}
+        />
+      </Section>
 
-        <Section>
-          <Button
-            variation="login"
-            text="Login with Email"
-            iconLeft="email"
-            iconContainerStyle={styles.iconContainer}
-            textContainerStyle={styles.textContainer}
-          />
-        </Section>
+      <Section
+        bottomSpace={size.l}
+        topSpace={size.l}
+        containerStyle={styles.textSection}>
+        <Text variation="subtitle" color={color.gray500}>
+          Or
+        </Text>
+      </Section>
 
-        <Section
-          bottomSpace={size.l}
-          topSpace={size.l}
-          containerStyle={styles.textSection}>
-          <Text variation="subtitle" color={color.gray500}>
-            Or
-          </Text>
-        </Section>
+      <Section>
+        <TextInput label="Email" />
+      </Section>
 
-        <Section>
-          <Button text="Continue with Google" variation="secondary" />
-        </Section>
-      </View>
+      <Section>
+        <TextInput label="Password" secureTextEntry />
+        <Button
+          variation="link"
+          text="Reset Password"
+          onPress={goToResetPasswordScreen}></Button>
+      </Section>
+
+      <Section>
+        <Button text="Login" />
+      </Section>
     </Screen>
   );
 };
