@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
-import {Section, Screen, Text, Header, Icon} from '@components';
+import {Section, Screen, Text, Header, Icon, size, color} from '@components';
 import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = () => {
@@ -20,23 +20,33 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
         <View style={styles.answerContainer}>
           <Icon
             name="radio-unchecked"
-            iconContainerStyle={{padding: 20}}></Icon>
+            size={size.m}
+            color={color.dark}
+            iconContainerStyle={{paddingRight: 20}}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
-          <Icon name="radio-checked" iconContainerStyle={{padding: 20}}></Icon>
+          <Icon
+            name="radio-checked"
+            color={color.success800}
+            iconContainerStyle={{paddingRight: 20}}
+            size={size.m}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
             name="radio-unchecked"
-            iconContainerStyle={{padding: 20}}></Icon>
+            iconContainerStyle={{paddingRight: 20}}
+            color={color.dark}
+            size={size.m}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
-            name="radio-unchecked"
-            iconContainerStyle={{padding: 20}}></Icon>
+            name="radio-checked"
+            iconContainerStyle={{paddingRight: 20}}
+            color={color.error800}
+            size={size.m}></Icon>
           <Text>answer 1</Text>
         </View>
       </Section>
