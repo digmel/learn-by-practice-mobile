@@ -6,6 +6,7 @@ import {ScrollView, View} from 'react-native';
 
 export const CardSlider: FC<TCardSliderProps> = ({
   title,
+  subTitle,
   titleContainerStyle,
   containerStyle,
   children,
@@ -13,8 +14,11 @@ export const CardSlider: FC<TCardSliderProps> = ({
   return (
     <View style={styles.wrapper}>
       <View style={[styles.titleContainer, titleContainerStyle]}>
-        <Text variation="H1" fontWeight="bold" color={color.secondary800}>
+        <Text variation="H1" fontWeight="bold" color={color.secondary}>
           {title}
+        </Text>
+        <Text variation="H1" fontWeight="light" color={color.secondary}>
+          {subTitle}
         </Text>
       </View>
       <ScrollView

@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {StyleProp, Text as NativeText, TextStyle} from 'react-native';
 import {styles} from './Text.style';
 import {TTextProps, TTextVariation, TTextWeight} from './Text.type';
+import {color as configColor} from '@components';
 
 const getTextVariation = (
   variation: TTextVariation,
@@ -73,7 +74,7 @@ const getTextVariation = (
 };
 
 export const Text: FC<TTextProps> = ({
-  color,
+  color = configColor.secondary,
   variation = 'body',
   fontWeight = 'regular',
   textStyle,

@@ -8,7 +8,7 @@ import styles from './Loader.style';
 export const Loader: FC<TLoaderProps> = ({
   isLoading = false,
   children,
-  loaderColor = color.primary500,
+  loaderColor = color.primary,
 }) => {
   return isLoading ? (
     <View style={styles.indicatorContainer}>

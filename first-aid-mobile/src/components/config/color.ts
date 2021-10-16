@@ -1,17 +1,9 @@
 export const color = {
-  primary100: '#bac1e8',
-  primary500: '#bac1e8',
-  primary800: '#bac1e8',
+  primary: '#bac1e8',
 
-  secondary100: '#094b61',
-  secondary500: '#094b61',
-  secondary800: '#094b61',
+  secondary: '#094b61',
 
-  accent100: '#c4e1eb',
-  accent300: '#c4e1eb',
-  accent200: '#c4e1eb',
-  accent500: '#c4e1eb',
-  accent800: '#c4e1eb',
+  accent: '#c4e1eb',
 
   success100: '#E6F9DC',
   success500: '#87E627',
@@ -33,10 +25,7 @@ export const color = {
 
   light: '#FFFFFF',
   dark: '#2D2D2D',
-  gradientStart: '#77DD77',
-  gradientEnd: '#78FFD6',
 
   google: '#DB4437',
   facebook: '#3B5998',
-  apple: '#000000',
 };

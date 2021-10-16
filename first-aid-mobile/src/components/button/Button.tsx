@@ -37,7 +37,7 @@ export const Button: FC<TButtonProps> = ({
   const HEIGHT_SMALL = 32;
 
   const dynamicProperties = {
-    backgroundColor: color.primary500,
+    backgroundColor: color.primary,
     textColor: color.dark,
     borderColor: color.dark,
     borderWidth: 0,
@@ -51,8 +51,8 @@ export const Button: FC<TButtonProps> = ({
   switch (variation) {
     case 'primary':
       dynamicProperties.backgroundColor = isDisabled
-        ? color.primary100
-        : color.primary500;
+        ? color.primary
+        : color.primary;
       dynamicProperties.borderWidth = 0;
       dynamicProperties.textColor = color.light;
       dynamicProperties.iconColor = color.light;
@@ -60,16 +60,16 @@ export const Button: FC<TButtonProps> = ({
     case 'secondary':
       dynamicProperties.backgroundColor = 'transparent';
       dynamicProperties.borderWidth = BORDER_OUTLINE_WIDTH;
-      dynamicProperties.textColor = color.primary500;
-      dynamicProperties.borderColor = color.primary500;
-      dynamicProperties.iconColor = color.primary500;
+      dynamicProperties.textColor = color.primary;
+      dynamicProperties.borderColor = color.primary;
+      dynamicProperties.iconColor = color.primary;
       break;
     case 'link':
       dynamicProperties.backgroundColor = isDisabled
-        ? color.primary100
+        ? color.gray200
         : 'transparent';
-      dynamicProperties.textColor = color.primary500;
-      dynamicProperties.iconColor = color.primary500;
+      dynamicProperties.textColor = color.primary;
+      dynamicProperties.iconColor = color.primary;
       break;
     case 'google':
       dynamicProperties.backgroundColor = color.google;

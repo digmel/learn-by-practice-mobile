@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {ExamScreen} from '@screens';
+import {ExamScreen, AllergicReactionScreen} from '@screens';
 import {DashboardScreenView} from './DashboardScreen.view';
 import {TDashboardScreenProps} from './DashboardScreen.type';
 
@@ -7,5 +7,13 @@ export const DashboardScreen: FC<TDashboardScreenProps> = ({navigation}) => {
   const _goToExam = () => {
     navigation.navigate(ExamScreen);
   };
-  return <DashboardScreenView goToExam={_goToExam} />;
+  const _goToAllergicReactionScreen = () => {
+    navigation.navigate(AllergicReactionScreen);
+  };
+  return (
+    <DashboardScreenView
+      goToExam={_goToExam}
+      goToAllergicReactionScreen={_goToAllergicReactionScreen}
+    />
+  );
 };
