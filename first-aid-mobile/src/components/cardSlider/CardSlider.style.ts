@@ -8,5 +8,6 @@ export const styles = StyleSheet.create({
 
   titleContainer: {
     marginBottom: size.m,
+    flexDirection: 'row',
   },
 });

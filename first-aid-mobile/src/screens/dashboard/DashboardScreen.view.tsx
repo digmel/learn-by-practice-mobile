@@ -32,7 +32,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       </Section>
 
       <Section>
-        <CardSlider title="Learn">
+        <CardSlider title="Learn " subTitle="Injuries">
           <Card title="Topic 1" />
           <Card title="Topic 2" />
           <Card title="Topic 3" />
