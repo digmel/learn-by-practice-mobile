@@ -2,9 +2,7 @@ import {StyleSheet} from 'react-native';
 import {color, size} from '@components';
 
 export const styles = StyleSheet.create({
-  container: {
-    backgroundColor: color.primary,
-  },
+  container: {},
 
   banner: {
     height: 270,

@@ -31,8 +31,19 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
         </View>
       </Section>
 
-      <Section>
+      <Section topSpace={size.l}>
         <CardSlider title="Learn " subTitle="Injuries">
+          <Card title="Topic 1" />
+          <Card title="Topic 2" />
+          <Card title="Topic 3" />
+          <Card title="Topic 4" />
+          <Card title="Topic 5" />
+          <Card title="Topic 6" />
+        </CardSlider>
+      </Section>
+
+      <Section>
+        <CardSlider title="Learn " subTitle="Natural Disaster">
           <Card title="Topic 1" />
           <Card title="Topic 2" />
           <Card title="Topic 3" />
