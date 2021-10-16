@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
     borderColor: color.secondary100,
     paddingVertical: size.l,
     borderWidth: 1,
-    borderRadius: size.xl,
+    borderRadius: size.l,
   },
 });

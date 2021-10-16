@@ -6,11 +6,13 @@ export const styles = StyleSheet.create({
     height: 240,
     width: 200,
     marginRight: size.m,
-    backgroundColor: color.accent100,
+    borderColor: color.secondary100,
+    borderWidth: 1,
+    borderRadius: size.l,
+    marginBottom: size.l,
   },
 
   imageContainer: {
-    backgroundColor: color.error100,
     flexBasis: '85%',
   },
 
