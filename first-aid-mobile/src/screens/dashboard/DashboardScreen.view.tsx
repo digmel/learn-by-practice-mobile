@@ -4,16 +4,12 @@ import {styles} from './DashboardScreen.style';
 import {
   Section,
   Screen,
-  Text,
   Header,
+  Banner,
   Card,
   CardSlider,
-  Button,
-  Icon,
-  color,
   size,
 } from '@components';
-import {View, Image} from 'react-native';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
@@ -21,19 +17,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   return (
     <Screen style={styles.container} isHeaderSticky header={<Header hasMenu />}>
       <Section>
-        <View style={styles.banner}>
-          <Text variation="H2" color={color.secondary}>
-            Check your knowledge
-          </Text>
-
-          <Icon name="logo" size={size.xxl} color={color.secondary} />
-          <Button
-            variation="google"
-            size="large"
-            text="Start Test"
-            onPress={goToExam}
-          />
-        </View>
+        <Banner title="Check your knowledge" onPress={goToExam} />
       </Section>
 
       <Section topSpace={size.l}>
