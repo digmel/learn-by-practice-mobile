@@ -39,8 +39,14 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       <Section topSpace={size.l}>
         <CardSlider title="Learn " subTitle="Injuries">
           <Card
+            cardContainerStyle={styles.firstCard}
             title="Allergic Reaction"
-            image={require('assets/images/get-started-screen.png')}
+            image={require('assets/images/asthma-attacks.png')}
+          />
+
+          <Card
+            title="Asthma Attacks"
+            image={require('assets/images/asthma-attacks.png')}
           />
         </CardSlider>
       </Section>
@@ -48,6 +54,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       <Section bottomSpace={size.xxl}>
         <CardSlider title="Learn " subTitle="Natural Disaster">
           <Card
+            cardContainerStyle={styles.firstCard}
             title="Topic 1"
             image={require('assets/images/get-started-screen.png')}
           />

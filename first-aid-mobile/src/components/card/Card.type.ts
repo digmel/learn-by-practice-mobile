@@ -7,4 +7,5 @@ export type TCardProps = {
   titleContainerStyle?: StyleProp<ViewStyle>;
   imageContainerStyle?: StyleProp<ViewStyle>;
   cardStyle?: StyleProp<ViewStyle>;
+  cardContainerStyle?: StyleProp<ViewStyle>;
 };

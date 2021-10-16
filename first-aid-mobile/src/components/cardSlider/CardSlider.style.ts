@@ -4,7 +4,9 @@ import {size} from '@components';
 export const styles = StyleSheet.create({
   wrapper: {},
 
-  container: {},
+  container: {
+    marginHorizontal: -size.xl,
+  },
 
   titleContainer: {
     marginBottom: size.m,

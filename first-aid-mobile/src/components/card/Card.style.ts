@@ -3,9 +3,12 @@ import {size, color} from '@components';
 
 export const styles = StyleSheet.create({
   container: {
+    marginRight: size.m,
+  },
+
+  card: {
     height: 240,
     width: 200,
-    marginRight: size.m,
     borderColor: color.secondary,
     borderWidth: 1,
     borderRadius: size.l,
