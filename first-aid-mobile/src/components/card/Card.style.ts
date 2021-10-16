@@ -13,11 +13,13 @@ export const styles = StyleSheet.create({
   },
 
   imageContainer: {
-    flexBasis: '85%',
+    flexBasis: '75%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   titleContainer: {
-    flexBasis: '15%',
+    flexBasis: '25%',
     alignItems: 'center',
     justifyContent: 'center',
   },

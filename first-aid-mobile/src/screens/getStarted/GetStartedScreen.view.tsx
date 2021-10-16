@@ -14,8 +14,7 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
         containerStyle={styles.imageContainer}
         topSpace={size.xl}
         bottomSpace={size.xxl}>
-        <Image
-          source={require('../../assets/images/get-started-screen.png')}></Image>
+        <Image source={require('assets/images/get-started-screen.png')}></Image>
       </Section>
 
       <Section bottomSpace={size.xxl}>

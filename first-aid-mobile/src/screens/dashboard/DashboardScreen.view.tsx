@@ -13,13 +13,13 @@ import {
   color,
   size,
 } from '@components';
-import {View} from 'react-native';
+import {View, Image} from 'react-native';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
 }) => {
   return (
-    <Screen style={styles.container} header={<Header hasMenu />}>
+    <Screen style={styles.container} isHeaderSticky header={<Header hasMenu />}>
       <Section>
         <View style={styles.banner}>
           <Text variation="H2" color={color.secondary}>
@@ -27,29 +27,50 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
           </Text>
 
           <Icon name="logo" size={size.xxl} color={color.secondary} />
-          <Button variation="google" text="Start Test" onPress={goToExam} />
+          <Button
+            variation="google"
+            size="large"
+            text="Start Test"
+            onPress={goToExam}
+          />
         </View>
       </Section>
 
       <Section topSpace={size.l}>
         <CardSlider title="Learn " subTitle="Injuries">
-          <Card title="Topic 1" />
-          <Card title="Topic 2" />
-          <Card title="Topic 3" />
-          <Card title="Topic 4" />
-          <Card title="Topic 5" />
-          <Card title="Topic 6" />
+          <Card
+            title="Allergic Reaction"
+            image={require('assets/images/get-started-screen.png')}
+          />
         </CardSlider>
       </Section>
 
-      <Section>
+      <Section bottomSpace={size.xxl}>
         <CardSlider title="Learn " subTitle="Natural Disaster">
-          <Card title="Topic 1" />
-          <Card title="Topic 2" />
-          <Card title="Topic 3" />
-          <Card title="Topic 4" />
-          <Card title="Topic 5" />
-          <Card title="Topic 6" />
+          <Card
+            title="Topic 1"
+            image={require('assets/images/get-started-screen.png')}
+          />
+          <Card
+            title="Topic 2"
+            image={require('assets/images/get-started-screen.png')}
+          />
+          <Card
+            title="Topic 3"
+            image={require('assets/images/get-started-screen.png')}
+          />
+          <Card
+            title="Topic 4"
+            image={require('assets/images/get-started-screen.png')}
+          />
+          <Card
+            title="Topic 5"
+            image={require('assets/images/get-started-screen.png')}
+          />
+          <Card
+            title="Topic 6"
+            image={require('assets/images/get-started-screen.png')}
+          />
         </CardSlider>
       </Section>
     </Screen>
