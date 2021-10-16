@@ -1,19 +1,34 @@
 import React, {FC} from 'react';
 import {TDashboardScreenViewProps} from './DashboardScreen.type';
 import {styles} from './DashboardScreen.style';
-import {Section, Screen, Text, Header, Card, CardSlider} from '@components';
+import {
+  Section,
+  Screen,
+  Text,
+  Header,
+  Card,
+  CardSlider,
+  Button,
+  Icon,
+  color,
+  size,
+} from '@components';
+import {View} from 'react-native';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
 }) => {
   return (
-    <Screen containerStyle={styles.container} header={<Header hasMenu />}>
+    <Screen style={styles.container} header={<Header hasMenu />}>
       <Section>
-        <CardSlider title="Test">
-          <Card title="Easy" onPress={goToExam} />
-          <Card title="Medium" />
-          <Card title="Hard" />
-        </CardSlider>
+        <View style={styles.banner}>
+          <Text variation="H2" color={color.secondary800}>
+            Check your knowledge
+          </Text>
+
+          <Icon name="logo" size={size.xxl} color={color.secondary800} />
+          <Button variation="google" text="Start Test" onPress={goToExam} />
+        </View>
       </Section>
 
       <Section>

@@ -3,12 +3,16 @@ import {color, size} from '@components';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: color.primary500,
+    backgroundColor: color.primary100,
   },
+
   banner: {
-    justifyContent: 'center',
+    height: 270,
+    justifyContent: 'space-between',
     alignItems: 'center',
-    height: 2 * size.xxl,
-    flexDirection: 'row',
+    borderColor: color.secondary100,
+    paddingVertical: size.l,
+    borderWidth: 1,
+    borderRadius: size.xl,
   },
 });
