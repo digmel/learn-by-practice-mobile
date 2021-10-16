@@ -18,19 +18,25 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
           <Text>Question something adasca asdcascd asdc?</Text>
         </View>
         <View style={styles.answerContainer}>
-          <Icon name="apple" iconContainerStyle={{padding: 20}}></Icon>
+          <Icon
+            name="radio-unchecked"
+            iconContainerStyle={{padding: 20}}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
-          <Icon name="apple" iconContainerStyle={{padding: 20}}></Icon>
+          <Icon name="radio-checked" iconContainerStyle={{padding: 20}}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
-          <Icon name="apple" iconContainerStyle={{padding: 20}}></Icon>
+          <Icon
+            name="radio-unchecked"
+            iconContainerStyle={{padding: 20}}></Icon>
           <Text>answer 1</Text>
         </View>
         <View style={styles.answerContainer}>
-          <Icon name="apple" iconContainerStyle={{padding: 20}}></Icon>
+          <Icon
+            name="radio-unchecked"
+            iconContainerStyle={{padding: 20}}></Icon>
           <Text>answer 1</Text>
         </View>
       </Section>
