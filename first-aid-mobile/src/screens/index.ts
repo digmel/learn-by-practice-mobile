@@ -5,3 +5,5 @@ export * from './resetPassword/ResetPasswordScreen';
 
 export * from './dashboard/DashboardScreen';
 export * from './exam/ExamScreen';
+
+export * from './allergicReaction/AllergicReactionScreen';

@@ -13,6 +13,7 @@ import {
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
+  goToAllergicReactionScreen,
 }) => {
   return (
     <Screen style={styles.container} isHeaderSticky header={<Header hasMenu />}>
@@ -23,6 +24,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       <Section topSpace={size.l}>
         <CardSlider title="Learn " subTitle="Injuries">
           <Card
+            onPress={goToAllergicReactionScreen}
             cardContainerStyle={styles.firstCard}
             title="Allergic Reaction"
             image={require('assets/images/asthma-attacks.png')}
