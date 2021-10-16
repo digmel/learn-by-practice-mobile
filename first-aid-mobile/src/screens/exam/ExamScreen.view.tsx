@@ -10,12 +10,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
       containerStyle={styles.container}
       header={<Header hasMenu hasBack />}>
       <Section>
-        <Text>EXAM</Text>
-      </Section>
-
-      <Section>
         <View style={styles.questionContainer}>
-          <Text>Question something adasca asdcascd asdc?</Text>
+          <Text>Question something?</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
@@ -31,7 +27,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
             color={color.success800}
             iconContainerStyle={{paddingRight: 20}}
             size={size.m}></Icon>
-          <Text>answer 1</Text>
+          <Text>answer 2</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
@@ -39,7 +35,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
             iconContainerStyle={{paddingRight: 20}}
             color={color.dark}
             size={size.m}></Icon>
-          <Text>answer 1</Text>
+          <Text>answer 3</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
@@ -47,7 +43,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
             iconContainerStyle={{paddingRight: 20}}
             color={color.error800}
             size={size.m}></Icon>
-          <Text>answer 1</Text>
+          <Text>answer 4</Text>
         </View>
       </Section>
     </Screen>
