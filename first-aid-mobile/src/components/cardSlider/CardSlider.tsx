@@ -13,7 +13,7 @@ export const CardSlider: FC<TCardSliderProps> = ({
   return (
     <View style={styles.wrapper}>
       <View style={[styles.titleContainer, titleContainerStyle]}>
-        <Text variation="H1" fontWeight="bold" color={color.secondary800}>
+        <Text variation="H1" fontWeight="bold" color={color.secondary}>
           {title}
         </Text>
       </View>

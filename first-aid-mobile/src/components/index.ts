@@ -27,8 +27,6 @@ export * from './header/Header.type';
 
 export * from './icon/Icon';
 
-export * from './screenUnprotected/ScreenUnprotected';
-
 export * from './card/Card';
 export * from './card/Card.type';
 

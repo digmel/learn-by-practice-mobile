@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     height: 240,
     width: 200,
     marginRight: size.m,
-    borderColor: color.secondary100,
+    borderColor: color.secondary,
     borderWidth: 1,
     borderRadius: size.l,
     marginBottom: size.l,

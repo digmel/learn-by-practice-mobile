@@ -19,7 +19,7 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
       </Section>
 
       <Section bottomSpace={size.xxl}>
-        <Text variation="H1" fontWeight="extraBold" color={color.primary100}>
+        <Text variation="H1" fontWeight="extraBold" color={color.primary}>
           Learn how to act
         </Text>
         <Text variation="H4" fontWeight="light" color={color.gray500}>

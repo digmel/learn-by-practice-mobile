@@ -22,11 +22,11 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
     <Screen style={styles.container} header={<Header hasMenu />}>
       <Section>
         <View style={styles.banner}>
-          <Text variation="H2" color={color.secondary800}>
+          <Text variation="H2" color={color.secondary}>
             Check your knowledge
           </Text>
 
-          <Icon name="logo" size={size.xxl} color={color.secondary800} />
+          <Icon name="logo" size={size.xxl} color={color.secondary} />
           <Button variation="google" text="Start Test" onPress={goToExam} />
         </View>
       </Section>
