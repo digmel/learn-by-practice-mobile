@@ -45,10 +45,18 @@ export const AllergicReactionScreenView: FC<TAllergicReactionScreenViewProps> =
           />
         </Section>
 
+        <Section>
+          <Text>
+            Milder Allergic Symptoms that can appear before a severe allergic
+            reaction:
+          </Text>
+        </Section>
+
         <Section variation="secondary">
-          <Text>- Wheeze or persistent cough</Text>
-          <Text>- Persistent dizziness or collapse</Text>
-          <Text>- Paleness and floppiness in young children</Text>
+          <Text>- Swelling of your lips, face and eyes</Text>
+          <Text>- Hives or welts</Text>
+          <Text>- Tingling mouth</Text>
+          <Text>- Abdominal pain and vomiting</Text>
         </Section>
       </Screen>
     );
