@@ -30,19 +30,17 @@ export const Section: FC<TSectionProps> = ({
       variationStyle.backgroundColor = color.primary;
       variationStyle.paddingVertical = size.l;
       variationStyle.borderBottomRightRadius = size.xl;
-      variationStyle.borderTopRightRadius = 2 * size.xxl;
-      variationStyle.marginRight = size.xl;
-      variationStyle.marginHorizontal = -size.xl;
-      contentDynamicStyle.marginHorizontal = size.xl;
+      variationStyle.borderTopRightRadius = 110;
+      variationStyle.marginLeft = -size.xl;
+      contentDynamicStyle.paddingLeft = size.xl;
       break;
     case 'secondary':
       variationStyle.backgroundColor = color.accent;
       variationStyle.paddingVertical = size.l;
       variationStyle.borderBottomLeftRadius = size.xl;
-      variationStyle.borderTopLeftRadius = 2 * size.xxl;
-      variationStyle.marginLeft = size.xl;
-      variationStyle.marginHorizontal = -size.xl;
-      contentDynamicStyle.marginHorizontal = size.xl;
+      variationStyle.borderTopLeftRadius = 70;
+      variationStyle.marginRight = -size.xl;
+      contentDynamicStyle.paddingLeft = size.xl;
       break;
   }
 
