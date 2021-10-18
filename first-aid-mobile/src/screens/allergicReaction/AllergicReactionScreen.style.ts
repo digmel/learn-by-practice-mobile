@@ -9,16 +9,4 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-
-  listContainer: {
-    marginLeft: size.xl,
-  },
-
-  listSectionContainer: {
-    backgroundColor: color.primary,
-    paddingVertical: size.l,
-    borderBottomRightRadius: 28,
-    borderTopRightRadius: 118,
-    marginRight: size.xl,
-  },
 });

@@ -1,16 +1,17 @@
 import React, {FC} from 'react';
-import {View, ViewStyle, StyleProp} from 'react-native';
+import {View, ViewStyle} from 'react-native';
 import {styles} from './Section.style';
 import {TSectionProps} from './Section.type';
-import {size} from '@components';
+import {color, size} from '@components';
 
 export const Section: FC<TSectionProps> = ({
+  variation,
   containerStyle,
   isFullWidth = false,
   children,
   topSpace,
   bottomSpace,
-  ...props
+  contentStyle,
 }) => {
   const fullWidthStyle = isFullWidth && {marginHorizontal: -size.xl};
 
@@ -20,17 +21,41 @@ export const Section: FC<TSectionProps> = ({
     ? {marginBottom: bottomSpace}
     : {marginBottom: size.m};
 
-  const containerDynamicStyle: StyleProp<ViewStyle> = {
+  const variationStyle: ViewStyle = {};
+
+  const contentDynamicStyle: ViewStyle = {};
+
+  switch (variation) {
+    case 'primary':
+      variationStyle.backgroundColor = color.primary;
+      variationStyle.paddingVertical = size.l;
+      variationStyle.borderBottomRightRadius = size.xl;
+      variationStyle.borderTopRightRadius = 110;
+      variationStyle.marginLeft = -size.xl;
+      contentDynamicStyle.paddingLeft = size.xl;
+      break;
+    case 'secondary':
+      variationStyle.backgroundColor = color.accent;
+      variationStyle.paddingVertical = size.l;
+      variationStyle.borderBottomLeftRadius = size.xl;
+      variationStyle.borderTopLeftRadius = 70;
+      variationStyle.marginRight = -size.xl;
+      contentDynamicStyle.paddingLeft = size.xl;
+      break;
+  }
+
+  const containerDynamicStyle = {
+    ...variationStyle,
     ...fullWidthStyle,
     ...topSpaceStyle,
     ...bottomSpaceStyle,
   };
 
   return (
-    <View
-      style={[styles.container, containerDynamicStyle, containerStyle]}
-      {...props}>
-      {children}
+    <View style={[styles.container, containerDynamicStyle, containerStyle]}>
+      <View style={[styles.content, contentDynamicStyle, contentStyle]}>
+        {children}
+      </View>
     </View>
   );
 };
