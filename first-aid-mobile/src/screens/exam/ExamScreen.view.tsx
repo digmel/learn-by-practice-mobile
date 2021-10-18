@@ -8,10 +8,14 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
   return (
     <Screen
       containerStyle={styles.container}
-      header={<Header hasMenu hasBack />}>
+      header={
+        <Header hasMenu hasBack>
+          <Text>Check your knowledge</Text>
+        </Header>
+      }>
       <Section>
         <View style={styles.questionContainer}>
-          <Text>Question something?</Text>
+          <Text>Question what is something?</Text>
         </View>
         <View style={styles.answerContainer}>
           <Icon
