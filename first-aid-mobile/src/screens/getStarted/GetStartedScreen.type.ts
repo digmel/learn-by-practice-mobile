@@ -3,5 +3,5 @@ export type TGetStartedScreenProps = {
 };
 
 export type TGetStartedScreenViewProps = {
-  onClickGetStarted: Function;
+  onPressGetStarted: Function;
 };

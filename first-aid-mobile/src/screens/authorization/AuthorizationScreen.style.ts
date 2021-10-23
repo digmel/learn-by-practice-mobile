@@ -4,18 +4,16 @@ export const styles = StyleSheet.create({
   container: {},
 
   svgContainer: {
-    flexBasis: '60%',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
   },
 
   textContainer: {
-    flexBasis: '20%',
-    justifyContent: 'flex-end',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   buttonContainer: {
-    flexBasis: '20%',
-    justifyContent: 'center',
+    flexBasis: '60%',
   },
 });

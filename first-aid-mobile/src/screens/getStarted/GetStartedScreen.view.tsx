@@ -1,19 +1,11 @@
 import React, {FC} from 'react';
 import {styles} from './GetStartedScreen.style';
 import {TGetStartedScreenViewProps} from './GetStartedScreen.type';
-import {
-  Screen,
-  Button,
-  Section,
-  Text,
-  color,
-  size,
-  GetStartedScreenSvg,
-} from '@components';
+import {Screen, Button, Section, Text, GetStartedScreenSvg} from '@components';
 import {View} from 'react-native';
 
 export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
-  onClickGetStarted,
+  onPressGetStarted,
 }) => {
   return (
     <Screen isScrollViewDisabled>
@@ -32,7 +24,7 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
       </View>
 
       <Section containerStyle={styles.buttonContainer}>
-        <Button text="Get Started" onPress={onClickGetStarted} />
+        <Button text="Get Started" onPress={onPressGetStarted} />
       </Section>
     </Screen>
   );

@@ -3,5 +3,8 @@ export type TAuthorizationScreenProps = {
 };
 
 export type TAuthorizationScreenViewProps = {
-  onClickAuthorization: Function;
+  onPressFacebook?: Function;
+  onPressGoogle?: Function;
+  onPressEmail?: Function;
+  onPressSignUp?: Function;
 };
