@@ -34,5 +34,6 @@ export * from './cardSlider/CardSlider';
 export * from './cardSlider/CardSlider.type';
 
 export * from './svg/Logo';
+export * from './svg/GetStartedScreenSvg';
 
 export * from './banner/Banner';

@@ -74,7 +74,7 @@ const getTextVariation = (
 };
 
 export const Text: FC<TTextProps> = ({
-  color = configColor.secondary,
+  color = configColor.primary,
   variation = 'body',
   fontWeight = 'regular',
   textStyle,

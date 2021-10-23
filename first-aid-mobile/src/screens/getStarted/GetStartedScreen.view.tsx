@@ -1,37 +1,38 @@
 import React, {FC} from 'react';
 import {styles} from './GetStartedScreen.style';
 import {TGetStartedScreenViewProps} from './GetStartedScreen.type';
-import {Screen, Button, Section, Text, color, size} from '@components';
-import {Image} from 'react-native';
+import {
+  Screen,
+  Button,
+  Section,
+  Text,
+  color,
+  size,
+  GetStartedScreenSvg,
+} from '@components';
+import {View} from 'react-native';
 
 export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
-  goToLogin,
-  goToSignUp,
+  onClickGetStarted,
 }) => {
   return (
     <Screen isScrollViewDisabled>
-      <Section
-        containerStyle={styles.imageContainer}
-        topSpace={size.xl}
-        bottomSpace={size.xxl}>
-        <Image source={require('assets/images/get-started-screen.png')}></Image>
-      </Section>
+      <View style={styles.svgContainer}>
+        <GetStartedScreenSvg />
+      </View>
 
-      <Section bottomSpace={size.xxl}>
-        <Text variation="H1" fontWeight="extraBold" color={color.primary}>
+      <View style={styles.textContainer}>
+        <Text variation="H1" fontWeight="extraBold">
           Learn how to act
         </Text>
-        <Text variation="H4" fontWeight="light" color={color.gray500}>
+
+        <Text variation="H4" fontWeight="light">
           When every second is important!
         </Text>
-      </Section>
+      </View>
 
-      <Section>
-        <Button text="Login" onPress={goToLogin} />
-      </Section>
-
-      <Section>
-        <Button text="Sign Up" variation="secondary" onPress={goToSignUp} />
+      <Section containerStyle={styles.buttonContainer}>
+        <Button text="Get Started" onPress={onClickGetStarted} />
       </Section>
     </Screen>
   );
