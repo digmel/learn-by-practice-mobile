@@ -51,31 +51,12 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
       <Section bottomSpace={size.xxl}>
         <CardSlider title="Learn " subTitle="Natural Disaster">
-          <Card
-            cardContainerStyle={styles.firstCard}
-            title="Topic 1"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 2"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 3"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 4"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 5"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 6"
-            image={require('assets/images/get-started-screen.png')}
-          />
+          <Card cardContainerStyle={styles.firstCard} title="Topic 1" />
+          <Card title="Topic 2" />
+          <Card title="Topic 3" />
+          <Card title="Topic 4" />
+          <Card title="Topic 5" />
+          <Card title="Topic 6" />
         </CardSlider>
       </Section>
     </Screen>
