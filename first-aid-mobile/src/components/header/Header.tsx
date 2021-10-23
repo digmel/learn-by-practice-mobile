@@ -51,7 +51,7 @@ export const Header: FC<THeaderProps> = ({
         <TouchableOpacity
           style={[styles.containerRight, containerRightStyle]}
           onPress={onPressMenu}>
-          <Icon name="menu-dots" size={size.xl} color={color.primary} />
+          <Icon name="menu" size={size.xl} color={color.primary} />
         </TouchableOpacity>
       )}
     </View>

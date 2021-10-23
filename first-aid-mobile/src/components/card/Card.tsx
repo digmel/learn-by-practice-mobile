@@ -24,7 +24,7 @@ export const Card: FC<TCardProps> = ({
         </View>
 
         <View style={[styles.titleContainer, titleContainerStyle]}>
-          <Text variation="subtitle" color={color.secondary}>
+          <Text variation="subtitle" color={color.primary}>
             {title}
           </Text>
         </View>

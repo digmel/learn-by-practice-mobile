@@ -5,10 +5,12 @@ import {
   Section,
   Screen,
   Header,
-  Banner,
   Card,
   CardSlider,
   size,
+  Logo,
+  Text,
+  Button,
 } from '@components';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
@@ -17,8 +19,18 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 }) => {
   return (
     <Screen style={styles.container} isHeaderSticky header={<Header hasMenu />}>
+      <Section topSpace={size.l} containerStyle={styles.logoContainer}>
+        <Logo />
+      </Section>
+
       <Section>
-        <Banner title="Check your knowledge" onPress={goToExam} />
+        <Text variation="H3" textStyle={styles.bannerText}>
+          Check your Knowledge
+        </Text>
+      </Section>
+
+      <Section topSpace={size.l}>
+        <Button text="Start Test" variation="secondary" onPress={goToExam} />
       </Section>
 
       <Section topSpace={size.l}>

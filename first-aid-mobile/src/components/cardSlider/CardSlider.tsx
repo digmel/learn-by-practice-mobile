@@ -14,10 +14,10 @@ export const CardSlider: FC<TCardSliderProps> = ({
   return (
     <View style={styles.wrapper}>
       <View style={[styles.titleContainer, titleContainerStyle]}>
-        <Text variation="H1" fontWeight="bold" color={color.secondary}>
+        <Text variation="H1" fontWeight="bold" color={color.primary}>
           {title}
         </Text>
-        <Text variation="H1" fontWeight="light" color={color.secondary}>
+        <Text variation="H1" fontWeight="light" color={color.primary}>
           {subTitle}
         </Text>
       </View>
