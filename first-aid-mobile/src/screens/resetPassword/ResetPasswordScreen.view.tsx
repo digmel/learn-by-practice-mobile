@@ -1,8 +1,15 @@
 import React, {FC} from 'react';
 import {TResetPasswordScreenViewProps} from './ResetPasswordScreen.type';
-import {Section, Screen, TextInput, Button, Header, size} from '@components';
-import {Image} from 'react-native';
-import {styles} from 'screens/getStarted/GetStartedScreen.style';
+import {
+  Section,
+  Screen,
+  TextInput,
+  Button,
+  Header,
+  size,
+  ResetPasswordScreenSvg,
+} from '@components';
+import {styles} from './ResetPasswordScreen.style';
 
 export const ResetPasswordScreenView: FC<TResetPasswordScreenViewProps> = ({
   userEmail,
@@ -12,16 +19,11 @@ export const ResetPasswordScreenView: FC<TResetPasswordScreenViewProps> = ({
 }) => {
   return (
     <Screen isScrollViewDisabled header={<Header hasBack />}>
-      <Section
-        containerStyle={styles.imageContainer}
-        topSpace={size.xl}
-        bottomSpace={size.xxl}>
-        <Image
-          source={require('../../assets/images/reset-password-screen.png')}
-        />
+      <Section topSpace={size.xl} containerStyle={styles.svgContainer}>
+        <ResetPasswordScreenSvg />
       </Section>
 
-      <Section>
+      <Section topSpace={size.l}>
         <TextInput
           label="E-mail address"
           value={userEmail}
@@ -30,7 +32,7 @@ export const ResetPasswordScreenView: FC<TResetPasswordScreenViewProps> = ({
         />
       </Section>
 
-      <Section>
+      <Section topSpace={size.xl}>
         <Button onPress={onPressSendResetPassword} text="Send Reset Link" />
       </Section>
     </Screen>
