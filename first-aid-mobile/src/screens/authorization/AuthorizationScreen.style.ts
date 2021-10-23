@@ -8,12 +8,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  textContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  buttonContainer: {
-    flexBasis: '60%',
+  text: {
+    textAlign: 'center',
   },
 });

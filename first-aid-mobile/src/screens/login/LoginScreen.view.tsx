@@ -6,7 +6,6 @@ import {
   Button,
   Text,
   Screen,
-  color,
   size,
   TextInput,
   Header,
@@ -17,41 +16,21 @@ export const LoginScreenView: FC<TLoginScreenViewProps> = ({
 }) => {
   return (
     <Screen isScrollViewDisabled header={<Header hasBack></Header>}>
-      <Section>
-        <Button
-          text="Continue with Google"
-          iconLeft="google"
-          variation="google"
-          textContainerStyle={styles.textContainer}
-          iconContainerStyle={styles.iconContainer}
-        />
-      </Section>
-
-      <Section>
-        <Button
-          iconLeft="facebook"
-          text="Continue with Facebook"
-          variation="facebook"
-          textContainerStyle={styles.textContainer}
-          iconContainerStyle={styles.iconContainer}
-        />
-      </Section>
-
-      <Section
-        bottomSpace={size.l}
-        topSpace={size.l}
-        containerStyle={styles.textSection}>
-        <Text variation="subtitle" color={color.gray500}>
-          Or
+      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
+        <Text variation="H1" fontWeight="extraBold" textStyle={styles.text}>
+          Welcome
         </Text>
       </Section>
 
-      <Section>
+      <Section bottomSpace={size.xl}>
         <TextInput label="Email" />
       </Section>
 
       <Section>
         <TextInput label="Password" secureTextEntry />
+      </Section>
+
+      <Section bottomSpace={size.xl}>
         <Button
           variation="link"
           text="Reset Password"
