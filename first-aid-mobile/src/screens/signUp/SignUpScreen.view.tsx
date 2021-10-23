@@ -14,7 +14,7 @@ import {
 export const SignUpScreenView: FC<TSignUpScreenViewProps> = ({}) => {
   return (
     <Screen isScrollViewDisabled header={<Header hasBack />}>
-      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
+      <Section topSpace={size.xl} bottomSpace={size.xxl}>
         <Text variation="H1" fontWeight="extraBold" textStyle={styles.text}>
           Welcome
         </Text>

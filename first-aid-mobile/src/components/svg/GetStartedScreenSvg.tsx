@@ -1041,8 +1041,8 @@ export const GetStartedScreenSvg: FC<SvgProps> = ({
           x2="266.362"
           y2="235.959"
           gradientUnits="userSpaceOnUse">
-          <Stop stop-color="#EAF4F8" />
-          <Stop offset="1" stop-color="#9ECEDE" />
+          <Stop stopColor="#EAF4F8" />
+          <Stop offset="1" stopColor="#9ECEDE" />
         </LinearGradient>
       </Defs>
     </Svg>

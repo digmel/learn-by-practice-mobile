@@ -16,7 +16,7 @@ export const LoginScreenView: FC<TLoginScreenViewProps> = ({
 }) => {
   return (
     <Screen isScrollViewDisabled header={<Header hasBack></Header>}>
-      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
+      <Section topSpace={size.xl} bottomSpace={size.xxl}>
         <Text variation="H1" fontWeight="extraBold" textStyle={styles.text}>
           Welcome
         </Text>

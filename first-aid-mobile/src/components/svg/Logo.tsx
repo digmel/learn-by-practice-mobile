@@ -33,8 +33,8 @@ export const Logo: FC<SvgProps> = ({width = 142, height = 143}) => {
           x2="70.7793"
           y2="142.935"
           gradientUnits="userSpaceOnUse">
-          <Stop stop-color="#EAF4F8" />
-          <Stop offset="1" stop-color="#9ECEDE" />
+          <Stop offset="0" stopColor="#EAF4F8" />
+          <Stop offset="1" stopColor="#9ECEDE" />
         </LinearGradient>
       </Defs>
     </Svg>
