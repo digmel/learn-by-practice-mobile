@@ -33,6 +33,7 @@ export * from './card/Card.type';
 export * from './cardSlider/CardSlider';
 export * from './cardSlider/CardSlider.type';
 
+//SVG's
 export * from './svg/Logo';
-
-export * from './banner/Banner';
+export * from './svg/GetStartedScreenSvg';
+export * from './svg/ResetPasswordScreenSvg';

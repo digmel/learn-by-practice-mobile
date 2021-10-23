@@ -1,21 +1,13 @@
 export const color = {
-  primary: '#bac1e8',
+  primary: '#094B61',
 
-  secondary: '#094b61',
+  secondary: '#C6CDFF',
 
-  accent: '#c4e1eb',
+  accent: '#C4E1EB',
 
-  success100: '#E6F9DC',
-  success500: '#87E627',
-  success800: '#4CAD0B',
+  success: '#00A66A',
 
-  warning100: '#FCF5CF',
-  warning500: '#FFCA43',
-  warning800: '#DC9F04',
-
-  error100: '#FCDED9',
-  error500: '#F65241',
-  error800: '#C0240C',
+  error: '#F20E56',
 
   gray100: '#F4F5F6',
   gray200: '#E3E5E8',
@@ -24,8 +16,11 @@ export const color = {
   gray500: '#565F67',
 
   light: '#FFFFFF',
-  dark: '#2D2D2D',
+  dark: '#14384F',
 
-  google: '#DB4437',
+  google: '#DB4438',
   facebook: '#3B5998',
+
+  gradientStart: '#EAF4F8',
+  gradientEnd: '#9ECEDE',
 };

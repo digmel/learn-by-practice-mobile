@@ -15,4 +15,14 @@ export const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
   },
+
+  textContainer: {
+    width: '70%',
+  },
+
+  iconContainer: {
+    width: '20%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

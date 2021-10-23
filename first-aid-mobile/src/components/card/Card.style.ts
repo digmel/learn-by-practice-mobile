@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   card: {
     height: 240,
     width: 200,
-    borderColor: color.secondary,
+    borderColor: color.primary,
     borderWidth: 1,
     borderRadius: size.l,
     marginBottom: size.l,

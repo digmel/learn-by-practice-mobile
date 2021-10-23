@@ -6,7 +6,8 @@ export type TButtonVariation =
   | 'secondary'
   | 'link'
   | 'google'
-  | 'facebook';
+  | 'facebook'
+  | 'email';
 
 export type TButtonSize = 'large' | 'medium' | 'small';
 

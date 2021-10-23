@@ -5,10 +5,12 @@ import {
   Section,
   Screen,
   Header,
-  Banner,
   Card,
   CardSlider,
   size,
+  Logo,
+  Text,
+  Button,
 } from '@components';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
@@ -17,8 +19,18 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 }) => {
   return (
     <Screen style={styles.container} isHeaderSticky header={<Header hasMenu />}>
+      <Section topSpace={size.l} containerStyle={styles.logoContainer}>
+        <Logo />
+      </Section>
+
       <Section>
-        <Banner title="Check your knowledge" onPress={goToExam} />
+        <Text variation="H3" textStyle={styles.bannerText}>
+          Check your Knowledge
+        </Text>
+      </Section>
+
+      <Section topSpace={size.l}>
+        <Button text="Start Test" variation="secondary" onPress={goToExam} />
       </Section>
 
       <Section topSpace={size.l}>
@@ -39,31 +51,12 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
       <Section bottomSpace={size.xxl}>
         <CardSlider title="Learn " subTitle="Natural Disaster">
-          <Card
-            cardContainerStyle={styles.firstCard}
-            title="Topic 1"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 2"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 3"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 4"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 5"
-            image={require('assets/images/get-started-screen.png')}
-          />
-          <Card
-            title="Topic 6"
-            image={require('assets/images/get-started-screen.png')}
-          />
+          <Card cardContainerStyle={styles.firstCard} title="Topic 1" />
+          <Card title="Topic 2" />
+          <Card title="Topic 3" />
+          <Card title="Topic 4" />
+          <Card title="Topic 5" />
+          <Card title="Topic 6" />
         </CardSlider>
       </Section>
     </Screen>

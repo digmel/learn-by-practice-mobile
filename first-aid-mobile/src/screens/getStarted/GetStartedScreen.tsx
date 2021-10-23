@@ -1,17 +1,11 @@
 import React, {FC} from 'react';
 import {TGetStartedScreenProps} from './GetStartedScreen.type';
 import {GetStartedScreenView} from './GetStartedScreen.view';
-import {LoginScreen, SignUpScreen} from '@screens';
+import {AuthorizationScreen} from '@screens';
 
 export const GetStartedScreen: FC<TGetStartedScreenProps> = ({navigation}) => {
-  const _goToLogin = () => {
-    navigation.navigate(LoginScreen);
+  const _onPressGetStarted = () => {
+    navigation.navigate(AuthorizationScreen);
   };
-
-  const _goToSignUp = () => {
-    navigation.navigate(SignUpScreen);
-  };
-  return (
-    <GetStartedScreenView goToLogin={_goToLogin} goToSignUp={_goToSignUp} />
-  );
+  return <GetStartedScreenView onPressGetStarted={_onPressGetStarted} />;
 };

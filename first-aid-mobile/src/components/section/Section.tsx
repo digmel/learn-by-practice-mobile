@@ -27,7 +27,7 @@ export const Section: FC<TSectionProps> = ({
 
   switch (variation) {
     case 'primary':
-      variationStyle.backgroundColor = color.primary;
+      variationStyle.backgroundColor = color.secondary;
       variationStyle.paddingVertical = size.l;
       variationStyle.borderBottomRightRadius = size.xl;
       variationStyle.borderTopRightRadius = 110;

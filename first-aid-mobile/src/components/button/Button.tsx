@@ -76,6 +76,7 @@ export const Button: FC<TButtonProps> = ({
       dynamicProperties.textColor = color.light;
       dynamicProperties.textVariation = 'caption';
       dynamicProperties.fontWeight = 'medium';
+      textContainerStyle = styles.textContainer;
       break;
     case 'facebook':
       dynamicProperties.backgroundColor = color.facebook;
@@ -83,6 +84,14 @@ export const Button: FC<TButtonProps> = ({
       dynamicProperties.iconColor = color.light;
       dynamicProperties.textVariation = 'caption';
       dynamicProperties.fontWeight = 'medium';
+      textContainerStyle = styles.textContainer;
+      break;
+    case 'email':
+      dynamicProperties.textColor = color.light;
+      dynamicProperties.iconColor = color.light;
+      dynamicProperties.textVariation = 'caption';
+      dynamicProperties.fontWeight = 'medium';
+      textContainerStyle = styles.textContainer;
       break;
   }
 
@@ -115,7 +124,7 @@ export const Button: FC<TButtonProps> = ({
 
   const textDynamicStyle: TextStyle = {
     color: dynamicProperties.textColor,
-    textTransform: isUppercase ? 'uppercase' : 'capitalize',
+    textTransform: isUppercase ? 'uppercase' : 'none',
   };
 
   const iconContainerDynamicStyle: TextStyle = {
@@ -133,11 +142,17 @@ export const Button: FC<TButtonProps> = ({
         <Loader isLoading={isLoading} loaderColor={dynamicProperties.textColor}>
           <View style={styles.contentContainer}>
             {!!iconLeft && (
-              <View style={[iconContainerDynamicStyle, iconContainerStyle]}>
+              <View
+                style={[
+                  styles.iconContainer,
+                  iconContainerDynamicStyle,
+                  iconContainerStyle,
+                ]}>
                 <Icon
                   name={iconLeft}
                   color={dynamicProperties.iconColor}
                   iconStyle={iconContainerDynamicStyle}
+                  size={configSize.l}
                 />
               </View>
             )}
@@ -150,11 +165,17 @@ export const Button: FC<TButtonProps> = ({
               </Text>
             </View>
             {!!iconRight && (
-              <View style={[iconContainerDynamicStyle, iconContainerStyle]}>
+              <View
+                style={[
+                  styles.iconContainer,
+                  iconContainerDynamicStyle,
+                  iconContainerStyle,
+                ]}>
                 <Icon
                   name={iconRight}
                   color={dynamicProperties.iconColor}
                   iconStyle={iconContainerDynamicStyle}
+                  size={configSize.l}
                 />
               </View>
             )}

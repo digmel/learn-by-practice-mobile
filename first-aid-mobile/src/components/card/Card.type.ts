@@ -2,7 +2,7 @@ import {ViewStyle, StyleProp, ImageSourcePropType} from 'react-native';
 
 export type TCardProps = {
   title: String;
-  image: ImageSourcePropType;
+  image?: ImageSourcePropType;
   onPress?: Function;
   titleContainerStyle?: StyleProp<ViewStyle>;
   imageContainerStyle?: StyleProp<ViewStyle>;
