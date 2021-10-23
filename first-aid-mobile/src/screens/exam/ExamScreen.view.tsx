@@ -28,7 +28,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
         <View style={styles.answerContainer}>
           <Icon
             name="radio-checked"
-            color={color.success800}
+            color={color.success}
             iconContainerStyle={{paddingRight: 20}}
             size={size.m}></Icon>
           <Text>answer 2</Text>
@@ -45,7 +45,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
           <Icon
             name="radio-checked"
             iconContainerStyle={{paddingRight: 20}}
-            color={color.error800}
+            color={color.error}
             size={size.m}></Icon>
           <Text>answer 4</Text>
         </View>
