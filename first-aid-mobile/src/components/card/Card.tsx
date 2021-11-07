@@ -19,9 +19,7 @@ export const Card: FC<TCardProps> = ({
       <TouchableOpacity
         style={[styles.card, cardStyle]}
         onPress={() => onPress && onPress()}>
-        <View style={[styles.imageContainer, imageContainerStyle]}>
-          <Image resizeMode="center" source={image} />
-        </View>
+        <View style={[styles.imageContainer, imageContainerStyle]}></View>
 
         <View style={[styles.titleContainer, titleContainerStyle]}>
           <Text variation="subtitle" color={color.primary}>

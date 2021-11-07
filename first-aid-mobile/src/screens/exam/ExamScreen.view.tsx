@@ -1,54 +1,30 @@
 import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
-import {Section, Screen, Text, Header, Icon, size, color} from '@components';
-import {View} from 'react-native';
+import {Section, Screen, Text, Header, Answer} from '@components';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = () => {
   return (
     <Screen
-      containerStyle={styles.container}
       header={
         <Header hasMenu hasBack>
           <Text>Check your knowledge</Text>
         </Header>
       }>
       <Section>
-        <View style={styles.questionContainer}>
-          <Text>Question what is something?</Text>
-        </View>
-        <View style={styles.answerContainer}>
-          <Icon
-            name="radio-unchecked"
-            size={size.m}
-            color={color.dark}
-            iconContainerStyle={{paddingRight: 20}}></Icon>
-          <Text>answer 1</Text>
-        </View>
-        <View style={styles.answerContainer}>
-          <Icon
-            name="radio-checked"
-            color={color.success}
-            iconContainerStyle={{paddingRight: 20}}
-            size={size.m}></Icon>
-          <Text>answer 2</Text>
-        </View>
-        <View style={styles.answerContainer}>
-          <Icon
-            name="radio-unchecked"
-            iconContainerStyle={{paddingRight: 20}}
-            color={color.dark}
-            size={size.m}></Icon>
-          <Text>answer 3</Text>
-        </View>
-        <View style={styles.answerContainer}>
-          <Icon
-            name="radio-checked"
-            iconContainerStyle={{paddingRight: 20}}
-            color={color.error}
-            size={size.m}></Icon>
-          <Text>answer 4</Text>
-        </View>
+        <Text>
+          After finding an unresponsive child, your next course of action?
+        </Text>
+      </Section>
+
+      <Section>
+        <Answer
+          answer="Leave the child and search for an AED"
+          variation="regular"
+        />
+        <Answer answer="Begin back blows and chest thrusts" variation="wrong" />
+        <Answer answer="Deliver 30 chest compressions" variation="correct" />
+        <Answer answer="Deliver 100 chest compressions" />
       </Section>
     </Screen>
   );

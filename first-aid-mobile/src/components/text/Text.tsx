@@ -1,90 +1,56 @@
 import React, {FC} from 'react';
 import {StyleProp, Text as NativeText, TextStyle} from 'react-native';
 import {styles} from './Text.style';
-import {TTextProps, TTextVariation, TTextWeight} from './Text.type';
+import {TTextProps} from './Text.type';
 import {color as configColor} from '@components';
-
-const getTextVariation = (
-  variation: TTextVariation,
-  fontWeight: TTextWeight,
-) => {
-  let textDynamicStyle: StyleProp<TextStyle> = {};
-  switch (variation) {
-    case 'H1':
-      textDynamicStyle.fontSize = 28;
-      break;
-    case 'H2':
-      textDynamicStyle.fontSize = 24;
-      break;
-    case 'H3':
-      textDynamicStyle.fontSize = 20;
-      break;
-    case 'H4':
-      textDynamicStyle.fontSize = 18;
-      break;
-    case 'subtitle':
-      textDynamicStyle.fontSize = 15;
-      break;
-    case 'caption':
-      textDynamicStyle.fontSize = 13;
-      break;
-    case 'notes':
-      textDynamicStyle.fontSize = 11;
-      break;
-    case 'button':
-      textDynamicStyle.fontSize = 17;
-      fontWeight = 'regular';
-      break;
-    case 'input':
-      textDynamicStyle.fontSize = 17;
-      fontWeight = 'regular';
-      break;
-    case 'label':
-      textDynamicStyle.fontSize = 14;
-      fontWeight = 'light';
-      break;
-    case 'chips':
-      textDynamicStyle.fontSize = 14;
-      fontWeight = 'medium';
-      break;
-  }
-
-  switch (fontWeight) {
-    case 'extraBold':
-      textDynamicStyle.fontFamily = 'Poppins-ExtraBold';
-      break;
-    case 'bold':
-      textDynamicStyle.fontFamily = 'Poppins-Bold';
-      break;
-    case 'semiBold':
-      textDynamicStyle.fontFamily = 'Poppins-SemiBold';
-      break;
-    case 'regular':
-      textDynamicStyle.fontFamily = 'Poppins-Regular';
-      break;
-    case 'medium':
-      textDynamicStyle.fontFamily = 'Poppins-Medium';
-      break;
-    case 'light':
-      textDynamicStyle.fontFamily = 'Poppins-Light';
-      break;
-  }
-
-  return textDynamicStyle;
-};
 
 export const Text: FC<TTextProps> = ({
   color = configColor.primary,
-  variation = 'body',
-  fontWeight = 'regular',
+  variation = 'body_light',
   textStyle,
   children,
   ...props
 }) => {
-  const dynamicStyle = getTextVariation(variation, fontWeight);
+  let variationStyle: StyleProp<TextStyle> = {};
+
+  switch (variation) {
+    case 'H1_bold':
+      variationStyle.fontFamily = 'Poppins-ExtraBold';
+      variationStyle.fontSize = 18;
+      break;
+    case 'H1_light':
+      variationStyle.fontFamily = 'Poppins-ExtraLight';
+      variationStyle.fontSize = 18;
+      break;
+    case 'title':
+      variationStyle.fontFamily = 'Poppins-Light';
+      variationStyle.fontSize = 14;
+      break;
+    case 'subtitle':
+      variationStyle.fontFamily = 'Poppins-ExtraLight';
+      variationStyle.fontSize = 14;
+      break;
+    case 'body_bold':
+      variationStyle.fontFamily = 'Poppins-Medium';
+      variationStyle.fontSize = 16;
+      break;
+    case 'body_light':
+      variationStyle.fontFamily = 'Poppins-Light';
+      variationStyle.fontSize = 16;
+      break;
+    case 'button':
+      variationStyle.fontFamily = 'Poppins-Regular';
+      variationStyle.fontSize = 16;
+      break;
+    case 'input':
+      variationStyle.fontFamily = 'Poppins-Regular';
+      variationStyle.fontSize = 14;
+      variationStyle.color = configColor.gray400;
+      break;
+  }
 
   const textDynamicStyle: StyleProp<TextStyle> = {
-    ...dynamicStyle,
+    ...variationStyle,
     color,
   };
 

@@ -16,9 +16,7 @@ export const AuthorizationScreenView: FC<TAuthorizationScreenViewProps> = ({
       </Section>
 
       <Section topSpace={size.xl} bottomSpace={size.xl}>
-        <Text variation="H1" fontWeight="extraBold" textStyle={styles.text}>
-          First Aid
-        </Text>
+        <Text textStyle={styles.text}>First Aid</Text>
       </Section>
 
       <Section bottomSpace={size.l}>
@@ -49,7 +47,7 @@ export const AuthorizationScreenView: FC<TAuthorizationScreenViewProps> = ({
       </Section>
 
       <Section topSpace={size.xxl} bottomSpace={size.xxl}>
-        <Text variation="H4" color={color.gray500} textStyle={styles.text}>
+        <Text color={color.gray500} textStyle={styles.text}>
           Or
         </Text>
       </Section>

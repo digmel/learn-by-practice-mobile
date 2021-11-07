@@ -11,17 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3BB6CDA2557CB64DF83A4DE9 /* libPods-FirstAid-FirstAidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A401D26DAA2ED4EB11D7592 /* libPods-FirstAid-FirstAidTests.a */; };
-		5E4A4653271A47DC00D6FAB1 /* Custom-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E4A4652271A47DC00D6FAB1 /* Custom-Font.ttf */; };
-		5EFFD5B62718C8F60031129F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */; };
-		5EFFD5B72718CB400031129F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A165AF3249A94EFA8416C12C /* Poppins-Bold.ttf */; };
-		5EFFD5B82718CB480031129F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */; };
-		5EFFD5B92718CB510031129F /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */; };
-		5EFFD5BA2718CB590031129F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DD19628FB4C9082E94BCD /* Poppins-Medium.ttf */; };
-		5EFFD5BB2718CB600031129F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CF80E842CFF4890AC5552EE /* Poppins-SemiBold.ttf */; };
-		5EFFD5BC2718CB6E0031129F /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34356DFB19A84789B35F3D62 /* Poppins-Thin.ttf */; };
+		4AD104175941F84FC1A2B982 /* libPods-FirstAid-FirstAidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */; };
+		5EE664EC27375ADA00596B0F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */; };
+		5EE664ED27375AE100596B0F /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05B7E9D186584326BDB79A88 /* Poppins-ExtraLight.ttf */; };
+		5EE664EE27375AEE00596B0F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */; };
+		5EE664EF27375AF500596B0F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7DD19628FB4C9082E94BCD /* Poppins-Medium.ttf */; };
+		5EE664F027375AFC00596B0F /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */; };
+		71FE90A538D04B31B7716F79 /* Custom-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C2AA298B5584E8987B15B77 /* Custom-Font.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C47BE6D04BBA26F96B46F92C /* libPods-FirstAid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2023110D330BE7E9F2516AED /* libPods-FirstAid.a */; };
+		B233A13A18069B48416A1F2B /* libPods-FirstAid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,54 +38,40 @@
 		00E356F21AD99517003FC87E /* FirstAidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstAidTests.m; sourceTree = "<group>"; };
 		0203ECD53A784F02B6560B97 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		05B7E9D186584326BDB79A88 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		07F95DB899D455340FA469C8 /* Pods-FirstAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.debug.xcconfig"; sourceTree = "<group>"; };
-		0CF80E842CFF4890AC5552EE /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FirstAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FirstAid/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FirstAid/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FirstAid/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FirstAid/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FirstAid/main.m; sourceTree = "<group>"; };
+		1C2AA298B5584E8987B15B77 /* Custom-Font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Custom-Font.ttf"; path = "../src/assets/fonts/Custom-Font.ttf"; sourceTree = "<group>"; };
 		1F9921CE30D04D25B348B095 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		2023110D330BE7E9F2516AED /* libPods-FirstAid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CC5F2A6E5C43FDB37FA234 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.debug.xcconfig"; sourceTree = "<group>"; };
 		24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		28AA896613064252A682A308 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		2AA7589456B041F0BF1ABBD8 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		2EE1D14F8A0A48CCB6316C26 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		31A5451F3C73427C8DF06CC0 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		34356DFB19A84789B35F3D62 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
-		3E703232187E4D08802DEF05 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../src/assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		41FB1202D6514E78A0280FF8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid-FirstAidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4491B714892A451284DFF027 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		4C19F5EB812D4E21BDB98CD4 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		4D93F1413E854338AF2AA3B0 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		5E4A4652271A47DC00D6FAB1 /* Custom-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Custom-Font.ttf"; path = "../src/assets/fonts/Custom-Font.ttf"; sourceTree = "<group>"; };
 		6294CD8F027C401E8633090D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		6FF321A0DF2441258C1BEC53 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		7A401D26DAA2ED4EB11D7592 /* libPods-FirstAid-FirstAidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid-FirstAidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FirstAid/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A3BF28222A34553BAAEF2FE /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
-		A165AF3249A94EFA8416C12C /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		A85954AE267844BE8154E2EF /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
-		ACB286D0B3314C00914D7145 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		B2485DD8C7C24A10989ECD0F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		B3D9873AB20C425FADA83F45 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		B8CBC817B1621E1CC43470E0 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.release.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1E90902D8A84D1EA30DF163 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		CB54167A40FCF5C59931955A /* Pods-FirstAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.release.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.release.xcconfig"; sourceTree = "<group>"; };
-		D70ABDBD256C42348A92138E /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../src/assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
-		E10FCC525191A2FD413EDF06 /* Pods-FirstAid-FirstAidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.release.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.release.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.release.xcconfig"; sourceTree = "<group>"; };
 		E38C9D9CDE9A4CF7BA698B07 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		EC7DD19628FB4C9082E94BCD /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EE3DBA3886CC433493366943 /* oxyn-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "oxyn-font.ttf"; path = "../src/assets/fonts/oxyn-font.ttf"; sourceTree = "<group>"; };
-		EE418608CFCD4C0091500A56 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		F2735ACDFD634151A8405C0D /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		F92E0A06DF2C4A359EAB7387 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../src/assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
-		FEBD3AD25D3B4A51B296C39D /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../src/assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BB6CDA2557CB64DF83A4DE9 /* libPods-FirstAid-FirstAidTests.a in Frameworks */,
+				4AD104175941F84FC1A2B982 /* libPods-FirstAid-FirstAidTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47BE6D04BBA26F96B46F92C /* libPods-FirstAid.a in Frameworks */,
+				B233A13A18069B48416A1F2B /* libPods-FirstAid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				2023110D330BE7E9F2516AED /* libPods-FirstAid.a */,
-				7A401D26DAA2ED4EB11D7592 /* libPods-FirstAid-FirstAidTests.a */,
+				D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */,
+				4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,7 +144,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				5E4A4652271A47DC00D6FAB1 /* Custom-Font.ttf */,
 				13B07FAE1A68108700A75B9A /* FirstAid */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FirstAidTests */,
@@ -186,10 +169,10 @@
 		C15CDFAEC8815EFD53197E42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				07F95DB899D455340FA469C8 /* Pods-FirstAid.debug.xcconfig */,
-				CB54167A40FCF5C59931955A /* Pods-FirstAid.release.xcconfig */,
-				B8CBC817B1621E1CC43470E0 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */,
-				E10FCC525191A2FD413EDF06 /* Pods-FirstAid-FirstAidTests.release.xcconfig */,
+				232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */,
+				E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */,
+				67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */,
+				BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,25 +180,11 @@
 		D4958112FA2647BFAB41EFE0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2AA7589456B041F0BF1ABBD8 /* Poppins-Black.ttf */,
-				EE418608CFCD4C0091500A56 /* Poppins-BlackItalic.ttf */,
-				A165AF3249A94EFA8416C12C /* Poppins-Bold.ttf */,
-				3E703232187E4D08802DEF05 /* Poppins-BoldItalic.ttf */,
 				24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */,
-				8A3BF28222A34553BAAEF2FE /* Poppins-ExtraBoldItalic.ttf */,
 				05B7E9D186584326BDB79A88 /* Poppins-ExtraLight.ttf */,
-				6FF321A0DF2441258C1BEC53 /* Poppins-ExtraLightItalic.ttf */,
-				F92E0A06DF2C4A359EAB7387 /* Poppins-Italic.ttf */,
 				9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */,
-				D70ABDBD256C42348A92138E /* Poppins-LightItalic.ttf */,
 				EC7DD19628FB4C9082E94BCD /* Poppins-Medium.ttf */,
-				A85954AE267844BE8154E2EF /* Poppins-MediumItalic.ttf */,
 				4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */,
-				0CF80E842CFF4890AC5552EE /* Poppins-SemiBold.ttf */,
-				ACB286D0B3314C00914D7145 /* Poppins-SemiBoldItalic.ttf */,
-				34356DFB19A84789B35F3D62 /* Poppins-Thin.ttf */,
-				FEBD3AD25D3B4A51B296C39D /* Poppins-ThinItalic.ttf */,
-				EE3DBA3886CC433493366943 /* oxyn-font.ttf */,
 				4D93F1413E854338AF2AA3B0 /* AntDesign.ttf */,
 				4491B714892A451284DFF027 /* Entypo.ttf */,
 				4C19F5EB812D4E21BDB98CD4 /* EvilIcons.ttf */,
@@ -232,6 +201,7 @@
 				B2485DD8C7C24A10989ECD0F /* Octicons.ttf */,
 				B3D9873AB20C425FADA83F45 /* SimpleLineIcons.ttf */,
 				21CC5F2A6E5C43FDB37FA234 /* Zocial.ttf */,
+				1C2AA298B5584E8987B15B77 /* Custom-Font.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -243,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FirstAidTests" */;
 			buildPhases = (
-				A402BF0697E380752607CD85 /* [CP] Check Pods Manifest.lock */,
+				9DBA6B0B9BC78D66B9F30DEC /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1B87560B36DF8D8ABE939B16 /* [CP] Embed Pods Frameworks */,
-				BD8EA2280C18AFE789E22CDB /* [CP] Copy Pods Resources */,
+				F493C30BCC144FBC207FCF15 /* [CP] Embed Pods Frameworks */,
+				A573184BCA40EBE81B2A1ECD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,14 +234,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FirstAid" */;
 			buildPhases = (
-				6A87CF7A832CF85B13B11177 /* [CP] Check Pods Manifest.lock */,
+				FDFD1BCE2B017D66E84F39C5 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				B8B84533CAB16B7B5AEC56E0 /* [CP] Embed Pods Frameworks */,
-				4FB9D65DCF49B4A3AF5102FE /* [CP] Copy Pods Resources */,
+				58859C3358DB9F4366617638 /* [CP] Embed Pods Frameworks */,
+				BE061972DDA175A15E8031C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,16 +300,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4A4653271A47DC00D6FAB1 /* Custom-Font.ttf in Resources */,
-				5EFFD5BC2718CB6E0031129F /* Poppins-Thin.ttf in Resources */,
-				5EFFD5BB2718CB600031129F /* Poppins-SemiBold.ttf in Resources */,
-				5EFFD5BA2718CB590031129F /* Poppins-Medium.ttf in Resources */,
-				5EFFD5B92718CB510031129F /* Poppins-Light.ttf in Resources */,
-				5EFFD5B82718CB480031129F /* Poppins-ExtraBold.ttf in Resources */,
-				5EFFD5B72718CB400031129F /* Poppins-Bold.ttf in Resources */,
-				5EFFD5B62718C8F60031129F /* Poppins-Regular.ttf in Resources */,
+				5EE664F027375AFC00596B0F /* Poppins-Light.ttf in Resources */,
+				5EE664EF27375AF500596B0F /* Poppins-Medium.ttf in Resources */,
+				5EE664EE27375AEE00596B0F /* Poppins-Regular.ttf in Resources */,
+				5EE664ED27375AE100596B0F /* Poppins-ExtraLight.ttf in Resources */,
+				5EE664EC27375ADA00596B0F /* Poppins-ExtraBold.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				71FE90A538D04B31B7716F79 /* Custom-Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,63 +328,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1B87560B36DF8D8ABE939B16 /* [CP] Embed Pods Frameworks */ = {
+		58859C3358DB9F4366617638 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4FB9D65DCF49B4A3AF5102FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A87CF7A832CF85B13B11177 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FirstAid-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A402BF0697E380752607CD85 /* [CP] Check Pods Manifest.lock */ = {
+		9DBA6B0B9BC78D66B9F30DEC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,24 +367,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8B84533CAB16B7B5AEC56E0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD8EA2280C18AFE789E22CDB /* [CP] Copy Pods Resources */ = {
+		A573184BCA40EBE81B2A1ECD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,6 +382,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE061972DDA175A15E8031C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F493C30BCC144FBC207FCF15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -489,6 +435,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFD1BCE2B017D66E84F39C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirstAid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -524,7 +492,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8CBC817B1621E1CC43470E0 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */;
+			baseConfigurationReference = 67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -551,7 +519,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E10FCC525191A2FD413EDF06 /* Pods-FirstAid-FirstAidTests.release.xcconfig */;
+			baseConfigurationReference = BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -575,7 +543,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F95DB899D455340FA469C8 /* Pods-FirstAid.debug.xcconfig */;
+			baseConfigurationReference = 232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -601,7 +569,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB54167A40FCF5C59931955A /* Pods-FirstAid.release.xcconfig */;
+			baseConfigurationReference = E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

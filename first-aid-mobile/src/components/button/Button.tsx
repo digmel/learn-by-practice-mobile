@@ -9,7 +9,6 @@ import {
   Text,
   size as configSize,
   TTextVariation,
-  TTextWeight,
 } from '@components';
 
 export const Button: FC<TButtonProps> = ({
@@ -45,7 +44,6 @@ export const Button: FC<TButtonProps> = ({
     height: HEIGHT_LARGE,
     textVariation: 'button',
     iconColor: color.light,
-    fontWeight: 'regular',
   };
 
   switch (variation) {
@@ -74,23 +72,17 @@ export const Button: FC<TButtonProps> = ({
     case 'google':
       dynamicProperties.backgroundColor = color.google;
       dynamicProperties.textColor = color.light;
-      dynamicProperties.textVariation = 'caption';
-      dynamicProperties.fontWeight = 'medium';
       textContainerStyle = styles.textContainer;
       break;
     case 'facebook':
       dynamicProperties.backgroundColor = color.facebook;
       dynamicProperties.textColor = color.light;
       dynamicProperties.iconColor = color.light;
-      dynamicProperties.textVariation = 'caption';
-      dynamicProperties.fontWeight = 'medium';
       textContainerStyle = styles.textContainer;
       break;
     case 'email':
       dynamicProperties.textColor = color.light;
       dynamicProperties.iconColor = color.light;
-      dynamicProperties.textVariation = 'caption';
-      dynamicProperties.fontWeight = 'medium';
       textContainerStyle = styles.textContainer;
       break;
   }
@@ -158,8 +150,7 @@ export const Button: FC<TButtonProps> = ({
             )}
             <View style={[textContainerStyle]}>
               <Text
-                variation={dynamicProperties.textVariation as TTextVariation}
-                fontWeight={dynamicProperties.fontWeight as TTextWeight}
+                variation="button"
                 textStyle={[textDynamicStyle, textStyle]}>
                 {text}
               </Text>

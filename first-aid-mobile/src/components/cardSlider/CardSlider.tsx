@@ -14,12 +14,8 @@ export const CardSlider: FC<TCardSliderProps> = ({
   return (
     <View style={styles.wrapper}>
       <View style={[styles.titleContainer, titleContainerStyle]}>
-        <Text variation="H1" fontWeight="bold" color={color.primary}>
-          {title}
-        </Text>
-        <Text variation="H1" fontWeight="light" color={color.primary}>
-          {subTitle}
-        </Text>
+        <Text>{title}</Text>
+        <Text>{subTitle}</Text>
       </View>
       <ScrollView
         horizontal
