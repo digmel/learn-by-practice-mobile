@@ -14,9 +14,9 @@ export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
       </View>
 
       <View style={styles.textContainer}>
-        <Text>Learn how to act</Text>
+        <Text variation="H1_bold">Learn First Aid</Text>
 
-        <Text>When every second is important!</Text>
+        <Text variation="H1_light">It takes a second to save a life!</Text>
       </View>
 
       <Section containerStyle={styles.buttonContainer}>

@@ -150,7 +150,7 @@ export const Button: FC<TButtonProps> = ({
             )}
             <View style={[textContainerStyle]}>
               <Text
-                variation={dynamicProperties.textVariation as TTextVariation}
+                variation="button"
                 textStyle={[textDynamicStyle, textStyle]}>
                 {text}
               </Text>
