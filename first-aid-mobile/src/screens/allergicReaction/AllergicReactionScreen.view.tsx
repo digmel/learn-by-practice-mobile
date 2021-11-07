@@ -15,9 +15,7 @@ export const AllergicReactionScreenView: FC<TAllergicReactionScreenViewProps> =
           </Header>
         }>
         <Section>
-          <Text variation="H1" fontWeight="bold">
-            Symptoms
-          </Text>
+          <Text>Symptoms</Text>
         </Section>
 
         <Section containerStyle={styles.imageContainer}>

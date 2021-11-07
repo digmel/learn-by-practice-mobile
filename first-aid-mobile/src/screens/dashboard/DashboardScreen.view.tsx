@@ -24,9 +24,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       </Section>
 
       <Section>
-        <Text variation="H3" textStyle={styles.bannerText}>
-          Check your Knowledge
-        </Text>
+        <Text textStyle={styles.bannerText}>Check your Knowledge</Text>
       </Section>
 
       <Section topSpace={size.l}>

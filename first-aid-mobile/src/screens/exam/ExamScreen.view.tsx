@@ -12,7 +12,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
         </Header>
       }>
       <Section>
-        <Text variation="H4" fontWeight="bold">
+        <Text>
           After finding an unresponsive child, your next course of action?
         </Text>
       </Section>

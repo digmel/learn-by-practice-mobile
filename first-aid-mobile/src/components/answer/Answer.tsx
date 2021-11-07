@@ -28,9 +28,7 @@ export const Answer: FC<TAnswerProps> = ({
       style={styles.container}
       onPress={() => onPress && onPress()}>
       <View style={styles.content}>
-        <Text variation="caption" fontWeight="light" color={dynamicColor}>
-          {answer}
-        </Text>
+        <Text color={dynamicColor}>{answer}</Text>
       </View>
     </TouchableOpacity>
   );

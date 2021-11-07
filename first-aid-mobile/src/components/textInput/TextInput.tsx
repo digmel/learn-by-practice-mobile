@@ -24,7 +24,7 @@ export const TextInput: FC<TTextInputProps> = ({
   };
 
   if (!!errorMessage && !isActive) {
-    dynamicProperties.borderColor = color.error500;
+    dynamicProperties.borderColor = color.error;
   }
 
   const inputDynamicStyle = {
@@ -66,9 +66,7 @@ export const TextInput: FC<TTextInputProps> = ({
       />
       {!!errorMessage && (
         <View style={styles.errorContainer}>
-          <Text variation="caption" color={color.error500}>
-            {errorMessage}
-          </Text>
+          <Text color={color.error}>{errorMessage}</Text>
         </View>
       )}
     </View>
