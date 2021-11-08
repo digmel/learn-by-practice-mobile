@@ -1,25 +1,31 @@
 import React, {FC} from 'react';
 import {styles} from './GetStartedScreen.style';
 import {TGetStartedScreenViewProps} from './GetStartedScreen.type';
-import {Screen, Button, Section, Text, GetStartedScreenSvg} from '@components';
-import {View} from 'react-native';
+import {
+  Screen,
+  Button,
+  Section,
+  Text,
+  GetStartedScreenSvg,
+  size,
+} from '@components';
 
 export const GetStartedScreenView: FC<TGetStartedScreenViewProps> = ({
   onPressGetStarted,
 }) => {
   return (
     <Screen isScrollViewDisabled>
-      <View style={styles.svgContainer}>
+      <Section containerStyle={styles.svgContainer}>
         <GetStartedScreenSvg />
-      </View>
+      </Section>
 
-      <View style={styles.textContainer}>
+      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
         <Text variation="H1_bold">Learn First Aid</Text>
 
-        <Text variation="H1_light">It takes a second to save a life!</Text>
-      </View>
+        <Text variation="H2_light">It takes a second to save a life!</Text>
+      </Section>
 
-      <Section containerStyle={styles.buttonContainer}>
+      <Section>
         <Button text="Get Started" onPress={onPressGetStarted} />
       </Section>
     </Screen>

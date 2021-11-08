@@ -8,14 +8,4 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-
-  textContainer: {
-    flexBasis: '20%',
-    justifyContent: 'flex-end',
-  },
-
-  buttonContainer: {
-    flexBasis: '20%',
-    justifyContent: 'center',
-  },
 });
