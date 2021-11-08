@@ -16,9 +16,17 @@ export const Text: FC<TTextProps> = ({
   switch (variation) {
     case 'H1_bold':
       variationStyle.fontFamily = 'Poppins-ExtraBold';
-      variationStyle.fontSize = 18;
+      variationStyle.fontSize = 24;
       break;
     case 'H1_light':
+      variationStyle.fontFamily = 'Poppins-ExtraLight';
+      variationStyle.fontSize = 24;
+      break;
+    case 'H2_bold':
+      variationStyle.fontFamily = 'Poppins-ExtraBold';
+      variationStyle.fontSize = 18;
+      break;
+    case 'H2_light':
       variationStyle.fontFamily = 'Poppins-ExtraLight';
       variationStyle.fontSize = 18;
       break;

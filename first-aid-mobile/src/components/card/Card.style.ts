@@ -3,20 +3,18 @@ import {size, color} from '@components';
 
 export const styles = StyleSheet.create({
   container: {
-    marginRight: size.m,
-  },
-
-  card: {
-    height: 240,
-    width: 200,
+    height: 184,
+    width: 153,
     borderColor: color.primary,
     borderWidth: 1,
     borderRadius: size.l,
     marginBottom: size.l,
+    marginRight: size.m,
   },
 
-  imageContainer: {
-    flexBasis: '75%',
+  svgContainer: {
+    height: 154,
+    width: 153,
     justifyContent: 'center',
     alignItems: 'center',
   },

@@ -11,12 +11,14 @@ export const AuthorizationScreenView: FC<TAuthorizationScreenViewProps> = ({
 }) => {
   return (
     <Screen isScrollViewDisabled>
-      <Section containerStyle={styles.svgContainer} topSpace={size.xl}>
+      <Section containerStyle={styles.svgContainer} topSpace={size.xxl}>
         <Logo />
       </Section>
 
-      <Section topSpace={size.xl} bottomSpace={size.xl}>
-        <Text textStyle={styles.text}>First Aid</Text>
+      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
+        <Text variation="H1_bold" textStyle={styles.text}>
+          Learn First Aid
+        </Text>
       </Section>
 
       <Section bottomSpace={size.l}>
@@ -47,7 +49,7 @@ export const AuthorizationScreenView: FC<TAuthorizationScreenViewProps> = ({
       </Section>
 
       <Section topSpace={size.xxl} bottomSpace={size.xxl}>
-        <Text color={color.gray500} textStyle={styles.text}>
+        <Text variation="body_bold" textStyle={styles.text}>
           Or
         </Text>
       </Section>

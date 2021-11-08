@@ -24,7 +24,9 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
       </Section>
 
       <Section>
-        <Text textStyle={styles.bannerText}>Check your Knowledge</Text>
+        <Text variation="body_bold" textStyle={styles.bannerText}>
+          Check your Knowledge
+        </Text>
       </Section>
 
       <Section topSpace={size.l}>
@@ -35,21 +37,16 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
         <CardSlider title="Learn " subTitle="Injuries">
           <Card
             onPress={goToAllergicReactionScreen}
-            cardContainerStyle={styles.firstCard}
             title="Allergic Reaction"
-            image={require('assets/images/asthma-attacks.png')}
           />
 
-          <Card
-            title="Asthma Attacks"
-            image={require('assets/images/asthma-attacks.png')}
-          />
+          <Card title="Asthma Attacks" />
         </CardSlider>
       </Section>
 
       <Section bottomSpace={size.xxl}>
         <CardSlider title="Learn " subTitle="Natural Disaster">
-          <Card cardContainerStyle={styles.firstCard} title="Topic 1" />
+          <Card title="Topic 1" />
           <Card title="Topic 2" />
           <Card title="Topic 3" />
           <Card title="Topic 4" />

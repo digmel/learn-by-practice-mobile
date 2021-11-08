@@ -5,28 +5,16 @@ import {styles} from './Card.style';
 import {color, Text} from '@components';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
-export const Card: FC<TCardProps> = ({
-  onPress,
-  title,
-  image,
-  imageContainerStyle,
-  titleContainerStyle,
-  cardStyle,
-  cardContainerStyle,
-}) => {
+export const Card: FC<TCardProps> = ({onPress, title, svg}) => {
   return (
-    <View style={[styles.container, cardContainerStyle]}>
-      <TouchableOpacity
-        style={[styles.card, cardStyle]}
-        onPress={() => onPress && onPress()}>
-        <View style={[styles.imageContainer, imageContainerStyle]}></View>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => onPress && onPress()}>
+      <View style={styles.svgContainer}>{svg}</View>
 
-        <View style={[styles.titleContainer, titleContainerStyle]}>
-          <Text variation="subtitle" color={color.primary}>
-            {title}
-          </Text>
-        </View>
-      </TouchableOpacity>
-    </View>
+      <View style={styles.titleContainer}>
+        <Text variation="title">{title}</Text>
+      </View>
+    </TouchableOpacity>
   );
 };
