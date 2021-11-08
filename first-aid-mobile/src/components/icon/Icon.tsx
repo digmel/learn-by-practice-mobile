@@ -11,7 +11,7 @@ const CustomIcon = createIconSetFromIcoMoon(icoMoonConfig);
 
 export const Icon: FC<TIconProps> = ({
   name,
-  size = configSize.xl,
+  size = configSize.l,
   color,
   iconContainerStyle,
   iconStyle,
