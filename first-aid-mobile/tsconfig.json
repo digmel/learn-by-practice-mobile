@@ -18,6 +18,7 @@
         "@screens": ["screens"],
         "@storage": ["storage"],
         "@utilities": ["utilities"],
+        "@data": ["data"],
          "test/*": ["test/*"],
     },
   },
