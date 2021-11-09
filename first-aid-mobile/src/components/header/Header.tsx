@@ -9,10 +9,8 @@ import {DrawerActions, useNavigation} from '@react-navigation/native';
 export const Header: FC<THeaderProps> = ({
   containerStyle,
   children,
-
   containerLeftStyle,
   containerRightStyle,
-
   hasBack,
   hasMenu,
 }) => {
