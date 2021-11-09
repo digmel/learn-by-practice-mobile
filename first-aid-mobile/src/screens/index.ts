@@ -7,5 +7,5 @@ export * from './resetPassword/ResetPasswordScreen';
 
 //Protected Screens
 export * from './dashboard/DashboardScreen';
-export * from './allergicReaction/AllergicReactionScreen';
+export * from './theory/TheoryScreen';
 export * from './exam/ExamScreen';
