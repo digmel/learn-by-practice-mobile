@@ -2,11 +2,11 @@ import {StyleSheet} from 'react-native';
 import {size} from '@components';
 
 export const styles = StyleSheet.create({
-  wrapper: {},
-
-  container: {
-    marginHorizontal: -size.xl,
+  wrapper: {
+    marginRight: -size.xl,
   },
+
+  container: {},
 
   titleContainer: {
     marginBottom: size.m,

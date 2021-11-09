@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     height: 184,
     width: 153,
-    borderColor: color.primary,
+    borderColor: color.dark,
     borderWidth: 1,
     borderRadius: size.l,
     marginBottom: size.l,
@@ -13,10 +13,9 @@ export const styles = StyleSheet.create({
   },
 
   svgContainer: {
-    height: 154,
-    width: 153,
     justifyContent: 'center',
     alignItems: 'center',
+    flexBasis: '75%',
   },
 
   titleContainer: {
