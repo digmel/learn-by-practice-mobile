@@ -17,7 +17,7 @@ import {
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
-  goToAllergicReactionScreen,
+  goToTheoryScreen,
 }) => {
   return (
     <LinearGradient colors={[color.gradientStart, color.gradientEnd]}>
@@ -41,10 +41,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
         <Section topSpace={size.l}>
           <CardSlider title="Learn " subTitle="Injuries">
-            <Card
-              onPress={goToAllergicReactionScreen}
-              title="Allergic Reaction"
-            />
+            <Card onPress={goToTheoryScreen} title="Allergic Reaction" />
 
             <Card title="Asthma Attacks" />
           </CardSlider>

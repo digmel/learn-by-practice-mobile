@@ -1,6 +1,6 @@
 export type TDashboardScreenViewProps = {
   goToExam?: Function;
-  goToAllergicReactionScreen?: Function;
+  goToTheoryScreen?: Function;
 };
 
 export type TDashboardScreenProps = {
