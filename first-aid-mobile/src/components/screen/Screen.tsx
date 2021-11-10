@@ -37,7 +37,7 @@ export const Screen: FC<TScreenProps> = ({
     : {contentContainerStyle: [styles.container, containerStyle]};
 
   return (
-    <View style={styles.globalWrapper}>
+    <View style={styles.globalWrapper} {...props}>
       {!!header && isHeaderSticky && (
         <View
           style={[
@@ -49,7 +49,7 @@ export const Screen: FC<TScreenProps> = ({
           {header}
         </View>
       )}
-      <Container {...containerDynamicStyle} {...props}>
+      <Container {...containerDynamicStyle}>
         {!!header && !isHeaderSticky && (
           <View style={[styles.header, headerStyle]}>{header}</View>
         )}
