@@ -1,15 +1,15 @@
 import {AnaphylaxisSvg} from '@components';
 
-export const TheoryData = [
+export const NaturalDisasterData = [
   {
-    title: 'What is Anaphylaxis?',
+    title: 'Test2?',
     description:
       'Anaphylaxis, also called anaphylactic shock, is a severe allergic reaction that makes it difficult for a person to breathe. Someone at risk of anaphylactic shock should always have an auto-injector. It contains medication that helps to ease the symptoms in an emergency.',
     SVG: AnaphylaxisSvg,
   },
 
   {
-    title: 'Symptoms of Anaphylaxis',
+    title: 'Test2',
     description: 'Difficult or noisy breathing',
   },
 

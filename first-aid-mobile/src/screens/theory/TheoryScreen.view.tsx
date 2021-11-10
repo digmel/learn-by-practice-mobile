@@ -5,6 +5,7 @@ import {Section, Screen, Header, Text} from '@components';
 import {TheoryData} from '@data';
 
 export const TheoryScreenView: FC<TTheoryScreenViewProps> = () => {
+  const data = TheoryData.Anaphylaxis;
   return (
     <Screen
       isHeaderSticky
@@ -14,7 +15,7 @@ export const TheoryScreenView: FC<TTheoryScreenViewProps> = () => {
           <Text variation="subtitle">Allergic Reaction</Text>
         </Header>
       }>
-      {TheoryData.map(({title, description, SVG}) => {
+      {data.map(({title, description, SVG}) => {
         return (
           <Section>
             <Text variation="H2_bold">{title}</Text>
