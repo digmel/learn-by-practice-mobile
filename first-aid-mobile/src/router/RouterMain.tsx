@@ -4,7 +4,7 @@ import {RouterUnprotected} from './RouterUnprotected';
 import {RouterProtected} from './RouterProtected';
 
 export const RouterMain: FC<TRouterMain> = () => {
-  const isAuth = false;
+  const isAuth = true;
 
   if (isAuth) {
     return <RouterProtected />;
