@@ -3,6 +3,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {
   DashboardScreen,
   ExamScreen,
+  IntroductionScreen,
   Topic01Screen,
   Topic02Screen,
   Topic03Screen,
@@ -27,6 +28,7 @@ export const Router = () => {
         swipeEnabled: false,
         drawerActiveBackgroundColor: color.light,
       }}>
+      <Drawer.Screen name="IntroductionScreen" component={IntroductionScreen} />
       <Drawer.Screen name="DashboardScreen" component={DashboardScreen} />
       <Drawer.Screen name="ExamScreen" component={ExamScreen} />
 

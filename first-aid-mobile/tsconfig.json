@@ -19,6 +19,7 @@
         "@storage": ["storage"],
         "@utilities": ["utilities"],
         "@data": ["data"],
+        "@svg": ["svg"],
          "test/*": ["test/*"],
     },
   },

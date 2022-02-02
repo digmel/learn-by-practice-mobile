@@ -9,11 +9,11 @@ import {
   Card,
   CardSlider,
   size,
-  Logo,
   Text,
   Button,
   color,
 } from '@components';
+import {Logo} from '@svg';
 import {View} from 'react-native';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({

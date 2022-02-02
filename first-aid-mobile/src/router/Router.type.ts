@@ -1,1 +1,1 @@
-export type TRouterMain = {};
+export type TRouter = {};

@@ -34,9 +34,3 @@ export * from './cardSlider/CardSlider';
 export * from './cardSlider/CardSlider.type';
 
 export * from './answer/Answer';
-
-//SVG's
-export * from './svg/Logo';
-export * from './svg/GetStartedScreenSvg';
-export * from './svg/ResetPasswordScreenSvg';
-export * from './svg/AnaphylaxisSvg';
