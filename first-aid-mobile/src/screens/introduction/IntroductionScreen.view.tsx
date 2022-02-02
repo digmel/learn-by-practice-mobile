@@ -20,7 +20,7 @@ export const IntroductionScreenView: FC<TIntroductionScreenViewProps> = ({
       </Section>
 
       <Section>
-        <Button text="Get Started" onPress={onPressIntroduction} />
+        <Button text="Start" onPress={onPressIntroduction} />
       </Section>
     </Screen>
   );
