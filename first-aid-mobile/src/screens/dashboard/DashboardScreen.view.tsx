@@ -13,7 +13,7 @@ import {
   Button,
   color,
 } from '@components';
-import {Logo} from '@svg';
+import {Logo, AnaphylaxisSvg} from '@svg';
 import {View} from 'react-native';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
@@ -48,7 +48,11 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
         <Section topSpace={size.l}>
           <CardSlider title="Learn " subTitle="Injuries">
-            <Card onPress={goToTopic01} title="Anaphylaxis" />
+            <Card
+              onPress={goToTopic01}
+              title="Anaphylaxis"
+              svg={<AnaphylaxisSvg />}
+            />
             <Card onPress={goToTopic02} title="Asthma Attacks" />
             <Card onPress={goToTopic03} title="Heart Attack" />
             <Card onPress={goToTopic04} title="Diabetes" />
