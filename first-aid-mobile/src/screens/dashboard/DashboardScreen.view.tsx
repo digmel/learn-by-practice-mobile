@@ -14,6 +14,7 @@ import {
   Button,
   color,
 } from '@components';
+import { View } from 'react-native';
 
 
 
@@ -63,6 +64,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
           </CardSlider>
         </Section>
+   <View style={{height: 250 }}></View>
       </Screen>
     </LinearGradient>
   );
