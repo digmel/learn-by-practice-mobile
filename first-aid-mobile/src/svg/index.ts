@@ -9,3 +9,4 @@ export * from './EarthquakeSvg';
 export * from './ThunderstormSvg';
 export * from './FloodSvg';
 export * from './HurricanesSvg';
+export * from './ForestFireSvg';

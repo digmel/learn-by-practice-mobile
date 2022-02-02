@@ -25,6 +25,7 @@ import {
   ThunderstormSvg,
   FloodSvg,
   HurricanesSvg,
+  ForestFireSvg,
 } from '@svg';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
@@ -106,7 +107,11 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
               title="Hurricanes"
               svg={<HurricanesSvg />}
             />
-            <Card onPress={goToTopic10} title="Forest Fire" />
+            <Card
+              onPress={goToTopic10}
+              title="Forest Fire"
+              svg={<ForestFireSvg />}
+            />
           </CardSlider>
         </Section>
         <View style={{height: 250}}></View>
