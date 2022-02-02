@@ -15,9 +15,10 @@ import {
   color,
 } from '@components';
 
+
+
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
-  goToExam,
-  goToTheoryScreen,
+  goToExam, goToTopic01, goToTopic02, goToTopic03,goToTopic04,goToTopic05,goToTopic06,goToTopic07,goToTopic08,goToTopic09,goToTopic10
 }) => {
   return (
     <LinearGradient colors={[color.gradientStart, color.gradientEnd]}>
@@ -30,7 +31,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
         </Section>
 
         <Section>
-          <Text variation="body_bold" textStyle={styles.bannerText}>
+          <Text variation="body_bold" textStyle={styles.bannerText} >
             Check your Knowledge
           </Text>
         </Section>
@@ -41,20 +42,25 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 
         <Section topSpace={size.l}>
           <CardSlider title="Learn " subTitle="Injuries">
-            <Card onPress={goToTheoryScreen} title="Allergic Reaction" />
 
-            <Card title="Asthma Attacks" />
+            <Card onPress={goToTopic01} title="Anaphylaxis" />
+            <Card onPress={goToTopic02} title="Asthma Attacks" />
+            <Card onPress={goToTopic03} title="Heart Attack" />
+            <Card onPress={goToTopic04} title="Diabetes" />
+            <Card onPress={goToTopic05} title="Fractures" />
+
           </CardSlider>
         </Section>
 
         <Section bottomSpace={size.xxl}>
           <CardSlider title="Learn " subTitle="Natural Disaster">
-            <Card title="Topic 1" />
-            <Card title="Topic 2" />
-            <Card title="Topic 3" />
-            <Card title="Topic 4" />
-            <Card title="Topic 5" />
-            <Card title="Topic 6" />
+
+            <Card onPress={goToTopic06} title="Eartquakes" />
+            <Card onPress={goToTopic07} title="Thunderstorm" />
+            <Card onPress={goToTopic08} title="Flood" />
+            <Card onPress={goToTopic09} title="Hurricanes" />
+            <Card onPress={goToTopic10} title="Forest Fire" />
+
           </CardSlider>
         </Section>
       </Screen>

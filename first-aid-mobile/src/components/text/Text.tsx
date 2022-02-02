@@ -39,7 +39,7 @@ export const Text: FC<TTextProps> = ({
       variationStyle.fontSize = 14;
       break;
     case 'body_bold':
-      variationStyle.fontFamily = 'Poppins-Medium';
+      variationStyle.fontFamily = 'Poppins-Regular';
       variationStyle.fontSize = 16;
       break;
     case 'body_light':
