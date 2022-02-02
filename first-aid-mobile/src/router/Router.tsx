@@ -1,14 +1,26 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {DashboardScreen, ExamScreen, Topic01Screen, Topic02Screen, Topic03Screen, Topic04Screen, Topic05Screen, Topic06Screen, Topic07Screen, Topic08Screen, Topic09Screen, Topic10Screen, } from '@screens';
+import {
+  DashboardScreen,
+  ExamScreen,
+  Topic01Screen,
+  Topic02Screen,
+  Topic03Screen,
+  Topic04Screen,
+  Topic05Screen,
+  Topic06Screen,
+  Topic07Screen,
+  Topic08Screen,
+  Topic09Screen,
+  Topic10Screen,
+} from '@screens';
 import {color} from '@components';
 
 const Drawer = createDrawerNavigator();
 
-export const RouterProtected = () => {
+export const Router = () => {
   return (
     <Drawer.Navigator
-      initialRouteName="Home"
       screenOptions={{
         drawerPosition: 'right',
         headerShown: false,
