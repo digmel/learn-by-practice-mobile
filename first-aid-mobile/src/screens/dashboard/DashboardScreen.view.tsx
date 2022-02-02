@@ -13,8 +13,8 @@ import {
   Button,
   color,
 } from '@components';
-import {Logo, AnaphylaxisSvg} from '@svg';
 import {View} from 'react-native';
+import {Logo, AnaphylaxisSvg, AsthmaSvg} from '@svg';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
   goToExam,
@@ -53,7 +53,11 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
               title="Anaphylaxis"
               svg={<AnaphylaxisSvg />}
             />
-            <Card onPress={goToTopic02} title="Asthma Attacks" />
+            <Card
+              onPress={goToTopic02}
+              title="Asthma Attacks"
+              svg={<AsthmaSvg />}
+            />
             <Card onPress={goToTopic03} title="Heart Attack" />
             <Card onPress={goToTopic04} title="Diabetes" />
             <Card onPress={goToTopic05} title="Fractures" />

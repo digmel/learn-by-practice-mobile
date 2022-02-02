@@ -1,3 +1,4 @@
-export * from '../svg/Logo';
-export * from '../svg/IntroductionScreenSvg';
-export * from '../svg/AnaphylaxisSvg';
+export * from './Logo';
+export * from './IntroductionScreenSvg';
+export * from './AnaphylaxisSvg';
+export * from './AsthmaSvg';
