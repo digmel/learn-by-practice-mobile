@@ -22,6 +22,7 @@ import {
   DiabetesSvg,
   FracturesSvg,
   EarthquakeSvg,
+  ThunderstormSvg,
 } from '@svg';
 
 export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
@@ -91,7 +92,11 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
               title="Earthquakes"
               svg={<EarthquakeSvg />}
             />
-            <Card onPress={goToTopic07} title="Thunderstorm" />
+            <Card
+              onPress={goToTopic07}
+              title="Thunderstorm"
+              svg={<ThunderstormSvg />}
+            />
             <Card onPress={goToTopic08} title="Flood" />
             <Card onPress={goToTopic09} title="Hurricanes" />
             <Card onPress={goToTopic10} title="Forest Fire" />

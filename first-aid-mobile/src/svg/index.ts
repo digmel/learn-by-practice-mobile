@@ -6,3 +6,4 @@ export * from './HeartAttackSvg';
 export * from './DiabetesSvg';
 export * from './FracturesSvg';
 export * from './EarthquakeSvg';
+export * from './ThunderstormSvg';
