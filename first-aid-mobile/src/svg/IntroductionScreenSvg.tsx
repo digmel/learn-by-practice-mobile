@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import type {SvgProps} from 'react-native-svg';
 import Svg, {Path, Stop, Defs, LinearGradient, Rect} from 'react-native-svg';
 
-export const GetStartedScreenSvg: FC<SvgProps> = ({
+export const IntroductionScreenSvg: FC<SvgProps> = ({
   width = 370,
   height = 300,
 }) => {

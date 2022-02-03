@@ -7,7 +7,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
   return (
     <Screen
       header={
-        <Header hasMenu hasBack>
+        <Header hasBack>
           <Text>Check your knowledge</Text>
         </Header>
       }>

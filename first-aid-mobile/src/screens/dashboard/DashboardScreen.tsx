@@ -1,5 +1,17 @@
 import React, {FC} from 'react';
-import {ExamScreen, Topic01Screen, Topic02Screen, Topic03Screen, Topic04Screen, Topic05Screen, Topic06Screen, Topic07Screen, Topic08Screen, Topic09Screen, Topic10Screen} from '@screens';
+import {
+  ExamScreen,
+  Topic01Screen,
+  Topic02Screen,
+  Topic03Screen,
+  Topic04Screen,
+  Topic05Screen,
+  Topic06Screen,
+  Topic07Screen,
+  Topic08Screen,
+  Topic09Screen,
+  Topic10Screen,
+} from '@screens';
 import {DashboardScreenView} from './DashboardScreen.view';
 import {TDashboardScreenProps} from './DashboardScreen.type';
 
@@ -37,7 +49,6 @@ export const DashboardScreen: FC<TDashboardScreenProps> = ({navigation}) => {
   const _goToTopic10 = () => {
     navigation.navigate(Topic10Screen);
   };
-
 
   return (
     <DashboardScreenView

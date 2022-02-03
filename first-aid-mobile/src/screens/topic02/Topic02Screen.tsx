@@ -1,18 +1,17 @@
-import React  from 'react';
+import React from 'react';
 import {styles} from './Topic02Screen.style';
-import { Screen, Header, Text} from '@components';
+import {Screen, Header, Text} from '@components';
 
 export const Topic02Screen = () => {
-    return (
+  return (
     <Screen
       isHeaderSticky
       style={styles.container}
       header={
-        <Header hasMenu hasBack>
-          <Text variation="subtitle">Astma Attacks</Text>
+        <Header hasBack>
+          <Text variation="subtitle">Asthma Attacks</Text>
         </Header>
-      }>
-
-    </Screen>
+      }
+      children={undefined}></Screen>
   );
 };

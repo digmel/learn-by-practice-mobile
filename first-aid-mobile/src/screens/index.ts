@@ -1,11 +1,5 @@
-//Unprotected Screens
-export * from './getStarted/GetStartedScreen';
-export * from './authorization/AuthorizationScreen';
-export * from './login/LoginScreen';
-export * from './signUp/SignUpScreen';
-export * from './resetPassword/ResetPasswordScreen';
+export * from './introduction/IntroductionScreen';
 
-//Protected Screens
 export * from './dashboard/DashboardScreen';
 export * from './exam/ExamScreen';
 

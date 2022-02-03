@@ -14,6 +14,7 @@ module.exports = {
           '@storage': './src/storage',
           '@utilities': './src/utilities',
           '@data': './src/data',
+          '@svg': './src/svg',
         },
       },
     ],

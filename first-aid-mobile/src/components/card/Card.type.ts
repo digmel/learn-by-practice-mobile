@@ -1,7 +1,7 @@
-import {ViewStyle, StyleProp, ImageSourcePropType} from 'react-native';
+import {ReactNode} from 'react';
 
 export type TCardProps = {
   title: String;
-  svg?: ImageSourcePropType;
+  svg?: ReactNode;
   onPress?: Function;
 };

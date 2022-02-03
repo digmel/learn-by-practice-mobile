@@ -13,13 +13,13 @@ export const styles = StyleSheet.create({
   },
 
   svgContainer: {
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
-    flexBasis: '75%',
+    flexBasis: '65%',
   },
 
   titleContainer: {
-    flexBasis: '25%',
+    flexBasis: '35%',
     alignItems: 'center',
     justifyContent: 'center',
   },
