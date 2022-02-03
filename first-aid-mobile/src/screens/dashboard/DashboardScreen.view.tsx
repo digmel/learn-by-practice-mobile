@@ -43,7 +43,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
 }) => {
   return (
     <LinearGradient colors={[color.gradientStart, color.gradientEnd]}>
-      <Screen style={styles.container} isHeaderSticky header={<Header />}>
+      <Screen style={styles.container}>
         <Section topSpace={size.l} containerStyle={styles.logoContainer}>
           <Logo />
         </Section>

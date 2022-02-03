@@ -9,11 +9,11 @@ export const IntroductionScreenView: FC<TIntroductionScreenViewProps> = ({
 }) => {
   return (
     <Screen isScrollViewDisabled>
-      <Section containerStyle={styles.svgContainer}>
+      <Section containerStyle={styles.svgContainer} bottomSpace={size.xxl}>
         <IntroductionScreenSvg />
       </Section>
 
-      <Section topSpace={size.xxl} bottomSpace={size.xxl}>
+      <Section topSpace={size.xxl} bottomSpace={size.xl}>
         <Text variation="H1_bold">Learn First Aid</Text>
 
         <Text variation="H2_light">It takes a second to save a life!</Text>
