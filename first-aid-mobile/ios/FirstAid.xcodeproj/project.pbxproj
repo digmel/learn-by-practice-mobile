@@ -11,7 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4AD104175941F84FC1A2B982 /* libPods-FirstAid-FirstAidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */; };
 		5EE664EC27375ADA00596B0F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */; };
 		5EE664ED27375AE100596B0F /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05B7E9D186584326BDB79A88 /* Poppins-ExtraLight.ttf */; };
 		5EE664EE27375AEE00596B0F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */; };
@@ -19,7 +18,8 @@
 		5EE664F027375AFC00596B0F /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */; };
 		71FE90A538D04B31B7716F79 /* Custom-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C2AA298B5584E8987B15B77 /* Custom-Font.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B233A13A18069B48416A1F2B /* libPods-FirstAid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */; };
+		A343AE316A85C133FB0CDABE /* libPods-FirstAid-FirstAidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E210E35623D6414B9A67240D /* libPods-FirstAid-FirstAidTests.a */; };
+		BB3DD867C0FFFA488A3D9B2A /* libPods-FirstAid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F80F1194BC4BB420C57598 /* libPods-FirstAid.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,27 +47,27 @@
 		1C2AA298B5584E8987B15B77 /* Custom-Font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Custom-Font.ttf"; path = "../src/assets/fonts/Custom-Font.ttf"; sourceTree = "<group>"; };
 		1F9921CE30D04D25B348B095 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		21CC5F2A6E5C43FDB37FA234 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.debug.xcconfig"; sourceTree = "<group>"; };
 		24E8B3D73DFD46EB95F09F29 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		28AA896613064252A682A308 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		2EE1D14F8A0A48CCB6316C26 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		31A5451F3C73427C8DF06CC0 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		38BABD21A97BA6D9C8430736 /* Pods-FirstAid-FirstAidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.release.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.release.xcconfig"; sourceTree = "<group>"; };
 		41FB1202D6514E78A0280FF8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid-FirstAidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4491B714892A451284DFF027 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		4C19F5EB812D4E21BDB98CD4 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		4D93F1413E854338AF2AA3B0 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		4F85158B482248A5BA1D5B20 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		6294CD8F027C401E8633090D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FirstAid/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8716EC32A9D54D2EAB1E11D0 /* Pods-FirstAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2F880DB1D334740B49CF01 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.debug.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA544AC04EF401481AAC6C5 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		B2485DD8C7C24A10989ECD0F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		B3D9873AB20C425FADA83F45 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid-FirstAidTests.release.xcconfig"; path = "Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7DFC873E7A2CDFC229BFD79 /* Pods-FirstAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.release.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.release.xcconfig"; sourceTree = "<group>"; };
+		B7F80F1194BC4BB420C57598 /* libPods-FirstAid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E90902D8A84D1EA30DF163 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstAid.release.xcconfig"; path = "Target Support Files/Pods-FirstAid/Pods-FirstAid.release.xcconfig"; sourceTree = "<group>"; };
+		E210E35623D6414B9A67240D /* libPods-FirstAid-FirstAidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstAid-FirstAidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38C9D9CDE9A4CF7BA698B07 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		EC7DD19628FB4C9082E94BCD /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD104175941F84FC1A2B982 /* libPods-FirstAid-FirstAidTests.a in Frameworks */,
+				A343AE316A85C133FB0CDABE /* libPods-FirstAid-FirstAidTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B233A13A18069B48416A1F2B /* libPods-FirstAid.a in Frameworks */,
+				BB3DD867C0FFFA488A3D9B2A /* libPods-FirstAid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D9AE788B890FB41B8626CA15 /* libPods-FirstAid.a */,
-				4429A121D0763723C3E0D9B8 /* libPods-FirstAid-FirstAidTests.a */,
+				B7F80F1194BC4BB420C57598 /* libPods-FirstAid.a */,
+				E210E35623D6414B9A67240D /* libPods-FirstAid-FirstAidTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,10 +169,10 @@
 		C15CDFAEC8815EFD53197E42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */,
-				E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */,
-				67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */,
-				BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */,
+				8716EC32A9D54D2EAB1E11D0 /* Pods-FirstAid.debug.xcconfig */,
+				B7DFC873E7A2CDFC229BFD79 /* Pods-FirstAid.release.xcconfig */,
+				8B2F880DB1D334740B49CF01 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */,
+				38BABD21A97BA6D9C8430736 /* Pods-FirstAid-FirstAidTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -213,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FirstAidTests" */;
 			buildPhases = (
-				9DBA6B0B9BC78D66B9F30DEC /* [CP] Check Pods Manifest.lock */,
+				087A700DA2BC1F025614A2CE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				F493C30BCC144FBC207FCF15 /* [CP] Embed Pods Frameworks */,
-				A573184BCA40EBE81B2A1ECD /* [CP] Copy Pods Resources */,
+				3DA3CA0E797CBD861116ED76 /* [CP] Embed Pods Frameworks */,
+				ECCD4FF6EBB21F1036133159 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,14 +234,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FirstAid" */;
 			buildPhases = (
-				FDFD1BCE2B017D66E84F39C5 /* [CP] Check Pods Manifest.lock */,
+				FE06EB705315D74C43EB090F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				58859C3358DB9F4366617638 /* [CP] Embed Pods Frameworks */,
-				BE061972DDA175A15E8031C1 /* [CP] Copy Pods Resources */,
+				348AC59017FC008AF89D6315 /* [CP] Embed Pods Frameworks */,
+				DF5F29A9A7FBDACF3009FDD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,24 +328,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		58859C3358DB9F4366617638 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DBA6B0B9BC78D66B9F30DEC /* [CP] Check Pods Manifest.lock */ = {
+		087A700DA2BC1F025614A2CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,24 +350,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A573184BCA40EBE81B2A1ECD /* [CP] Copy Pods Resources */ = {
+		348AC59017FC008AF89D6315 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE061972DDA175A15E8031C1 /* [CP] Copy Pods Resources */ = {
+		3DA3CA0E797CBD861116ED76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5F29A9A7FBDACF3009FDD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,21 +401,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid/Pods-FirstAid-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F493C30BCC144FBC207FCF15 /* [CP] Embed Pods Frameworks */ = {
+		ECCD4FF6EBB21F1036133159 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstAid-FirstAidTests/Pods-FirstAid-FirstAidTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -437,7 +437,7 @@
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FDFD1BCE2B017D66E84F39C5 /* [CP] Check Pods Manifest.lock */ = {
+		FE06EB705315D74C43EB090F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,7 +492,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67016573E02C65E330A0792C /* Pods-FirstAid-FirstAidTests.debug.xcconfig */;
+			baseConfigurationReference = 8B2F880DB1D334740B49CF01 /* Pods-FirstAid-FirstAidTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -519,7 +519,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFC79B2C76488EA4D16B1E65 /* Pods-FirstAid-FirstAidTests.release.xcconfig */;
+			baseConfigurationReference = 38BABD21A97BA6D9C8430736 /* Pods-FirstAid-FirstAidTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -543,7 +543,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 232810F843D96CCE23F06BF8 /* Pods-FirstAid.debug.xcconfig */;
+			baseConfigurationReference = 8716EC32A9D54D2EAB1E11D0 /* Pods-FirstAid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -569,7 +569,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2BE7ED6262E90D68CB19BB1 /* Pods-FirstAid.release.xcconfig */;
+			baseConfigurationReference = B7DFC873E7A2CDFC229BFD79 /* Pods-FirstAid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
