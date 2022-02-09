@@ -34,13 +34,9 @@ export const Section: FC<TSectionProps> = ({
       variationStyle.marginLeft = -size.xl;
       contentDynamicStyle.paddingLeft = size.xl;
       break;
-    case 'secondary':
-      variationStyle.backgroundColor = color.accent;
-      variationStyle.paddingVertical = size.l;
-      variationStyle.borderBottomLeftRadius = size.xl;
-      variationStyle.borderTopLeftRadius = 70;
-      variationStyle.marginRight = -size.xl;
-      contentDynamicStyle.paddingLeft = size.xl;
+    case 'headline':
+      contentDynamicStyle.flexDirection = 'row';
+      contentDynamicStyle.alignItems = 'center';
       break;
   }
 
