@@ -114,7 +114,7 @@ export const DashboardScreenView: FC<TDashboardScreenViewProps> = ({
             />
           </CardSlider>
         </Section>
-        <View style={{height: 250}}></View>
+        <View style={{height: 70}}></View>
       </Screen>
     </LinearGradient>
   );

@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   },
   containerLeft: {
     justifyContent: 'center',
+    paddingRight: size.l,
   },
   containerRight: {
     justifyContent: 'center',
