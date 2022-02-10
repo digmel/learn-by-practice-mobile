@@ -33,12 +33,12 @@ export const Topic01Screen = () => {
       </Section>
 
       <Section>
-        <List text="Difficult or noisy breathing" />
-        <List text="Swelling or tightness of the throat" />
-        <List text="Wheeze or persistent cough" />
-        <List text="Persistent dizziness or collapse" />
-        <List text="Paleness and floppiness in children" />
-        <List text="Abdominal pain and vomiting" />
+        <List>Difficult or noisy breathing</List>
+        <List>Swelling or tightness of the throat</List>
+        <List>Wheeze or persistent cough</List>
+        <List>Persistent dizziness or collapse</List>
+        <List>Paleness and floppiness in children</List>
+        <List>Abdominal pain and vomiting</List>
       </Section>
 
       <Section variation="headline">
@@ -47,12 +47,12 @@ export const Topic01Screen = () => {
       </Section>
 
       <Section>
-        <List text="A weak and rapid pulse" />
-        <List text="Nausea, vomiting, or diarrhea" />
-        <List text="Dizziness or fainting" />
-        <List text="Low blood pressure (hypotension)" />
-        <List text="Swelling of your lips, face, and eyes" />
-        <List text="Hives or welts. Tingling mouth" />
+        <List>A weak and rapid pulse</List>
+        <List>Nausea, vomiting, or diarrhea</List>
+        <List>Dizziness or fainting</List>
+        <List>Low blood pressure (hypotension)</List>
+        <List>Swelling of your lips, face, and eyes</List>
+        <List>Hives or welts. Tingling mouth</List>
       </Section>
 
       <Section variation="headline">

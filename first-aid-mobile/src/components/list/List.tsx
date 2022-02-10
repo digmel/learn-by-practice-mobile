@@ -4,7 +4,7 @@ import {styles} from './List.style';
 import {TListProps} from './List.type';
 import {color, size, Icon, Text} from '@components';
 
-export const List: FC<TListProps> = ({text}) => {
+export const List: FC<TListProps> = ({children}) => {
   return (
     <View style={[styles.container]}>
       <Icon
@@ -13,7 +13,7 @@ export const List: FC<TListProps> = ({text}) => {
         color={color.primary}
         iconContainerStyle={{paddingRight: size.xs}}
       />
-      <Text>{text}</Text>
+      <Text>{children}</Text>
     </View>
   );
 };

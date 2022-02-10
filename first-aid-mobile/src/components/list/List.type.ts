@@ -1,3 +1,1 @@
-export type TListProps = {
-  text: String;
-};
+export type TListProps = {};
