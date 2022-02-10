@@ -34,3 +34,6 @@ export * from './cardSlider/CardSlider';
 export * from './cardSlider/CardSlider.type';
 
 export * from './answer/Answer';
+
+export * from './list/List';
+export * from './list/List.type';
