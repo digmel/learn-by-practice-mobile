@@ -1,6 +1,6 @@
 import React from 'react';
 import {styles} from './Topic01Screen.style';
-import {Screen, Header, Text, Section, Icon, size, color} from '@components';
+import {Screen, Header, Text, Section, List} from '@components';
 import {View} from 'react-native';
 
 export const Topic01Screen = () => {
@@ -33,12 +33,12 @@ export const Topic01Screen = () => {
       </Section>
 
       <Section>
-        <Text>{'\u25CF'} Difficult or noisy breathing</Text>
-        <Text>{'\u25CF'} Swelling or tightness of the throat</Text>
-        <Text>{'\u25CF'} Wheeze or persistent cough</Text>
-        <Text>{'\u25CF'} Persistent dizziness or collapse</Text>
-        <Text>{'\u25CF'} Paleness and floppiness in children</Text>
-        <Text>{'\u25CF'} Abdominal pain and vomiting</Text>
+        <List text="Difficult or noisy breathing" />
+        <List text="Swelling or tightness of the throat" />
+        <List text="Wheeze or persistent cough" />
+        <List text="Persistent dizziness or collapse" />
+        <List text="Paleness and floppiness in children" />
+        <List text="Abdominal pain and vomiting" />
       </Section>
 
       <Section variation="headline">
@@ -47,12 +47,12 @@ export const Topic01Screen = () => {
       </Section>
 
       <Section>
-        <Text>{'\u25CF'} A weak and rapid pulse</Text>
-        <Text>{'\u25CF'} Nausea, vomiting, or diarrhea</Text>
-        <Text>{'\u25CF'} Dizziness or fainting</Text>
-        <Text>{'\u25CF'} Low blood pressure (hypotension)</Text>
-        <Text>{'\u25CF'} Swelling of your lips, face, and eyes</Text>
-        <Text>{'\u25CF'} Hives or welts. Tingling mouth</Text>
+        <List text="A weak and rapid pulse" />
+        <List text="Nausea, vomiting, or diarrhea" />
+        <List text="Dizziness or fainting" />
+        <List text="Low blood pressure (hypotension)" />
+        <List text="Swelling of your lips, face, and eyes" />
+        <List text="Hives or welts. Tingling mouth" />
       </Section>
 
       <Section variation="headline">
