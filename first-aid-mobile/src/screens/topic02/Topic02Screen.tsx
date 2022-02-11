@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic02Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {AsthmaSvg01, AsthmaSvg02} from '@svg';
 
 export const Topic02Screen = () => {
   return (
@@ -18,6 +19,10 @@ export const Topic02Screen = () => {
       </Section>
 
       <Section>
+        <AsthmaSvg01 />
+      </Section>
+
+      <Section>
         <Text>
           Asthma is a medical condition that affects the airways – tubes that
           carry air in and out of the lungs. If someone has an asthma attack,
@@ -27,6 +32,10 @@ export const Topic02Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Risks & Symptoms</Text>
+      </Section>
+
+      <Section>
+        <AsthmaSvg02 />
       </Section>
 
       <Section variation="headline">

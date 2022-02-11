@@ -1,6 +1,5 @@
 export * from './Logo';
 export * from './IntroductionScreenSvg';
-export * from './AsthmaSvg';
 export * from './HeartAttackSvg';
 export * from './DiabetesSvg';
 export * from './FracturesSvg';
@@ -14,3 +13,7 @@ export * from './AnaphylaxisSvg';
 export * from './AnaphylaxisSvg01';
 export * from './AnaphylaxisSvg02';
 export * from './AnaphylaxisSvg03';
+
+export * from './AsthmaSvg';
+export * from './AsthmaSvg01';
+export * from './AsthmaSvg02';
