@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic03Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {HeartAttackSvg01, HeartAttackSvg02, HeartAttackSvg03} from '@svg';
 
 export const Topic03Screen = () => {
   return (
@@ -18,6 +19,10 @@ export const Topic03Screen = () => {
       </Section>
 
       <Section>
+        <HeartAttackSvg01 />
+      </Section>
+
+      <Section>
         <Text>
           A heart attack happens when the supply of blood to part of the heart
           is suddenly blocked, usually by a blood clot.
@@ -27,6 +32,10 @@ export const Topic03Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">Symptoms </Text>
         <Text variation="H1_light">of a heart attack</Text>
+      </Section>
+
+      <Section>
+        <HeartAttackSvg02 />
       </Section>
 
       <Section>
@@ -42,6 +51,10 @@ export const Topic03Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">What to do </Text>
         <Text variation="H1_light">to help</Text>
+      </Section>
+
+      <Section>
+        <HeartAttackSvg03 />
       </Section>
 
       <Section>
