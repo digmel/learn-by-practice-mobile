@@ -1,6 +1,12 @@
 import React from 'react';
 import {styles} from './Topic06Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {
+  EarthquakeSvg01,
+  EarthquakeSvg02,
+  EarthquakeSvg03,
+  EarthquakeSvg04,
+} from '@svg';
 
 export const Topic06Screen = () => {
   return (
@@ -17,6 +23,10 @@ export const Topic06Screen = () => {
       </Section>
 
       <Section>
+        <EarthquakeSvg01 />
+      </Section>
+
+      <Section>
         <List>Have your emergency kit ready</List>
         <List>Pick safe places in each room</List>
         <List>Review evacuation plans </List>
@@ -24,6 +34,26 @@ export const Topic06Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Inside The Building</Text>
+      </Section>
+
+      <Section>
+        <EarthquakeSvg02 />
+      </Section>
+
+      <Section>
+        <Text>
+          It's safer to stay inside until an earthquake ends, lay down under the
+          table to stay away from falling objects. After that use stairs to exit
+          buildings.
+        </Text>
+      </Section>
+
+      <Section>
+        <Text variation="H1_bold">Outside The Building</Text>
+      </Section>
+
+      <Section>
+        <EarthquakeSvg03 />
       </Section>
 
       <Section>
@@ -52,6 +82,10 @@ export const Topic06Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">After </Text>
         <Text variation="H1_light">Earthquakes</Text>
+      </Section>
+
+      <Section>
+        <EarthquakeSvg04 />
       </Section>
 
       <Section>
