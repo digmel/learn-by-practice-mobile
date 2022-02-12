@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic08Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {FloodSvg01, FloodSvg02, FloodSvg03} from '@svg';
 
 export const Topic08Screen = () => {
   return (
@@ -17,6 +18,10 @@ export const Topic08Screen = () => {
       </Section>
 
       <Section>
+        <FloodSvg01 />
+      </Section>
+
+      <Section>
         <Text>
           Avoid driving through areas that are subject to flooding. Never
           attempt to drive over a flooded road. The depth of water isn’t always
@@ -26,6 +31,10 @@ export const Topic08Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Inside The Building</Text>
+      </Section>
+
+      <Section>
+        <FloodSvg02 />
       </Section>
 
       <Section>
@@ -39,6 +48,10 @@ export const Topic08Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Outside The Building</Text>
+      </Section>
+
+      <Section>
+        <FloodSvg03 />
       </Section>
 
       <Section>
