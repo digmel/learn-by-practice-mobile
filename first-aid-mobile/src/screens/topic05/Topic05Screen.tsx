@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic05Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {FracturesSvg01, FracturesSvg02} from '@svg';
 
 export const Topic05Screen = () => {
   return (
@@ -15,6 +16,10 @@ export const Topic05Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">What is </Text>
         <Text variation="H1_light">fractures?</Text>
+      </Section>
+
+      <Section>
+        <FracturesSvg01 />
       </Section>
 
       <Section>
@@ -37,6 +42,10 @@ export const Topic05Screen = () => {
         <List>A limb may look shorter, twisted, bent</List>
         <List>Difficulty to move the limb normally</List>
         <List>A wound where the bone sticking out</List>
+      </Section>
+
+      <Section>
+        <FracturesSvg02 />
       </Section>
 
       <Section variation="headline">
