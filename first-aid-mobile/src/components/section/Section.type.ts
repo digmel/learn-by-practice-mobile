@@ -1,7 +1,7 @@
 import type {ReactNode} from 'react';
 import type {ViewStyle, StyleProp} from 'react-native';
 
-export type TSectionVariation = 'primary' | 'headline';
+export type TSectionVariation = 'svg' | 'headline';
 
 export type TSectionProps = {
   variation?: TSectionVariation;

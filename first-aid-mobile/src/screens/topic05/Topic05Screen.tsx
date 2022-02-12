@@ -18,7 +18,7 @@ export const Topic05Screen = () => {
         <Text variation="H1_light">fractures?</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <FracturesSvg01 />
       </Section>
 
@@ -44,7 +44,7 @@ export const Topic05Screen = () => {
         <List>A wound where the bone sticking out</List>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <FracturesSvg02 />
       </Section>
 

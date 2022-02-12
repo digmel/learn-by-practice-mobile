@@ -26,13 +26,9 @@ export const Section: FC<TSectionProps> = ({
   const contentDynamicStyle: ViewStyle = {};
 
   switch (variation) {
-    case 'primary':
-      variationStyle.backgroundColor = color.secondary;
-      variationStyle.paddingVertical = size.l;
-      variationStyle.borderBottomRightRadius = size.xl;
-      variationStyle.borderTopRightRadius = 110;
-      variationStyle.marginLeft = -size.xl;
-      contentDynamicStyle.paddingLeft = size.xl;
+    case 'svg':
+      contentDynamicStyle.alignItems = 'center';
+      contentDynamicStyle.justifyContent = 'center';
       break;
     case 'headline':
       contentDynamicStyle.flexDirection = 'row';
