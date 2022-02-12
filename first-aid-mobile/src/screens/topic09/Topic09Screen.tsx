@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic09Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {HurricanesSvg01, HurricanesSvg02} from '@svg';
 
 export const Topic09Screen = () => {
   return (
@@ -28,6 +29,10 @@ export const Topic09Screen = () => {
       </Section>
 
       <Section>
+        <HurricanesSvg01 />
+      </Section>
+
+      <Section>
         <Text>
           You may need evacuation, be prepared for that. Avoid walking or
           driving through flooded roads and bridges. Remember, after the
@@ -38,6 +43,10 @@ export const Topic09Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">After </Text>
         <Text variation="H1_light">Hurricanes</Text>
+      </Section>
+
+      <Section>
+        <HurricanesSvg02 />
       </Section>
 
       <Section>

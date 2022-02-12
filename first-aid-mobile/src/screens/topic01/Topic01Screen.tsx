@@ -2,6 +2,7 @@ import React from 'react';
 import {styles} from './Topic01Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
 import {View} from 'react-native';
+import {AnaphylaxisSvg01, AnaphylaxisSvg02, AnaphylaxisSvg03} from '@svg';
 
 export const Topic01Screen = () => {
   return (
@@ -25,6 +26,10 @@ export const Topic01Screen = () => {
           risk of anaphylactic shock should always have an auto-injector. It
           contains medication that helps to ease the symptoms in an emergency.
         </Text>
+      </Section>
+
+      <Section>
+        <AnaphylaxisSvg01 />
       </Section>
 
       <Section variation="headline">
@@ -61,12 +66,23 @@ export const Topic01Screen = () => {
       </Section>
 
       <Section>
+        <AnaphylaxisSvg02 />
+      </Section>
+
+      <Section>
         <Text>
           When person is having a severe allergic reaction help them use an
           auto-injector if they have some. Lay the person flat, don’t stand, and
           call an ambulance. Make them as comfortable as possible while you wait
           for the ambulance.
         </Text>
+      </Section>
+
+      <Section>
+        <AnaphylaxisSvg03 />
+      </Section>
+
+      <Section>
         <Text>
           If you are at risk of a severe allergic reaction, make sure you always
           have a: Mobile phone, Action plan, EpiPen®

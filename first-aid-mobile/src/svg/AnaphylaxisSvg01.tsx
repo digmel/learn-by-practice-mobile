@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import type {SvgProps} from 'react-native-svg';
 import Svg, {Path, G} from 'react-native-svg';
 
-export const AnaphylaxisSvg: FC<SvgProps> = ({width = 326, height = 101}) => {
+export const AnaphylaxisSvg01: FC<SvgProps> = ({width = 326, height = 101}) => {
   return (
     <Svg
       width={width}

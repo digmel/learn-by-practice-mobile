@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic04Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {DiabetesSvg01, DiabetesSvg02, DiabetesSvg03, DiabetesSvg04} from '@svg';
 
 export const Topic04Screen = () => {
   return (
@@ -25,6 +26,10 @@ export const Topic04Screen = () => {
       </Section>
 
       <Section>
+        <DiabetesSvg01 />
+      </Section>
+
+      <Section>
         <Text variation="H1_bold">Causes of high sugar level</Text>
       </Section>
 
@@ -38,6 +43,10 @@ export const Topic04Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Symptoms of High Sugar Level</Text>
+      </Section>
+
+      <Section>
+        <DiabetesSvg02 />
       </Section>
 
       <Section>
@@ -59,6 +68,10 @@ export const Topic04Screen = () => {
         </Text>
       </Section>
 
+      <Section>
+        <DiabetesSvg03 />
+      </Section>
+
       <Section variation="headline">
         <Text variation="H1_bold">Causes of Low Sugar Level</Text>
       </Section>
@@ -73,6 +86,10 @@ export const Topic04Screen = () => {
 
       <Section>
         <Text variation="H1_bold">Symptoms of Low Sugar Level</Text>
+      </Section>
+
+      <Section>
+        <DiabetesSvg04 />
       </Section>
 
       <Section>
