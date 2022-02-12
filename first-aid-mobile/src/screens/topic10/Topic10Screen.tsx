@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic10Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {ForestFireSvg01, ForestFireSvg02} from '@svg';
 
 export const Topic10Screen = () => {
   return (
@@ -23,6 +24,10 @@ export const Topic10Screen = () => {
         </Text>
       </Section>
 
+      <Section>
+        <ForestFireSvg01 />
+      </Section>
+
       <Section variation="headline">
         <Text variation="H1_bold">During </Text>
         <Text variation="H1_light">Forest Fire</Text>
@@ -37,6 +42,10 @@ export const Topic10Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">After </Text>
         <Text variation="H1_light">Forest Fire</Text>
+      </Section>
+
+      <Section>
+        <ForestFireSvg02 />
       </Section>
 
       <Section>
