@@ -1,6 +1,7 @@
 import React from 'react';
 import {styles} from './Topic07Screen.style';
 import {Screen, Header, Text, Section, List} from '@components';
+import {ThunderstormSvg01, ThunderstormSvg02} from '@svg';
 
 export const Topic07Screen = () => {
   return (
@@ -27,6 +28,10 @@ export const Topic07Screen = () => {
       </Section>
 
       <Section>
+        <ThunderstormSvg01 />
+      </Section>
+
+      <Section>
         <Text>
           Avoid using electrical equipment, phones, use battery-operated devices
           instead. Stay inside for 30 minutes after the last thunder and keep
@@ -49,6 +54,10 @@ export const Topic07Screen = () => {
       <Section variation="headline">
         <Text variation="H1_bold">Driving during </Text>
         <Text variation="H1_light">Thunderstorm</Text>
+      </Section>
+
+      <Section>
+        <ThunderstormSvg02 />
       </Section>
 
       <Section>

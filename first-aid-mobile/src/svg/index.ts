@@ -1,6 +1,5 @@
 export * from './Logo';
 export * from './IntroductionScreenSvg';
-export * from './ThunderstormSvg';
 export * from './FloodSvg';
 export * from './HurricanesSvg';
 export * from './ForestFireSvg';
@@ -34,3 +33,7 @@ export * from './EarthquakeSvg01';
 export * from './EarthquakeSvg02';
 export * from './EarthquakeSvg03';
 export * from './EarthquakeSvg04';
+
+export * from './ThunderstormSvg';
+export * from './ThunderstormSvg01';
+export * from './ThunderstormSvg02';
