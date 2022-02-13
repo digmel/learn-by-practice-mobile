@@ -1,19 +1,20 @@
 import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
-import {Section, Screen, Text, Header, List, Button} from '@components';
+import {Section, Screen, Text, Header, List, Button, color} from '@components';
 import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = () => {
   return (
     <Screen
       isScrollViewDisabled
+      contentStyle={styles.content}
       header={
         <Header hasBack>
           <Text>Knowledge Test</Text>
         </Header>
       }>
-      <View>
+      <View style={styles.testView}>
         <Section>
           <Text variation="body_bold">
             After finding an unresponsive child, your next course of action?
@@ -45,15 +46,34 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
         </Section>
       </View>
 
-      <Section>
-        <Section>
-          <Button text="Previous" variation="secondary"></Button>
-        </Section>
+      <Section isFullWidth contentStyle={styles.answerView}>
+        <View style={styles.headline}>
+          <Text variation="body_bold" color={color.error}>
+            Wrong
+          </Text>
+        </View>
 
-        <Section>
-          <Button text="Next"></Button>
-        </Section>
+        <View style={styles.details}>
+          <Text variation="subtitle">
+            Applying pressure is one of the best ways to stop or slow down the
+            bleeding. if it is bad enough, call for emergency, but the primary
+            first aid concern is to slow down the bleeding.
+          </Text>
+        </View>
       </Section>
+
+      <Section isCentered>
+        <View style={styles.progressBar}></View>
+      </Section>
+
+      <View style={styles.navigation}>
+        <View style={styles.buttonContainer}>
+          <Button text="Previous" variation="secondary" />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button text="Next" />
+        </View>
+      </View>
     </Screen>
   );
 };
