@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
-import {View} from 'react-native';
 import {styles} from './List.style';
 import {TListProps} from './List.type';
 import {color, size, Icon, Text} from '@components';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
-export const List: FC<TListProps> = ({children, variation}) => {
+export const List: FC<TListProps> = ({children, variation, onPress}) => {
   let iconName: String;
   let dynamicColor;
   let dynamicSize;
@@ -33,7 +33,10 @@ export const List: FC<TListProps> = ({children, variation}) => {
       break;
   }
   return (
-    <View style={[styles.container]}>
+    <TouchableOpacity
+      disabled={!onPress}
+      onPress={() => onPress && onPress()}
+      style={[styles.container]}>
       <Icon
         name={iconName}
         size={dynamicSize}
@@ -41,6 +44,6 @@ export const List: FC<TListProps> = ({children, variation}) => {
         iconContainerStyle={{paddingRight: size.xs}}
       />
       <Text color={dynamicColor}>{children}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };

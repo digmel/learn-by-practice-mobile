@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
 import {Section, Screen, Text, Header, List, Button} from '@components';
+import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = () => {
   return (
@@ -12,18 +13,37 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
           <Text>Knowledge Test</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="body_bold">
-          After finding an unresponsive child, your next course of action?
-        </Text>
-      </Section>
+      <View>
+        <Section>
+          <Text variation="body_bold">
+            After finding an unresponsive child, your next course of action?
+          </Text>
+        </Section>
 
-      <Section>
-        <List>Leave the child and search for an AED</List>
-        <List variation="correct">Begin back blows and chest thrusts</List>
-        <List variation="wrong">Deliver 30 chest compressions</List>
-        <List variation="empty">Deliver 100 chest compressions</List>
-      </Section>
+        <Section>
+          <List variation="empty" onPress={() => {}}>
+            Leave the child and search for an AED
+          </List>
+        </Section>
+
+        <Section>
+          <List variation="correct" onPress={() => {}}>
+            Begin back blows and chest thrusts
+          </List>
+        </Section>
+
+        <Section>
+          <List variation="wrong" onPress={() => {}}>
+            Deliver 30 chest compressions
+          </List>
+        </Section>
+
+        <Section>
+          <List variation="empty" onPress={() => {}}>
+            Deliver 100 chest compressions
+          </List>
+        </Section>
+      </View>
 
       <Section>
         <Section>
