@@ -25,7 +25,7 @@ export const Topic04Screen = () => {
         </Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <DiabetesSvg01 />
       </Section>
 
@@ -45,7 +45,7 @@ export const Topic04Screen = () => {
         <Text variation="H1_bold">Symptoms of High Sugar Level</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <DiabetesSvg02 />
       </Section>
 
@@ -68,7 +68,7 @@ export const Topic04Screen = () => {
         </Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <DiabetesSvg03 />
       </Section>
 
@@ -88,7 +88,7 @@ export const Topic04Screen = () => {
         <Text variation="H1_bold">Symptoms of Low Sugar Level</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <DiabetesSvg04 />
       </Section>
 

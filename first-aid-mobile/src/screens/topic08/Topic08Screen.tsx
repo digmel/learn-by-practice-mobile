@@ -17,7 +17,7 @@ export const Topic08Screen = () => {
         <Text variation="H1_bold">Always</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <FloodSvg01 />
       </Section>
 
@@ -33,7 +33,7 @@ export const Topic08Screen = () => {
         <Text variation="H1_bold">Inside The Building</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <FloodSvg02 />
       </Section>
 
@@ -50,7 +50,7 @@ export const Topic08Screen = () => {
         <Text variation="H1_bold">Outside The Building</Text>
       </Section>
 
-      <Section>
+      <Section variation="svg">
         <FloodSvg03 />
       </Section>
 
