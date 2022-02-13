@@ -1,1 +1,6 @@
-export type TListProps = {};
+export type TListVariation = 'empty' | 'correct' | 'wrong';
+
+export type TListProps = {
+  children?: String;
+  variation?: TListVariation;
+};

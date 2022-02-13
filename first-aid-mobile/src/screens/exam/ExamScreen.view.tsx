@@ -20,12 +20,12 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
 
       <Section>
         <List>Leave the child and search for an AED</List>
-        <List>Begin back blows and chest thrusts</List>
-        <List>Deliver 30 chest compressions</List>
-        <List>Deliver 100 chest compressions</List>
+        <List variation="correct">Begin back blows and chest thrusts</List>
+        <List variation="wrong">Deliver 30 chest compressions</List>
+        <List variation="empty">Deliver 100 chest compressions</List>
       </Section>
 
-      <Section variation="headline">
+      <Section>
         <Section>
           <Button text="Previous" variation="secondary"></Button>
         </Section>
