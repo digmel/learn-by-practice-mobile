@@ -1,10 +1,36 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
 import {Section, Screen, Text, Header, List, Button, color} from '@components';
 import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = () => {
+  let [progress, setProgress] = useState([
+    <View
+      style={{
+        width: 15,
+        height: 12,
+        backgroundColor: color.primary,
+        borderRadius: 64,
+        marginRight: -4,
+      }}></View>,
+  ]);
+
+  const onPressNext = () => {
+    setProgress(progress => [
+      ...progress,
+      <View
+        style={{
+          width: 19.2,
+          height: 12,
+          backgroundColor: color.primary,
+          borderRadius: 64,
+          marginHorizontal: -4,
+        }}></View>,
+    ]);
+
+    console.log('working', progress.length);
+  };
   return (
     <Screen
       isScrollViewDisabled
@@ -63,7 +89,9 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
       </Section>
 
       <Section isCentered>
-        <View style={styles.progressBar}></View>
+        <View style={styles.progressBar}>
+          <View style={{flexDirection: 'row'}}>{progress}</View>
+        </View>
       </Section>
 
       <View style={styles.navigation}>
@@ -71,7 +99,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = () => {
           <Button text="Previous" variation="secondary" />
         </View>
         <View style={styles.buttonContainer}>
-          <Button text="Next" />
+          <Button text="Next" onPress={onPressNext} />
         </View>
       </View>
     </Screen>

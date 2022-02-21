@@ -46,5 +46,6 @@ export const styles = StyleSheet.create({
     borderColor: color.primary,
     borderRadius: size.xxl,
     borderWidth: 1,
+    justifyContent: 'center',
   },
 });
