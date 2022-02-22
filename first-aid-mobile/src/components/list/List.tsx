@@ -10,17 +10,17 @@ export const List: FC<TListProps> = ({children, variation, onPress}) => {
   let dynamicSize;
 
   switch (variation) {
-    case 'empty':
+    case 'Empty':
       iconName = 'check-clear';
       dynamicColor = color.primary;
       dynamicSize = size.m;
       break;
-    case 'correct':
+    case 'Correct':
       iconName = 'check-correct';
       dynamicColor = color.success;
       dynamicSize = size.m;
       break;
-    case 'wrong':
+    case 'Wrong':
       iconName = 'check-wrong';
       dynamicColor = color.error;
       dynamicSize = size.m;

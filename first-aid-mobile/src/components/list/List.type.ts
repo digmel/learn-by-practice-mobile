@@ -1,9 +1,7 @@
-import {TAnswerStatus} from 'screens/exam/ExamScreen.type';
-
-export type TListVariation = 'empty' | 'correct' | 'wrong';
+export type TListVariation = 'Empty' | 'Correct' | 'Wrong';
 
 export type TListProps = {
   children?: String;
-  variation?: TAnswerStatus;
+  variation?: TListVariation;
   onPress?: Function;
 };

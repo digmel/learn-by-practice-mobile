@@ -14,10 +14,12 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   let [_count, _setCount] = useState(0);
   let [_examData, _setExamData] = useState<TQuestions>(Questions[_count]);
   let [_showDetails, _setShowDetails] = useState(false);
-  let [_answerA, _setAnswerA] = useState<TAnswerStatus>('empty');
-  let [_answerB, _setAnswerB] = useState<TAnswerStatus>('empty');
-  let [_answerC, _setAnswerC] = useState<TAnswerStatus>('empty');
-  let [_answerD, _setAnswerD] = useState<TAnswerStatus>('empty');
+
+  let [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
+  let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
+  let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
+  let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
+  let [_answerStatus, _setAnswerStatus] = useState<TAnswerStatus>('Wrong');
 
   let [_progress, _setProgress] = useState([
     <View style={styles.progressBarFirstFiller} />,
@@ -25,17 +27,19 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   const checkAnswers = (selectedAnswer: TAnswer) => {
     if (Questions[_count].answer === selectedAnswer) {
-      return 'correct';
+      _setAnswerStatus('Correct');
+      return 'Correct';
     } else {
-      return 'wrong';
+      _setAnswerStatus('Wrong');
+      return 'Wrong';
     }
   };
 
   const clearAnswers = () => {
-    _setAnswerA('empty');
-    _setAnswerB('empty');
-    _setAnswerC('empty');
-    _setAnswerD('empty');
+    _setAnswerA('Empty');
+    _setAnswerB('Empty');
+    _setAnswerC('Empty');
+    _setAnswerD('Empty');
   };
 
   const _onPressA = () => {
@@ -89,6 +93,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
       AnswerB={_answerB}
       AnswerC={_answerC}
       AnswerD={_answerD}
+      AnswerStatus={_answerStatus}
       progressBar={_progress}
       showDetails={_showDetails}
       examData={_examData}

@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
 import {Section, Screen, Text, Header, List, Button, color} from '@components';
@@ -15,6 +15,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   AnswerB,
   AnswerC,
   AnswerD,
+  AnswerStatus,
   progressBar,
   showDetails,
   examData,
@@ -62,8 +63,10 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         {showDetails && (
           <View style={styles.detailsView}>
             <View style={styles.headline}>
-              <Text variation="body_bold" color={color.error}>
-                Wrong
+              <Text
+                variation="body_bold"
+                color={AnswerStatus === 'Wrong' ? color.error : color.success}>
+                {AnswerStatus}
               </Text>
             </View>
 

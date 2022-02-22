@@ -1,4 +1,4 @@
-export type TAnswerStatus = 'empty' | 'correct' | 'wrong';
+export type TAnswerStatus = 'Empty' | 'Correct' | 'Wrong';
 
 export type TAnswer = 'A' | 'B' | 'C' | 'D';
 
@@ -25,5 +25,6 @@ export type TExamScreenViewProps = {
   AnswerB: TAnswerStatus;
   AnswerC: TAnswerStatus;
   AnswerD: TAnswerStatus;
+  AnswerStatus: TAnswerStatus;
   examData: TQuestions;
 };
