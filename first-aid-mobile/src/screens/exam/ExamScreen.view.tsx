@@ -8,6 +8,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   onPressNext,
   onPressPrevious,
   progressBar,
+  showDetails,
 }) => {
   return (
     <Screen
@@ -50,20 +51,24 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         </Section>
       </View>
 
-      <Section isFullWidth contentStyle={styles.answerView}>
-        <View style={styles.headline}>
-          <Text variation="body_bold" color={color.error}>
-            Wrong
-          </Text>
-        </View>
+      <Section isFullWidth contentStyle={styles.detailsSection}>
+        {showDetails && (
+          <View style={styles.detailsView}>
+            <View style={styles.headline}>
+              <Text variation="body_bold" color={color.error}>
+                Wrong
+              </Text>
+            </View>
 
-        <View style={styles.details}>
-          <Text variation="subtitle">
-            Applying pressure is one of the best ways to stop or slow down the
-            bleeding. if it is bad enough, call for emergency, but the primary
-            first aid concern is to slow down the bleeding.
-          </Text>
-        </View>
+            <View style={styles.details}>
+              <Text variation="subtitle">
+                Applying pressure is one of the best ways to stop or slow down
+                the bleeding. if it is bad enough, call for emergency, but the
+                primary first aid concern is to slow down the bleeding.
+              </Text>
+            </View>
+          </View>
+        )}
       </Section>
 
       <Section isCentered>

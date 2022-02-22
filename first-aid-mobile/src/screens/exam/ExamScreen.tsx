@@ -5,26 +5,31 @@ import {View} from 'react-native';
 import {styles} from './ExamScreen.style';
 
 export const ExamScreen: FC<TExamScreenViewProps> = () => {
-  let [progress, setProgress] = useState([
+  let [_progress, _setProgress] = useState([
     <View style={styles.progressBarFirstFiller} />,
   ]);
 
+  let [_showDetails, _setShowDetails] = useState(false);
+
   const _onPressNext = () => {
-    setProgress(progress => [
+    _setProgress(progress => [
       ...progress,
       <View style={styles.progressBarFiller} />,
     ]);
+
+    _setShowDetails(true);
   };
 
   const _onPressPrevious = () => {
-    setProgress(progress => progress.slice(0, progress.length - 1));
+    _setProgress(progress => progress.slice(0, progress.length - 1));
   };
 
   return (
     <ExamScreenView
       onPressNext={_onPressNext}
       onPressPrevious={_onPressPrevious}
-      progressBar={progress}
+      progressBar={_progress}
+      showDetails={_showDetails}
     />
   );
 };

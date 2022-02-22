@@ -12,9 +12,13 @@ export const styles = StyleSheet.create({
     flexBasis: '35%',
   },
 
-  answerView: {
+  detailsSection: {
     flexBasis: '35%',
+  },
+
+  detailsView: {
     backgroundColor: color.gray100,
+    flexGrow: 1,
   },
   headline: {
     marginHorizontal: size.xl,
