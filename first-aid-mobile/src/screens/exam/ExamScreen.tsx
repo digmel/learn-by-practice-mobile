@@ -1,6 +1,6 @@
 import React, {FC, useState, useEffect} from 'react';
 import {ExamScreenView} from './ExamScreen.view';
-import {TExamScreenViewProps} from './ExamScreen.type';
+import {TAnswerStatus, TExamScreenViewProps} from './ExamScreen.type';
 import {View} from 'react-native';
 import {styles} from './ExamScreen.style';
 import {Questions} from './questions';
@@ -9,6 +9,8 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   let [_count, _setCount] = useState(0);
   let [_examData, _setExamData] = useState(Questions[_count]);
   let [_showDetails, _setShowDetails] = useState(false);
+
+  let _showAnswer: TAnswerStatus = 'empty';
 
   let [_progress, _setProgress] = useState([
     <View style={styles.progressBarFirstFiller} />,
@@ -57,6 +59,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
       onPressD={_onPressD}
       progressBar={_progress}
       showDetails={_showDetails}
+      showAnswer={_showAnswer}
       examData={_examData}
     />
   );

@@ -1,5 +1,7 @@
 import {TQuestions} from './questions';
 
+export type TAnswerStatus = 'empty' | 'correct' | 'wrong';
+
 export type TExamScreenViewProps = {
   onPressNext: Function;
   onPressPrevious: Function;
@@ -9,5 +11,6 @@ export type TExamScreenViewProps = {
   onPressD: Function;
   progressBar: Array<any>;
   showDetails: boolean;
+  showAnswer: TAnswerStatus;
   examData: TQuestions;
 };
