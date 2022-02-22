@@ -17,9 +17,19 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   const _onPressA = () => {
     _setShowDetails(true);
   };
+  const _onPressB = () => {
+    _setShowDetails(true);
+  };
+  const _onPressC = () => {
+    _setShowDetails(true);
+  };
+  const _onPressD = () => {
+    _setShowDetails(true);
+  };
 
   const _onPressNext = () => {
     _setCount(_count + 1);
+    _setShowDetails(false);
     _setProgress(progress => [
       ...progress,
       <View style={styles.progressBarFiller} />,
@@ -28,6 +38,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   const _onPressPrevious = () => {
     _setCount(_count - 1);
+    _setShowDetails(false);
     _setProgress(progress => progress.slice(0, progress.length - 1));
   };
 
@@ -41,6 +52,9 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
       onPressNext={_onPressNext}
       onPressPrevious={_onPressPrevious}
       onPressA={_onPressA}
+      onPressB={_onPressB}
+      onPressC={_onPressC}
+      onPressD={_onPressD}
       progressBar={_progress}
       showDetails={_showDetails}
       examData={_examData}

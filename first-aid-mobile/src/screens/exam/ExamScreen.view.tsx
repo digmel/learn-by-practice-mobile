@@ -8,6 +8,9 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   onPressNext,
   onPressPrevious,
   onPressA,
+  onPressB,
+  onPressC,
+  onPressD,
   progressBar,
   showDetails,
   examData,
@@ -28,25 +31,25 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
 
         <Section>
           <List variation="empty" onPress={onPressA}>
-            Leave the child and search for an AED
+            {examData.A}
           </List>
         </Section>
 
         <Section>
-          <List variation="correct" onPress={() => {}}>
-            Begin back blows and chest thrusts
+          <List variation="correct" onPress={onPressB}>
+            {examData.B}
           </List>
         </Section>
 
         <Section>
-          <List variation="wrong" onPress={() => {}}>
-            Deliver 30 chest compressions
+          <List variation="wrong" onPress={onPressC}>
+            {examData.C}
           </List>
         </Section>
 
         <Section>
-          <List variation="empty" onPress={() => {}}>
-            Deliver 100 chest compressions
+          <List variation="empty" onPress={onPressD}>
+            {examData.D}
           </List>
         </Section>
       </View>
@@ -61,11 +64,7 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
             </View>
 
             <View style={styles.details}>
-              <Text variation="subtitle">
-                Applying pressure is one of the best ways to stop or slow down
-                the bleeding. if it is bad enough, call for emergency, but the
-                primary first aid concern is to slow down the bleeding.
-              </Text>
+              <Text variation="subtitle">{examData.details}</Text>
             </View>
           </View>
         )}
