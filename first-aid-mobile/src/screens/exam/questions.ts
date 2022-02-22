@@ -1,13 +1,3 @@
-export type TQuestions = {
-  question: String;
-  A: String;
-  B: String;
-  C: String;
-  D: String;
-  answer: String;
-  details: String;
-};
-
 export const Questions = [
   {
     question:

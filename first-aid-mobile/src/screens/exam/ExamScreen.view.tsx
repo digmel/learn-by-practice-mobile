@@ -11,9 +11,12 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   onPressB,
   onPressC,
   onPressD,
+  AnswerA,
+  AnswerB,
+  AnswerC,
+  AnswerD,
   progressBar,
   showDetails,
-  showAnswer,
   examData,
 }) => {
   return (
@@ -31,25 +34,25 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         </Section>
 
         <Section>
-          <List variation={showAnswer} onPress={onPressA}>
+          <List variation={AnswerA} onPress={onPressA}>
             {examData.A}
           </List>
         </Section>
 
         <Section>
-          <List variation={showAnswer} onPress={onPressB}>
+          <List variation={AnswerB} onPress={onPressB}>
             {examData.B}
           </List>
         </Section>
 
         <Section>
-          <List variation={showAnswer} onPress={onPressC}>
+          <List variation={AnswerC} onPress={onPressC}>
             {examData.C}
           </List>
         </Section>
 
         <Section>
-          <List variation={showAnswer} onPress={onPressD}>
+          <List variation={AnswerD} onPress={onPressD}>
             {examData.D}
           </List>
         </Section>
