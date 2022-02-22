@@ -7,8 +7,10 @@ import {View} from 'react-native';
 export const ExamScreenView: FC<TExamScreenViewProps> = ({
   onPressNext,
   onPressPrevious,
+  onPressA,
   progressBar,
   showDetails,
+  examData,
 }) => {
   return (
     <Screen
@@ -21,13 +23,11 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
       }>
       <View style={styles.testView}>
         <Section>
-          <Text variation="body_bold">
-            After finding an unresponsive child, your next course of action?
-          </Text>
+          <Text variation="body_bold">{examData.question}</Text>
         </Section>
 
         <Section>
-          <List variation="empty" onPress={() => {}}>
+          <List variation="empty" onPress={onPressA}>
             Leave the child and search for an AED
           </List>
         </Section>
