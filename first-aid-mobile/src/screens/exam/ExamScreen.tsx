@@ -31,5 +31,16 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
       />,
     ]);
   };
-  return <ExamScreenView onPressNext={_onPressNext} progressBar={progress} />;
+
+  const _onPressPrevious = () => {
+    setProgress(progress => progress.slice(0, progress.length - 1));
+  };
+
+  return (
+    <ExamScreenView
+      onPressNext={_onPressNext}
+      onPressPrevious={_onPressPrevious}
+      progressBar={progress}
+    />
+  );
 };

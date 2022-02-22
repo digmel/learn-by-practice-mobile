@@ -6,6 +6,7 @@ import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = ({
   onPressNext,
+  onPressPrevious,
   progressBar,
 }) => {
   return (
@@ -73,7 +74,11 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
 
       <View style={styles.navigation}>
         <View style={styles.buttonContainer}>
-          <Button text="Previous" variation="secondary" />
+          <Button
+            text="Previous"
+            variation="secondary"
+            onPress={onPressPrevious}
+          />
         </View>
         <View style={styles.buttonContainer}>
           <Button text="Next" onPress={onPressNext} />
