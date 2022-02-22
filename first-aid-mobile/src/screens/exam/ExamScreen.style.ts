@@ -48,4 +48,20 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     justifyContent: 'center',
   },
+
+  progressBarFirstFiller: {
+    width: 15,
+    height: size.s,
+    backgroundColor: color.primary,
+    borderRadius: size.xxl,
+    marginHorizontal: -size.xxs,
+  },
+
+  progressBarFiller: {
+    width: 19.2,
+    height: size.s,
+    backgroundColor: color.primary,
+    borderRadius: size.xxl,
+    marginHorizontal: -size.xxs,
+  },
 });
