@@ -3,16 +3,17 @@ import {ExamScreenView} from './ExamScreen.view';
 import {
   TAnswer,
   TAnswerStatus,
-  TExamScreenViewProps,
+  TExamScreenProps,
   TQuestions,
 } from './ExamScreen.type';
 import {View} from 'react-native';
 import {styles} from './ExamScreen.style';
 import {Questions} from './questions';
+import {DashboardScreen} from '@screens';
 
-export const ExamScreen: FC<TExamScreenViewProps> = () => {
-  let [_count, _setCount] = useState(0);
-  let [_examData, _setExamData] = useState<TQuestions>(Questions[_count]);
+export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
+  let [_index, _setIndex] = useState(0);
+  let [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
   let [_showDetails, _setShowDetails] = useState(false);
 
   let [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
@@ -30,48 +31,67 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
     <View style={styles.progressBarFirstFiller} />,
   ]);
 
-  const checkAnswers = (selectedAnswer: TAnswer) => {
-    if (Questions[_count].answer === selectedAnswer) {
+  const CheckAnswers = (selectedAnswer: TAnswer) => {
+    let AnswerStatus: TAnswerStatus = 'Empty';
+
+    _setShowDetails(true);
+
+    if (Questions[_index].answer === selectedAnswer) {
+      AnswerStatus = 'Correct';
       _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
       _setPreviousButtonDisabled(false);
-      return 'Correct';
     } else {
+      AnswerStatus = 'Wrong';
       _setAnswerStatus(false);
-      return 'Wrong';
+      _setTestButtonDisabled(false);
+      _setNextButtonDisabled(true);
+      _setPreviousButtonDisabled(true);
+    }
+
+    switch (selectedAnswer) {
+      case 'A':
+        _setAnswerA(AnswerStatus);
+        break;
+      case 'B':
+        _setAnswerB(AnswerStatus);
+        break;
+      case 'C':
+        _setAnswerC(AnswerStatus);
+        break;
+      case 'D':
+        _setAnswerD(AnswerStatus);
+        break;
     }
   };
 
-  const clearAnswers = () => {
+  const ClearAnswers = () => {
     _setAnswerA('Empty');
     _setAnswerB('Empty');
     _setAnswerC('Empty');
     _setAnswerD('Empty');
     _setTestButtonDisabled(false);
     _setNextButtonDisabled(true);
+    _setPreviousButtonDisabled(true);
   };
 
   const _onPressA = () => {
-    _setShowDetails(true);
-    _setAnswerA(checkAnswers('A'));
+    CheckAnswers('A');
   };
   const _onPressB = () => {
-    _setShowDetails(true);
-    _setAnswerB(checkAnswers('B'));
+    CheckAnswers('B');
   };
   const _onPressC = () => {
-    _setShowDetails(true);
-    _setAnswerC(checkAnswers('C'));
+    CheckAnswers('C');
   };
   const _onPressD = () => {
-    _setShowDetails(true);
-    _setAnswerD(checkAnswers('D'));
+    CheckAnswers('D');
   };
 
   const _onPressNext = () => {
-    clearAnswers();
-    _setCount(_count + 1);
+    ClearAnswers();
+    _setIndex(_index + 1);
     _setShowDetails(false);
     _setProgress(progress => [
       ...progress,
@@ -80,26 +100,25 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   };
 
   const _onPressPrevious = () => {
-    clearAnswers();
-    _setCount(_count - 1);
+    ClearAnswers();
+    _setIndex(_index - 1);
     _setShowDetails(true);
     _setProgress(progress => progress.slice(0, progress.length - 1));
   };
 
   useEffect(() => {
-    _setExamData(Questions[_count]);
+    _setExamData(Questions[_index]);
 
-    if (_count > 0) {
-      _setPreviousButtonDisabled(false);
-    } else {
-      _setPreviousButtonDisabled(true);
-    }
+    _index === 0 && _setPreviousButtonDisabled(true);
 
-    console.log('index', _count);
+    _index === 12 && navigation.navigate(DashboardScreen);
+
+    console.log('index', _index);
   });
 
   return (
     <ExamScreenView
+      index={_index}
       onPressNext={_onPressNext}
       onPressPrevious={_onPressPrevious}
       onPressA={_onPressA}

@@ -13,6 +13,7 @@ export type TQuestions = {
 };
 
 export type TExamScreenViewProps = {
+  index: Number;
   onPressNext: Function;
   onPressPrevious: Function;
   onPressA: Function;
@@ -30,4 +31,8 @@ export type TExamScreenViewProps = {
   isNextButtonDisabled: boolean;
   isPreviousButtonDisabled: boolean;
   isTestButtonDisabled: boolean;
+};
+
+export type TExamScreenProps = {
+  navigation: any;
 };

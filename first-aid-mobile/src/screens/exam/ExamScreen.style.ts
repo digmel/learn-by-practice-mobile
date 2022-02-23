@@ -68,4 +68,8 @@ export const styles = StyleSheet.create({
     borderRadius: size.xxl,
     marginHorizontal: -size.xxs,
   },
+
+  indexContainer: {
+    marginTop: size.s,
+  },
 });

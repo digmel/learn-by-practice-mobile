@@ -1,10 +1,20 @@
 import React, {FC} from 'react';
 import {TExamScreenViewProps} from './ExamScreen.type';
 import {styles} from './ExamScreen.style';
-import {Section, Screen, Text, Header, List, Button, color} from '@components';
+import {
+  Section,
+  Screen,
+  Text,
+  Header,
+  List,
+  Button,
+  color,
+  size,
+} from '@components';
 import {View} from 'react-native';
 
 export const ExamScreenView: FC<TExamScreenViewProps> = ({
+  index,
   onPressNext,
   onPressPrevious,
   onPressA,
@@ -74,7 +84,10 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         </Section>
       </View>
 
-      <Section isFullWidth contentStyle={styles.detailsSection}>
+      <Section
+        isFullWidth
+        contentStyle={styles.detailsSection}
+        topSpace={size.m}>
         {showDetails && (
           <View style={styles.detailsView}>
             <View style={styles.headline}>
@@ -95,6 +108,9 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
       <Section isCentered>
         <View style={styles.progressBar}>
           <View style={{flexDirection: 'row'}}>{progressBar}</View>
+        </View>
+        <View style={styles.indexContainer}>
+          <Text>{index}/12</Text>
         </View>
       </Section>
 
