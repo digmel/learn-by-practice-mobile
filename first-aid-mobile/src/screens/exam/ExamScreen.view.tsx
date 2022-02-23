@@ -80,8 +80,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
             <View style={styles.headline}>
               <Text
                 variation="body_bold"
-                color={AnswerStatus === 'Wrong' ? color.error : color.success}>
-                {AnswerStatus}
+                color={AnswerStatus ? color.success : color.error}>
+                {AnswerStatus ? 'Correct' : 'Wrong'}
               </Text>
             </View>
 

@@ -19,11 +19,12 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   let [_isPreviousButtonDisabled, _setPreviousButtonDisabled] = useState(true);
   let [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
 
+  let [_answerStatus, _setAnswerStatus] = useState<boolean>();
+
   let [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
   let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
   let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
   let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
-  let [_answerStatus, _setAnswerStatus] = useState<TAnswerStatus>('Wrong');
 
   let [_progress, _setProgress] = useState([
     <View style={styles.progressBarFirstFiller} />,
@@ -31,13 +32,13 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   const checkAnswers = (selectedAnswer: TAnswer) => {
     if (Questions[_count].answer === selectedAnswer) {
-      _setAnswerStatus('Correct');
+      _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
+      _setPreviousButtonDisabled(false);
       return 'Correct';
     } else {
-      _setAnswerStatus('Wrong');
-      _setNextButtonDisabled(true);
+      _setAnswerStatus(false);
       return 'Wrong';
     }
   };
@@ -48,6 +49,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
     _setAnswerC('Empty');
     _setAnswerD('Empty');
     _setTestButtonDisabled(false);
+    _setNextButtonDisabled(true);
   };
 
   const _onPressA = () => {
@@ -79,9 +81,8 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   const _onPressPrevious = () => {
     clearAnswers();
-
     _setCount(_count - 1);
-    _setShowDetails(false);
+    _setShowDetails(true);
     _setProgress(progress => progress.slice(0, progress.length - 1));
   };
 

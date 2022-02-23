@@ -25,7 +25,7 @@ export type TExamScreenViewProps = {
   AnswerB: TAnswerStatus;
   AnswerC: TAnswerStatus;
   AnswerD: TAnswerStatus;
-  AnswerStatus: TAnswerStatus;
+  AnswerStatus: boolean | undefined;
   examData: TQuestions;
   isNextButtonDisabled: boolean;
   isPreviousButtonDisabled: boolean;
