@@ -19,6 +19,9 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   progressBar,
   showDetails,
   examData,
+  isPreviousButtonDisabled,
+  isNextButtonDisabled,
+  isTestButtonDisabled,
 }) => {
   return (
     <Screen
@@ -35,25 +38,37 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         </Section>
 
         <Section>
-          <List variation={AnswerA} onPress={onPressA}>
+          <List
+            variation={AnswerA}
+            onPress={onPressA}
+            isDisabled={isTestButtonDisabled}>
             {examData.A}
           </List>
         </Section>
 
         <Section>
-          <List variation={AnswerB} onPress={onPressB}>
+          <List
+            variation={AnswerB}
+            onPress={onPressB}
+            isDisabled={isTestButtonDisabled}>
             {examData.B}
           </List>
         </Section>
 
         <Section>
-          <List variation={AnswerC} onPress={onPressC}>
+          <List
+            variation={AnswerC}
+            onPress={onPressC}
+            isDisabled={isTestButtonDisabled}>
             {examData.C}
           </List>
         </Section>
 
         <Section>
-          <List variation={AnswerD} onPress={onPressD}>
+          <List
+            variation={AnswerD}
+            onPress={onPressD}
+            isDisabled={isTestButtonDisabled}>
             {examData.D}
           </List>
         </Section>
@@ -89,10 +104,15 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
             text="Previous"
             variation="secondary"
             onPress={onPressPrevious}
+            isDisabled={isPreviousButtonDisabled}
           />
         </View>
         <View style={styles.buttonContainer}>
-          <Button text="Next" onPress={onPressNext} />
+          <Button
+            text="Next"
+            onPress={onPressNext}
+            isDisabled={isNextButtonDisabled}
+          />
         </View>
       </View>
     </Screen>

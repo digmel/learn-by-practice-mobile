@@ -15,6 +15,10 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   let [_examData, _setExamData] = useState<TQuestions>(Questions[_count]);
   let [_showDetails, _setShowDetails] = useState(false);
 
+  let [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
+  let [_isPreviousButtonDisabled, _setPreviousButtonDisabled] = useState(true);
+  let [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
+
   let [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
   let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
   let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
@@ -28,9 +32,12 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
   const checkAnswers = (selectedAnswer: TAnswer) => {
     if (Questions[_count].answer === selectedAnswer) {
       _setAnswerStatus('Correct');
+      _setTestButtonDisabled(true);
+      _setNextButtonDisabled(false);
       return 'Correct';
     } else {
       _setAnswerStatus('Wrong');
+      _setNextButtonDisabled(true);
       return 'Wrong';
     }
   };
@@ -40,6 +47,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
     _setAnswerB('Empty');
     _setAnswerC('Empty');
     _setAnswerD('Empty');
+    _setTestButtonDisabled(false);
   };
 
   const _onPressA = () => {
@@ -71,6 +79,7 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   const _onPressPrevious = () => {
     clearAnswers();
+
     _setCount(_count - 1);
     _setShowDetails(false);
     _setProgress(progress => progress.slice(0, progress.length - 1));
@@ -78,6 +87,13 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
 
   useEffect(() => {
     _setExamData(Questions[_count]);
+
+    if (_count > 0) {
+      _setPreviousButtonDisabled(false);
+    } else {
+      _setPreviousButtonDisabled(true);
+    }
+
     console.log('index', _count);
   });
 
@@ -97,6 +113,9 @@ export const ExamScreen: FC<TExamScreenViewProps> = () => {
       progressBar={_progress}
       showDetails={_showDetails}
       examData={_examData}
+      isNextButtonDisabled={_isNextButtonDisabled}
+      isPreviousButtonDisabled={_isPreviousButtonDisabled}
+      isTestButtonDisabled={_isTestButtonDisabled}
     />
   );
 };

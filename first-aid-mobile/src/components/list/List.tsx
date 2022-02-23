@@ -4,7 +4,12 @@ import {TListProps} from './List.type';
 import {color, size, Icon, Text} from '@components';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
-export const List: FC<TListProps> = ({children, variation, onPress}) => {
+export const List: FC<TListProps> = ({
+  children,
+  variation,
+  onPress,
+  isDisabled = !onPress,
+}) => {
   let iconName: String;
   let dynamicColor;
   let dynamicSize;
@@ -34,7 +39,7 @@ export const List: FC<TListProps> = ({children, variation, onPress}) => {
   }
   return (
     <TouchableOpacity
-      disabled={!onPress}
+      disabled={isDisabled}
       onPress={() => onPress && onPress()}
       style={[styles.container]}>
       <Icon
