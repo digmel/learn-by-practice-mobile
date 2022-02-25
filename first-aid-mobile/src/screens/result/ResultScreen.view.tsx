@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
 import {styles} from './ResultScreen.style';
 import {TResultScreenViewProps} from './ResultScreen.type';
-import {Screen, Button, Section, Text, size} from '@components';
+import CircularProgress from 'react-native-circular-progress-indicator';
+import {Screen, Button, Section, Text, size, color} from '@components';
 import {View} from 'react-native';
 
 export const ResultScreenView: FC<TResultScreenViewProps> = ({
@@ -15,8 +16,20 @@ export const ResultScreenView: FC<TResultScreenViewProps> = ({
           <Text variation="H1_bold">Congratulations!</Text>
         </Section>
 
+        <Section isCentered bottomSpace={size.xl}>
+          <CircularProgress
+            value={6}
+            radius={100}
+            duration={2000}
+            textColor={color.primary}
+            maxValue={12}
+            title={'%'}
+            titleColor={color.primary}
+          />
+        </Section>
+
         <Section isCentered>
-          <Text>
+          <Text textStyle={{textAlign: 'center'}}>
             Thank you for your time, try again with different questions to learn
             more!
           </Text>
