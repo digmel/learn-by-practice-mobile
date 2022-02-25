@@ -3,6 +3,6 @@ export type TResultScreenProps = {
 };
 
 export type TResultScreenViewProps = {
-  onPressHomepage: Function;
+  onPressGoHome: Function;
   onPressTryAgain: Function;
 };

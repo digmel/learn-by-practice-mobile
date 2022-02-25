@@ -4,7 +4,7 @@ import {TResultScreenProps} from './ResultScreen.type';
 import {ResultScreenView} from './ResultScreen.view';
 
 export const ResultScreen: FC<TResultScreenProps> = ({navigation}) => {
-  const _onPressHomepage = () => {
+  const _onPressGoHome = () => {
     navigation.navigate(DashboardScreen);
   };
 
@@ -13,7 +13,7 @@ export const ResultScreen: FC<TResultScreenProps> = ({navigation}) => {
   };
   return (
     <ResultScreenView
-      onPressHomepage={_onPressHomepage}
+      onPressGoHome={_onPressGoHome}
       onPressTryAgain={_onPressTryAgain}
     />
   );
