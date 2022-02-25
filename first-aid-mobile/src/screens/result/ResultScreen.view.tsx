@@ -12,7 +12,7 @@ export const ResultScreenView: FC<TResultScreenViewProps> = ({
   return (
     <Screen isScrollViewDisabled>
       <View style={styles.textContainer}>
-        <Section topSpace={size.xxl} bottomSpace={size.xxl} isCentered>
+        <Section topSpace={size.xxl} bottomSpace={size.xl} isCentered>
           <Text variation="H1_bold">Congratulations!</Text>
         </Section>
 
