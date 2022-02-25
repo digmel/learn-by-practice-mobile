@@ -128,4 +128,15 @@ export const Questions = [
     details:
       'There is no fixed number of chest compressions. If possible, keep giving chest compressions until help arrives',
   },
+  {
+    question:
+      'noooooooo If someone is unresponsive and not breathing, how long should we give chest compressions?',
+    A: 'Until your arms get tired',
+    B: 'Until you have done 100 compressions',
+    C: 'Until help arrives and someone else takes over',
+    D: 'His shoulders and neck',
+    answer: 'C',
+    details:
+      'There is no fixed number of chest compressions. If possible, keep giving chest compressions until help arrives',
+  },
 ];

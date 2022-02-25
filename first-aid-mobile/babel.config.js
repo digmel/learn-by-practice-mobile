@@ -3,6 +3,7 @@ module.exports = {
   plugins: [
     [
       'module-resolver',
+
       {
         root: ['./src'],
         extensions: ['.ts', '.ios.ts', '.android.ts', '.tsx'],
@@ -18,5 +19,6 @@ module.exports = {
         },
       },
     ],
+    'react-native-reanimated/plugin', //Added for React Native Animation V2
   ],
 };
