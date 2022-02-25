@@ -9,7 +9,7 @@ import {
 import {View} from 'react-native';
 import {styles} from './ExamScreen.style';
 import {Questions} from './questions';
-import {DashboardScreen} from '@screens';
+import {ResultScreen} from '@screens';
 
 export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   let [_index, _setIndex] = useState(0);
@@ -111,7 +111,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
 
     _index === 0 && _setPreviousButtonDisabled(true);
 
-    _index === 12 && navigation.navigate(DashboardScreen);
+    _index === 12 && navigation.navigate(ResultScreen);
 
     console.log('index', _index);
   });

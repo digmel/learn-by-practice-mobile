@@ -1,7 +1,7 @@
 export * from './introduction/IntroductionScreen';
-
 export * from './dashboard/DashboardScreen';
 export * from './exam/ExamScreen';
+export * from './result/ResultScreen';
 
 export * from './topic01/Topic01Screen';
 export * from './topic02/Topic02Screen';

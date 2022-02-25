@@ -1,9 +1,10 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
+  IntroductionScreen,
   DashboardScreen,
   ExamScreen,
-  IntroductionScreen,
+  ResultScreen,
   Topic01Screen,
   Topic02Screen,
   Topic03Screen,
@@ -27,6 +28,7 @@ export const Router = () => {
       <Stack.Screen name="IntroductionScreen" component={IntroductionScreen} />
       <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
       <Stack.Screen name="ExamScreen" component={ExamScreen} />
+      <Stack.Screen name="ResultScreen" component={ResultScreen} />
 
       <Stack.Screen name="Topic01Screen" component={Topic01Screen} />
       <Stack.Screen name="Topic02Screen" component={Topic02Screen} />
