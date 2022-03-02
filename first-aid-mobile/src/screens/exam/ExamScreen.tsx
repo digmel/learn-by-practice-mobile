@@ -41,13 +41,11 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
       _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
-      _setPreviousButtonDisabled(false);
     } else {
       AnswerStatus = 'Wrong';
       _setAnswerStatus(false);
       _setTestButtonDisabled(false);
       _setNextButtonDisabled(true);
-      _setPreviousButtonDisabled(true);
     }
 
     switch (selectedAnswer) {
@@ -91,6 +89,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
 
   const _onPressNext = () => {
     ClearAnswers();
+    _setPreviousButtonDisabled(false);
     _setIndex(_index + 1);
     _setShowDetails(false);
     _setProgress(progress => [
