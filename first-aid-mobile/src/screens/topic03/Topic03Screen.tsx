@@ -13,12 +13,7 @@ export const Topic03Screen = () => {
           <Text variation="subtitle">Heart Attack</Text>
         </Header>
       }>
-      <Section variation="headline">
-        <Text variation="H1_bold">What is a </Text>
-        <Text variation="H1_light">heart attack?</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="What is a" subtitle="heart attack?">
         <HeartAttackSvg01 />
       </Section>
 
@@ -29,12 +24,7 @@ export const Topic03Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Symptoms </Text>
-        <Text variation="H1_light">of a heart attack</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Symptoms" subtitle="of a heart attack">
         <HeartAttackSvg02 />
       </Section>
 
@@ -48,12 +38,7 @@ export const Topic03Screen = () => {
         <List>Have a rapid, weak, or irregular pulse</List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">What to do </Text>
-        <Text variation="H1_light">to help</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="What to do" subtitle="to help">
         <HeartAttackSvg03 />
       </Section>
 

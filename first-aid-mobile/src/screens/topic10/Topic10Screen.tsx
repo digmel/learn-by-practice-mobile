@@ -13,38 +13,24 @@ export const Topic10Screen = () => {
           <Text variation="subtitle">Forest Fire</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="H1_bold">Always</Text>
-      </Section>
-
-      <Section>
+      <Section title="Always">
         <Text>
           Clear the area near your house of any dried-out branches, leaves, and
           debris, If you live near a forested area .
         </Text>
       </Section>
 
-      <Section variation="svg">
+      <Section isCentered>
         <ForestFireSvg01 />
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">During </Text>
-        <Text variation="H1_light">Forest Fire</Text>
-      </Section>
-
-      <Section>
+      <Section title="During" subtitle="Forest Fire">
         <List>Be prepared to evacuate at any time</List>
         <List>Close windows to reduce smoke </List>
         <List>Move combustible away from a house</List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">After </Text>
-        <Text variation="H1_light">Forest Fire</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="After" subtitle="Forest Fire">
         <ForestFireSvg02 />
       </Section>
 

@@ -13,27 +13,18 @@ export const Topic04Screen = () => {
           <Text variation="subtitle">Diabetes</Text>
         </Header>
       }>
-      <Section variation="headline">
-        <Text variation="H1_bold">What is </Text>
-        <Text variation="H1_light">diabetes?</Text>
-      </Section>
-
-      <Section>
+      <Section title="What is" subtitle="diabetes?">
         <Text>
           Diabetes is a medical condition where the body can’t produce enough
           insulin.
         </Text>
       </Section>
 
-      <Section variation="svg">
+      <Section isCentered>
         <DiabetesSvg01 />
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Causes of high sugar level</Text>
-      </Section>
-
-      <Section>
+      <Section title="Causes of high sugar level">
         <Text>
           Hyperglycemia is the medical term for a high blood sugar level. Causes
           can be if a person hasn't taken medication, or eaten too much sugary
@@ -41,11 +32,7 @@ export const Topic04Screen = () => {
         </Text>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Symptoms of High Sugar Level</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Symptoms of High Sugar Level">
         <DiabetesSvg02 />
       </Section>
 
@@ -56,11 +43,7 @@ export const Topic04Screen = () => {
         <List>Drowsiness, become unresponsive</List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">High Sugar Level Emergency</Text>
-      </Section>
-
-      <Section>
+      <Section title="High Sugar Level Emergency">
         <Text>
           Call for emergency and keep checking their breathing, pulse. If they
           become unresponsive, open their airway, check their breathing and
@@ -68,15 +51,11 @@ export const Topic04Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="svg">
+      <Section isCentered>
         <DiabetesSvg03 />
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Causes of Low Sugar Level</Text>
-      </Section>
-
-      <Section>
+      <Section title="Causes of Low Sugar Level">
         <Text>
           Hypoglycaemia is the medical term for a low blood sugar level. It can
           be caused if a person take too much medication or insulin. Also,
@@ -88,7 +67,7 @@ export const Topic04Screen = () => {
         <Text variation="H1_bold">Symptoms of Low Sugar Level</Text>
       </Section>
 
-      <Section variation="svg">
+      <Section isCentered>
         <DiabetesSvg04 />
       </Section>
 
@@ -100,11 +79,7 @@ export const Topic04Screen = () => {
         <List>Deteriorating level of response</List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Low Sugar Level Emergency</Text>
-      </Section>
-
-      <Section>
+      <Section title="Low Sugar Level Emergency">
         <Text>
           If they do not have their own glucose gel, give them something sugary,
           like juice. Don’t give something to eat or drink, if they aren’t fully

@@ -13,22 +13,13 @@ export const Topic09Screen = () => {
           <Text variation="subtitle">Hurricanes</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="H1_bold">Always</Text>
-      </Section>
-
-      <Section>
+      <Section title="Always">
         <List>Have your emergency kit ready</List>
         <List>Secure windows and doors</List>
         <List>Cut dead branches, trees </List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">During </Text>
-        <Text variation="H1_light">Hurricanes</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="During" subtitle="Hurricanes" isCentered>
         <HurricanesSvg01 />
       </Section>
 
@@ -40,12 +31,7 @@ export const Topic09Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">After </Text>
-        <Text variation="H1_light">Hurricanes</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="After" subtitle="Hurricanes">
         <HurricanesSvg02 />
       </Section>
 

@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import {
   ExamScreen,
-  ResultScreen,
   Topic01Screen,
   Topic02Screen,
   Topic03Screen,
@@ -18,7 +17,7 @@ import {TDashboardScreenProps} from './DashboardScreen.type';
 
 export const DashboardScreen: FC<TDashboardScreenProps> = ({navigation}) => {
   const _goToExam = () => {
-    navigation.navigate(ResultScreen);
+    navigation.navigate(ExamScreen);
   };
   const _goToTopic01 = () => {
     navigation.navigate(Topic01Screen);

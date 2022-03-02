@@ -18,11 +18,7 @@ export const Topic06Screen = () => {
           <Text variation="subtitle">Earthquakes</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="H1_bold">Always</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Always">
         <EarthquakeSvg01 />
       </Section>
 
@@ -32,11 +28,7 @@ export const Topic06Screen = () => {
         <List>Review evacuation plans </List>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Inside The Building</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="Inside The Building" isCentered>
         <EarthquakeSvg02 />
       </Section>
 
@@ -48,11 +40,7 @@ export const Topic06Screen = () => {
         </Text>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Outside The Building</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Outside The Building">
         <EarthquakeSvg03 />
       </Section>
 
@@ -64,12 +52,7 @@ export const Topic06Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Driving during </Text>
-        <Text variation="H1_light">Earthquakes</Text>
-      </Section>
-
-      <Section>
+      <Section title="Driving during" subtitle="Earthquakes">
         <List>Pull over to a clear area</List>
         <List>Avoid bridges, overpasses, buildings</List>
         <List>Put on your seatbelt and stay in the car</List>
@@ -79,12 +62,7 @@ export const Topic06Screen = () => {
         </List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">After </Text>
-        <Text variation="H1_light">Earthquakes</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="After" subtitle="Earthquakes">
         <EarthquakeSvg04 />
       </Section>
 
