@@ -2,14 +2,7 @@ import React, {FC} from 'react';
 import {TouchableOpacity, TextStyle, ViewStyle, View} from 'react-native';
 import {styles} from './Button.style';
 import type {TButtonProps} from './Button.type';
-import {
-  color,
-  Icon,
-  Loader,
-  Text,
-  size as configSize,
-  TTextVariation,
-} from '@components';
+import {color, Icon, Loader, Text, size as configSize} from '@components';
 
 export const Button: FC<TButtonProps> = ({
   text,

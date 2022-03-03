@@ -1,1 +1,3 @@
-export type TProgressBarProps = {};
+export type TProgressBarProps = {
+  progressIndex: number;
+};

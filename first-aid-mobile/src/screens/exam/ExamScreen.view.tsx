@@ -106,10 +106,10 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
       </Section>
 
       <Section isCentered>
-        <ProgressBar />
+        <ProgressBar progressIndex={index} />
       </Section>
 
-      <View style={styles.navigation}>
+      <View style={styles.navigationContainer}>
         <View style={styles.buttonContainer}>
           <Button
             text="Previous"

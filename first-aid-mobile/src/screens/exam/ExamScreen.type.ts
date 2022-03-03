@@ -13,7 +13,7 @@ export type TQuestions = {
 };
 
 export type TExamScreenViewProps = {
-  index: Number;
+  index: number;
   onPressNext: Function;
   onPressPrevious: Function;
   onPressA: Function;

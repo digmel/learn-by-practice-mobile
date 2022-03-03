@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: size.xl,
   },
 
-  navigation: {
+  navigationContainer: {
     flexBasis: '15%',
     flexDirection: 'row',
     alignItems: 'flex-start',
