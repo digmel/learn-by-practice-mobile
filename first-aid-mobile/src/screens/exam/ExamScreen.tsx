@@ -26,17 +26,17 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
 
   const CheckAnswers = (selectedAnswer: TAnswer) => {
-    let AnswerStatus: TAnswerStatus = 'Empty';
+    let AnswerStatusInList: TAnswerStatus = 'Empty';
 
     _setShowDetails(true);
 
     if (Questions[_index].answer === selectedAnswer) {
-      AnswerStatus = 'Correct';
+      AnswerStatusInList = 'Correct';
       _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
     } else {
-      AnswerStatus = 'Wrong';
+      AnswerStatusInList = 'Wrong';
       _setAnswerStatus(false);
       _setTestButtonDisabled(false);
       _setNextButtonDisabled(true);
@@ -44,16 +44,16 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
 
     switch (selectedAnswer) {
       case 'A':
-        _setAnswerA(AnswerStatus);
+        _setAnswerA(AnswerStatusInList);
         break;
       case 'B':
-        _setAnswerB(AnswerStatus);
+        _setAnswerB(AnswerStatusInList);
         break;
       case 'C':
-        _setAnswerC(AnswerStatus);
+        _setAnswerC(AnswerStatusInList);
         break;
       case 'D':
-        _setAnswerD(AnswerStatus);
+        _setAnswerD(AnswerStatusInList);
         break;
     }
   };
@@ -63,9 +63,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setAnswerB('Empty');
     _setAnswerC('Empty');
     _setAnswerD('Empty');
-    _setTestButtonDisabled(false);
-    _setNextButtonDisabled(true);
-    _setPreviousButtonDisabled(true);
   };
 
   const _onPressA = () => {
@@ -83,15 +80,21 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
 
   const _onPressNext = () => {
     ClearAnswers();
-    _setPreviousButtonDisabled(false);
     _setIndex(_index + 1);
     _setShowDetails(false);
+
+    _setTestButtonDisabled(false);
+    _setPreviousButtonDisabled(false);
+    _setNextButtonDisabled(true);
   };
 
   const _onPressPrevious = () => {
     ClearAnswers();
     _setIndex(_index - 1);
     _setShowDetails(true);
+
+    _setTestButtonDisabled(true);
+    _setNextButtonDisabled(false);
   };
 
   useEffect(() => {
