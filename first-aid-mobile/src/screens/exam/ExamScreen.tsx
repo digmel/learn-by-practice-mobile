@@ -6,8 +6,6 @@ import {
   TExamScreenProps,
   TQuestions,
 } from './ExamScreen.type';
-import {View} from 'react-native';
-import {styles} from './ExamScreen.style';
 import {Questions} from './questions';
 import {ResultScreen} from '@screens';
 
@@ -26,10 +24,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
   let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
   let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
-
-  let [_progress, _setProgress] = useState([
-    <View style={styles.progressBarFirstFiller} />,
-  ]);
 
   const CheckAnswers = (selectedAnswer: TAnswer) => {
     let AnswerStatus: TAnswerStatus = 'Empty';
@@ -92,17 +86,12 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setPreviousButtonDisabled(false);
     _setIndex(_index + 1);
     _setShowDetails(false);
-    _setProgress(progress => [
-      ...progress,
-      <View style={styles.progressBarFiller} />,
-    ]);
   };
 
   const _onPressPrevious = () => {
     ClearAnswers();
     _setIndex(_index - 1);
     _setShowDetails(true);
-    _setProgress(progress => progress.slice(0, progress.length - 1));
   };
 
   useEffect(() => {
@@ -129,7 +118,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
       AnswerC={_answerC}
       AnswerD={_answerD}
       AnswerStatus={_answerStatus}
-      progressBar={_progress}
       showDetails={_showDetails}
       examData={_examData}
       isNextButtonDisabled={_isNextButtonDisabled}

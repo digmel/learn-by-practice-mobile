@@ -20,7 +20,6 @@ export type TExamScreenViewProps = {
   onPressB: Function;
   onPressC: Function;
   onPressD: Function;
-  progressBar: Array<any>;
   showDetails: boolean;
   AnswerA: TAnswerStatus;
   AnswerB: TAnswerStatus;
