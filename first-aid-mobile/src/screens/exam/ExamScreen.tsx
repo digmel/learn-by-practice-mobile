@@ -14,6 +14,11 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   let [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
   let [_showDetails, _setShowDetails] = useState(false);
 
+  let [allSelectedAnswers, setAllSelectedAnswers] = useState<
+    Array<Array<String>>
+  >([]);
+  let [selectedData, setSelectedData] = useState<Array<String>>([]);
+
   let [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
   let [_isPreviousButtonDisabled, _setPreviousButtonDisabled] = useState(true);
   let [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
@@ -25,7 +30,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
   let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
 
-  const CheckAnswers = (selectedAnswer: TAnswer) => {
+  const CheckAnswers = (selectedAnswer: TAnswer | String) => {
     let AnswerStatusInList: TAnswerStatus = 'Empty';
 
     _setShowDetails(true);
@@ -65,16 +70,32 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setAnswerD('Empty');
   };
 
+  const SaveSelectedAnswers = (selectedAnswer: TAnswer) => {
+    setSelectedData([...selectedData, selectedAnswer]);
+  };
+
+  const ShowSelectedAnswers = () => {
+    if (allSelectedAnswers.length > 0 && allSelectedAnswers[_index]) {
+      allSelectedAnswers[_index].forEach((selected: TAnswer | String) => {
+        CheckAnswers(selected);
+      });
+    }
+  };
+
   const _onPressA = () => {
+    SaveSelectedAnswers('A');
     CheckAnswers('A');
   };
   const _onPressB = () => {
+    SaveSelectedAnswers('B');
     CheckAnswers('B');
   };
   const _onPressC = () => {
+    SaveSelectedAnswers('C');
     CheckAnswers('C');
   };
   const _onPressD = () => {
+    SaveSelectedAnswers('D');
     CheckAnswers('D');
   };
 
@@ -82,6 +103,12 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     ClearAnswers();
     _setIndex(_index + 1);
     _setShowDetails(false);
+
+    setSelectedData([]);
+
+    if (selectedData.length > 0) {
+      setAllSelectedAnswers([...allSelectedAnswers, selectedData]);
+    }
 
     _setTestButtonDisabled(false);
     _setPreviousButtonDisabled(false);
@@ -92,19 +119,18 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     ClearAnswers();
     _setIndex(_index - 1);
     _setShowDetails(true);
-
+    setSelectedData([]);
     _setTestButtonDisabled(true);
     _setNextButtonDisabled(false);
   };
 
   useEffect(() => {
     _setExamData(Questions[_index]);
+    ShowSelectedAnswers();
 
     _index === 0 && _setPreviousButtonDisabled(true);
 
     _index === 12 && navigation.navigate(ResultScreen);
-
-    console.log('index', _index);
   });
 
   return (
@@ -129,3 +155,8 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     />
   );
 };
+
+[
+  ['a', 'b'],
+  ['a', 'c'],
+];
