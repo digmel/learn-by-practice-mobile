@@ -13,11 +13,7 @@ export const Topic08Screen = () => {
           <Text variation="subtitle">Flood</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="H1_bold">Always</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Always">
         <FloodSvg01 />
       </Section>
 
@@ -29,11 +25,7 @@ export const Topic08Screen = () => {
         </Text>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Inside The Building</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="Inside The Building" isCentered>
         <FloodSvg02 />
       </Section>
 
@@ -46,11 +38,7 @@ export const Topic08Screen = () => {
         </Text>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Outside The Building</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section isCentered title="Outside The Building">
         <FloodSvg03 />
       </Section>
 
@@ -61,11 +49,7 @@ export const Topic08Screen = () => {
         <List>Watch out for downed power lines</List>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Stay in a safe shelter!</Text>
-      </Section>
-
-      <Section>
+      <Section title="Stay in a safe shelter!">
         <Text>
           Be careful walking around. After a flood, steps and floors are often
           slippery with mud and covered with debris, including nails and broken

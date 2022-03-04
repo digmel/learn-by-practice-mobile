@@ -10,6 +10,7 @@ import {
   Button,
   color,
   size,
+  ProgressBar,
 } from '@components';
 import {View} from 'react-native';
 
@@ -26,7 +27,6 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
   AnswerC,
   AnswerD,
   AnswerStatus,
-  progressBar,
   showDetails,
   examData,
   isPreviousButtonDisabled,
@@ -106,15 +106,10 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
       </Section>
 
       <Section isCentered>
-        <View style={styles.progressBar}>
-          <View style={{flexDirection: 'row'}}>{progressBar}</View>
-        </View>
-        <View style={styles.indexContainer}>
-          <Text>{index}/12</Text>
-        </View>
+        <ProgressBar progressIndex={index} />
       </Section>
 
-      <View style={styles.navigation}>
+      <View style={styles.navigationContainer}>
         <View style={styles.buttonContainer}>
           <Button
             text="Previous"

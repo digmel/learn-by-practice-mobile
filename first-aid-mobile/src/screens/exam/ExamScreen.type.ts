@@ -13,14 +13,13 @@ export type TQuestions = {
 };
 
 export type TExamScreenViewProps = {
-  index: Number;
+  index: number;
   onPressNext: Function;
   onPressPrevious: Function;
   onPressA: Function;
   onPressB: Function;
   onPressC: Function;
   onPressD: Function;
-  progressBar: Array<any>;
   showDetails: boolean;
   AnswerA: TAnswerStatus;
   AnswerB: TAnswerStatus;

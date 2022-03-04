@@ -13,12 +13,7 @@ export const Topic05Screen = () => {
           <Text variation="subtitle">Fractures</Text>
         </Header>
       }>
-      <Section variation="headline">
-        <Text variation="H1_bold">What is </Text>
-        <Text variation="H1_light">fractures?</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="What is" subtitle="fractures?" isCentered>
         <FracturesSvg01 />
       </Section>
 
@@ -31,12 +26,7 @@ export const Topic05Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Symptoms </Text>
-        <Text variation="H1_light">of fractures</Text>
-      </Section>
-
-      <Section>
+      <Section title="Symptoms" subtitle="of fractures">
         <List>Deformity, swelling, and bruising</List>
         <List>Pain or difficulty moving the area</List>
         <List>A limb may look shorter, twisted, bent</List>
@@ -44,16 +34,11 @@ export const Topic05Screen = () => {
         <List>A wound where the bone sticking out</List>
       </Section>
 
-      <Section variation="svg">
+      <Section isCentered>
         <FracturesSvg02 />
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">What to do </Text>
-        <Text variation="H1_light">to help</Text>
-      </Section>
-
-      <Section>
+      <Section title="What to do" subtitle="to help">
         <Text>
           If it is an open fracture, cover the wound with a sterile dressing or
           clean non-fluffy clothes. Apply pressure around a wound and not over

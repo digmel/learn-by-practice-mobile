@@ -2,14 +2,7 @@ import React, {FC} from 'react';
 import {TouchableOpacity, TextStyle, ViewStyle, View} from 'react-native';
 import {styles} from './Button.style';
 import type {TButtonProps} from './Button.type';
-import {
-  color,
-  Icon,
-  Loader,
-  Text,
-  size as configSize,
-  TTextVariation,
-} from '@components';
+import {color, Icon, Loader, Text, size as configSize} from '@components';
 
 export const Button: FC<TButtonProps> = ({
   text,
@@ -49,7 +42,7 @@ export const Button: FC<TButtonProps> = ({
   switch (variation) {
     case 'primary':
       dynamicProperties.backgroundColor = isDisabled
-        ? color.primary
+        ? color.disabled
         : color.primary;
       dynamicProperties.borderWidth = 0;
       dynamicProperties.textColor = color.light;
@@ -58,9 +51,11 @@ export const Button: FC<TButtonProps> = ({
     case 'secondary':
       dynamicProperties.backgroundColor = 'transparent';
       dynamicProperties.borderWidth = BORDER_OUTLINE_WIDTH;
-      dynamicProperties.textColor = color.primary;
-      dynamicProperties.borderColor = color.primary;
-      dynamicProperties.iconColor = color.primary;
+      dynamicProperties.textColor = isDisabled ? color.disabled : color.primary;
+      dynamicProperties.borderColor = isDisabled
+        ? color.disabled
+        : color.primary;
+      dynamicProperties.iconColor = isDisabled ? color.disabled : color.primary;
       break;
     case 'link':
       dynamicProperties.backgroundColor = isDisabled

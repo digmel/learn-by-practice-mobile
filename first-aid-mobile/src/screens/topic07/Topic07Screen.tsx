@@ -13,21 +13,13 @@ export const Topic07Screen = () => {
           <Text variation="subtitle">Thunderstorm</Text>
         </Header>
       }>
-      <Section>
-        <Text variation="H1_bold">Always</Text>
-      </Section>
-
-      <Section>
+      <Section title="Always">
         <List>Have your emergency kit ready</List>
         <List>Keep trees and shrubs trimmed</List>
         <List>Be aware, power outages can occur</List>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Inside The Building</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="Inside The Building" isCentered>
         <ThunderstormSvg01 />
       </Section>
 
@@ -39,11 +31,7 @@ export const Topic07Screen = () => {
         </Text>
       </Section>
 
-      <Section>
-        <Text variation="H1_bold">Outside The Building</Text>
-      </Section>
-
-      <Section>
+      <Section title="Outside The Building">
         <Text>
           Avoid sheltering under equipment, posts, fences, trees, as they
           attract lightning. Stay away from water and try to get out of open
@@ -51,12 +39,7 @@ export const Topic07Screen = () => {
         </Text>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">Driving during </Text>
-        <Text variation="H1_light">Thunderstorm</Text>
-      </Section>
-
-      <Section variation="svg">
+      <Section title="Driving during" subtitle="Thunderstorm" isCentered>
         <ThunderstormSvg02 />
       </Section>
 
@@ -70,12 +53,7 @@ export const Topic07Screen = () => {
         </List>
       </Section>
 
-      <Section variation="headline">
-        <Text variation="H1_bold">After </Text>
-        <Text variation="H1_light">Thunderstorm</Text>
-      </Section>
-
-      <Section>
+      <Section title="After" subtitle="Thunderstorm">
         <Text>
           If someone is struck by lightning, call for medical assistance, and if
           you are able administer first aid treatment. Check the area around the

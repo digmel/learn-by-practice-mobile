@@ -6,62 +6,60 @@ import {
   TExamScreenProps,
   TQuestions,
 } from './ExamScreen.type';
-import {View} from 'react-native';
-import {styles} from './ExamScreen.style';
 import {Questions} from './questions';
 import {ResultScreen} from '@screens';
 
 export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
-  let [_index, _setIndex] = useState(0);
-  let [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
-  let [_showDetails, _setShowDetails] = useState(false);
+  const [_index, _setIndex] = useState(0);
+  const [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
+  const [_showDetails, _setShowDetails] = useState(false);
 
-  let [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
-  let [_isPreviousButtonDisabled, _setPreviousButtonDisabled] = useState(true);
-  let [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
+  const [allSelectedAnswers, setAllSelectedAnswers] = useState<
+    Array<Array<String>>
+  >([]);
+  const [selectedData, setSelectedData] = useState<Array<String>>([]);
 
-  let [_answerStatus, _setAnswerStatus] = useState<boolean>();
+  const [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
+  const [_isPreviousButtonDisabled, _setPreviousButtonDisabled] =
+    useState(true);
+  const [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
 
-  let [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
-  let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
-  let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
-  let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
+  const [_answerStatus, _setAnswerStatus] = useState<boolean>();
 
-  let [_progress, _setProgress] = useState([
-    <View style={styles.progressBarFirstFiller} />,
-  ]);
+  const [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
+  const [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
+  const [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
+  const [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
 
-  const CheckAnswers = (selectedAnswer: TAnswer) => {
-    let AnswerStatus: TAnswerStatus = 'Empty';
+  const CheckAnswers = (selectedAnswer: TAnswer | String) => {
+    let AnswerStatusInList: TAnswerStatus = 'Empty';
 
     _setShowDetails(true);
 
     if (Questions[_index].answer === selectedAnswer) {
-      AnswerStatus = 'Correct';
+      AnswerStatusInList = 'Correct';
       _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
-      _setPreviousButtonDisabled(false);
     } else {
-      AnswerStatus = 'Wrong';
+      AnswerStatusInList = 'Wrong';
       _setAnswerStatus(false);
       _setTestButtonDisabled(false);
       _setNextButtonDisabled(true);
-      _setPreviousButtonDisabled(true);
     }
 
     switch (selectedAnswer) {
       case 'A':
-        _setAnswerA(AnswerStatus);
+        _setAnswerA(AnswerStatusInList);
         break;
       case 'B':
-        _setAnswerB(AnswerStatus);
+        _setAnswerB(AnswerStatusInList);
         break;
       case 'C':
-        _setAnswerC(AnswerStatus);
+        _setAnswerC(AnswerStatusInList);
         break;
       case 'D':
-        _setAnswerD(AnswerStatus);
+        _setAnswerD(AnswerStatusInList);
         break;
     }
   };
@@ -71,21 +69,47 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setAnswerB('Empty');
     _setAnswerC('Empty');
     _setAnswerD('Empty');
-    _setTestButtonDisabled(false);
-    _setNextButtonDisabled(true);
-    _setPreviousButtonDisabled(true);
+    setSelectedData([]);
+  };
+
+  const SaveSelectedAnswers = (selectedAnswer: TAnswer) => {
+    setSelectedData([...selectedData, selectedAnswer]);
+  };
+
+  const ShowSelectedAnswers = () => {
+    if (allSelectedAnswers.length > 0 && allSelectedAnswers[_index]) {
+      allSelectedAnswers[_index].forEach((selected: TAnswer | String) => {
+        CheckAnswers(selected);
+      });
+    }
+  };
+
+  const CountCorrectAnswers = () => {
+    let correctAnswers = 0;
+    for (let i = 0; i < allSelectedAnswers.length; i++) {
+      const firstSelection = allSelectedAnswers[i][0];
+
+      if (firstSelection === Questions[i].answer) {
+        correctAnswers++;
+      }
+    }
+    console.log('correct answers', correctAnswers);
   };
 
   const _onPressA = () => {
+    SaveSelectedAnswers('A');
     CheckAnswers('A');
   };
   const _onPressB = () => {
+    SaveSelectedAnswers('B');
     CheckAnswers('B');
   };
   const _onPressC = () => {
+    SaveSelectedAnswers('C');
     CheckAnswers('C');
   };
   const _onPressD = () => {
+    SaveSelectedAnswers('D');
     CheckAnswers('D');
   };
 
@@ -93,27 +117,40 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     ClearAnswers();
     _setIndex(_index + 1);
     _setShowDetails(false);
-    _setProgress(progress => [
-      ...progress,
-      <View style={styles.progressBarFiller} />,
-    ]);
+
+    if (selectedData.length > 0) {
+      setAllSelectedAnswers([...allSelectedAnswers, selectedData]);
+    }
+
+    _setTestButtonDisabled(false);
+    _setPreviousButtonDisabled(false);
+    _setNextButtonDisabled(true);
   };
 
   const _onPressPrevious = () => {
     ClearAnswers();
     _setIndex(_index - 1);
     _setShowDetails(true);
-    _setProgress(progress => progress.slice(0, progress.length - 1));
+
+    _setTestButtonDisabled(true);
+    _setNextButtonDisabled(false);
   };
 
   useEffect(() => {
     _setExamData(Questions[_index]);
+    ShowSelectedAnswers();
 
-    _index === 0 && _setPreviousButtonDisabled(true);
+    if (_index === 0) {
+      _setPreviousButtonDisabled(true);
+    }
 
-    _index === 12 && navigation.navigate(ResultScreen);
-
-    console.log('index', _index);
+    if (_index === 3) {
+      navigation.navigate(ResultScreen);
+      CountCorrectAnswers();
+      ClearAnswers();
+      _setIndex(0);
+      setAllSelectedAnswers([]);
+    }
   });
 
   return (
@@ -130,7 +167,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
       AnswerC={_answerC}
       AnswerD={_answerD}
       AnswerStatus={_answerStatus}
-      progressBar={_progress}
       showDetails={_showDetails}
       examData={_examData}
       isNextButtonDisabled={_isNextButtonDisabled}

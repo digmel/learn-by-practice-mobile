@@ -35,3 +35,6 @@ export * from './cardSlider/CardSlider.type';
 
 export * from './list/List';
 export * from './list/List.type';
+
+export * from './progressBar/ProgressBar';
+export * from './progressBar/ProgressBar.type';

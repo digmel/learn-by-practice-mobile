@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: size.xl,
   },
 
-  navigation: {
+  navigationContainer: {
     flexBasis: '15%',
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -42,34 +42,5 @@ export const styles = StyleSheet.create({
   buttonContainer: {
     flexBasis: '50%',
     paddingHorizontal: size.s,
-  },
-
-  progressBar: {
-    width: 150,
-    height: size.s,
-    borderColor: color.primary,
-    borderRadius: size.xxl,
-    borderWidth: 1,
-    justifyContent: 'center',
-  },
-
-  progressBarFirstFiller: {
-    width: 15,
-    height: size.s,
-    backgroundColor: color.primary,
-    borderRadius: size.xxl,
-    marginHorizontal: -size.xxs,
-  },
-
-  progressBarFiller: {
-    width: 19.2,
-    height: size.s,
-    backgroundColor: color.primary,
-    borderRadius: size.xxl,
-    marginHorizontal: -size.xxs,
-  },
-
-  indexContainer: {
-    marginTop: size.s,
   },
 });
