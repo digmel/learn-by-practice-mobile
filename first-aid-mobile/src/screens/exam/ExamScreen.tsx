@@ -10,25 +10,26 @@ import {Questions} from './questions';
 import {ResultScreen} from '@screens';
 
 export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
-  let [_index, _setIndex] = useState(0);
-  let [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
-  let [_showDetails, _setShowDetails] = useState(false);
+  const [_index, _setIndex] = useState(0);
+  const [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
+  const [_showDetails, _setShowDetails] = useState(false);
 
-  let [allSelectedAnswers, setAllSelectedAnswers] = useState<
+  const [allSelectedAnswers, setAllSelectedAnswers] = useState<
     Array<Array<String>>
   >([]);
-  let [selectedData, setSelectedData] = useState<Array<String>>([]);
+  const [selectedData, setSelectedData] = useState<Array<String>>([]);
 
-  let [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
-  let [_isPreviousButtonDisabled, _setPreviousButtonDisabled] = useState(true);
-  let [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
+  const [_isNextButtonDisabled, _setNextButtonDisabled] = useState(true);
+  const [_isPreviousButtonDisabled, _setPreviousButtonDisabled] =
+    useState(true);
+  const [_isTestButtonDisabled, _setTestButtonDisabled] = useState(false);
 
-  let [_answerStatus, _setAnswerStatus] = useState<boolean>();
+  const [_answerStatus, _setAnswerStatus] = useState<boolean>();
 
-  let [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
-  let [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
-  let [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
-  let [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
+  const [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
+  const [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
+  const [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
+  const [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
 
   const CheckAnswers = (selectedAnswer: TAnswer | String) => {
     let AnswerStatusInList: TAnswerStatus = 'Empty';
@@ -68,6 +69,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setAnswerB('Empty');
     _setAnswerC('Empty');
     _setAnswerD('Empty');
+    setSelectedData([]);
   };
 
   const SaveSelectedAnswers = (selectedAnswer: TAnswer) => {
@@ -80,6 +82,18 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
         CheckAnswers(selected);
       });
     }
+  };
+
+  const CountCorrectAnswers = () => {
+    let correctAnswers = 0;
+    for (let i = 0; i < allSelectedAnswers.length; i++) {
+      const firstSelection = allSelectedAnswers[i][0];
+
+      if (firstSelection === Questions[i].answer) {
+        correctAnswers++;
+      }
+    }
+    console.log('correct answers', correctAnswers);
   };
 
   const _onPressA = () => {
@@ -104,8 +118,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setIndex(_index + 1);
     _setShowDetails(false);
 
-    setSelectedData([]);
-
     if (selectedData.length > 0) {
       setAllSelectedAnswers([...allSelectedAnswers, selectedData]);
     }
@@ -119,7 +131,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     ClearAnswers();
     _setIndex(_index - 1);
     _setShowDetails(true);
-    setSelectedData([]);
+
     _setTestButtonDisabled(true);
     _setNextButtonDisabled(false);
   };
@@ -128,9 +140,17 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     _setExamData(Questions[_index]);
     ShowSelectedAnswers();
 
-    _index === 0 && _setPreviousButtonDisabled(true);
+    if (_index === 0) {
+      _setPreviousButtonDisabled(true);
+    }
 
-    _index === 12 && navigation.navigate(ResultScreen);
+    if (_index === 3) {
+      navigation.navigate(ResultScreen);
+      CountCorrectAnswers();
+      ClearAnswers();
+      _setIndex(0);
+      setAllSelectedAnswers([]);
+    }
   });
 
   return (
@@ -155,8 +175,3 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     />
   );
 };
-
-[
-  ['a', 'b'],
-  ['a', 'c'],
-];
