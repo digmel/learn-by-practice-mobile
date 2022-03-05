@@ -2,12 +2,15 @@ import React from 'react';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {Router} from './router';
+import {AppStateProvider} from 'AppState';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Router />
-    </NavigationContainer>
+    <AppStateProvider>
+      <NavigationContainer>
+        <Router />
+      </NavigationContainer>
+    </AppStateProvider>
   );
 };
 
