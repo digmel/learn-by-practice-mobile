@@ -8,7 +8,7 @@ import {
 } from './ExamScreen.type';
 import {Questions} from './questions';
 import {ResultScreen} from '@screens';
-import {AppStateContext} from '../../AppState';
+import {useStateValue} from 'AppState';
 
 export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   const [_index, _setIndex] = useState(0);
@@ -31,9 +31,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   const [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
   const [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
   const [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
-
-  //const {correctAnswers, setCorrectAnswer} = useContext(AppStateContext);
-  const context = useContext(AppStateContext);
 
   const CheckAnswers = (selectedAnswer: TAnswer | String) => {
     let AnswerStatusInList: TAnswerStatus = 'Empty';
@@ -88,18 +85,21 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     }
   };
 
+  //-----useReducer----
+
+  const [state, dispatch] = useStateValue();
+
   const CountCorrectAnswers = () => {
-    let correctAnswers = 0;
     for (let i = 0; i < allSelectedAnswers.length; i++) {
       const firstSelection = allSelectedAnswers[i][0];
 
       if (firstSelection === Questions[i].answer) {
-        //setCorrectAnswer(correctAnswers + 1);
-        correctAnswers++;
+        dispatch({type: 'increment'});
       }
     }
-    console.log('correct answers', correctAnswers, 'context', context);
   };
+
+  //-------
 
   const _onPressA = () => {
     SaveSelectedAnswers('A');

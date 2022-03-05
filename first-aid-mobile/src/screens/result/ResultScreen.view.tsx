@@ -8,6 +8,7 @@ import {View} from 'react-native';
 export const ResultScreenView: FC<TResultScreenViewProps> = ({
   onPressGoHome,
   onPressTryAgain,
+  correctAnswersValue,
 }) => {
   return (
     <Screen isScrollViewDisabled>
@@ -18,7 +19,7 @@ export const ResultScreenView: FC<TResultScreenViewProps> = ({
 
         <Section isCentered bottomSpace={size.xl}>
           <CircularProgress
-            value={9}
+            value={correctAnswersValue}
             radius={100}
             duration={2000}
             activeStrokeColor={color.success}

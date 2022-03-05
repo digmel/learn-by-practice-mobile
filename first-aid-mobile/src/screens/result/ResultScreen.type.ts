@@ -5,4 +5,5 @@ export type TResultScreenProps = {
 export type TResultScreenViewProps = {
   onPressGoHome: Function;
   onPressTryAgain: Function;
+  correctAnswersValue: number;
 };

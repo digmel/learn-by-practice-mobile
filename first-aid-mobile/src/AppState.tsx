@@ -1,14 +1,10 @@
-import React, {createContext, useState, useMemo, Children} from 'react';
+import React, {createContext, useContext, useReducer} from 'react';
 
-export const AppStateContext = createContext();
+export const AppStateContext = createContext({});
 
-export const AppStateProvider = (props: any) => {
-  const [correctAnswers, setCorrectAnswer] = useState(0);
-
-  const contextValue = 'success';
-  return (
-    <AppStateContext.Provider value={contextValue}>
-      {props.children}
-    </AppStateContext.Provider>
-  );
-};
+export const AppStateProvider = ({reducer, initialState, children}) => (
+  <AppStateContext.Provider value={useReducer(reducer, initialState)}>
+    {children}
+  </AppStateContext.Provider>
+);
+export const useStateValue = () => useContext(AppStateContext);
