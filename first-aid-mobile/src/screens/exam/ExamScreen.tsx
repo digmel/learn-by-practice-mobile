@@ -1,4 +1,4 @@
-import React, {FC, useState, useEffect, useContext} from 'react';
+import React, {FC, useState, useEffect} from 'react';
 import {ExamScreenView} from './ExamScreen.view';
 import {
   TAnswer,
