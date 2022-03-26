@@ -8,6 +8,7 @@ import {
 } from './ExamScreen.type';
 import {Questions} from './questions';
 import {ResultScreen} from '@screens';
+import {useStateValue} from 'AppState';
 
 export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   const [_index, _setIndex] = useState(0);
@@ -84,17 +85,21 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
     }
   };
 
+  //-----useReducer----
+
+  const [state, dispatch] = useStateValue();
+
   const CountCorrectAnswers = () => {
-    let correctAnswers = 0;
     for (let i = 0; i < allSelectedAnswers.length; i++) {
       const firstSelection = allSelectedAnswers[i][0];
 
       if (firstSelection === Questions[i].answer) {
-        correctAnswers++;
+        dispatch({type: 'increment'});
       }
     }
-    console.log('correct answers', correctAnswers);
   };
+
+  //-------
 
   const _onPressA = () => {
     SaveSelectedAnswers('A');
