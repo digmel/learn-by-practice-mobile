@@ -1,0 +1,6 @@
+module Pods_FirstAid_FirstAidTests {
+  umbrella header "Pods-FirstAid-FirstAidTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
