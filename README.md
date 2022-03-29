@@ -10,16 +10,14 @@
 <span>
 <a  target="_blank">Android</a>, 
 <a  target="_blank">iOS</a> & 
-<a  target="_blank">Web</a> with <b>95%+ code sharing</b> between them.<br/>
+<a  target="_blank">Web</a> <b>Currently working to share code</b> between them.
 <br/>
-
 </span>
 
-  <p >
+  <!-- <p >
     <a  target="_blank"><img alt="Download on the App Store" height="50" src="https://user-images.githubusercontent.com/619186/52173137-d416fd00-2764-11e9-98c1-77607061f188.png" /></a>
     <a target="_blank"><img alt="Get it on Google Play" height="50" src="https://user-images.githubusercontent.com/619186/52173136-d416fd00-2764-11e9-9599-7c098c14bb37.png" /></a>
-  </p>
-</p>
+  </p> -->
 </br>
 
 ## Why
@@ -44,10 +42,9 @@
 
 - [TypeScript](https://github.com/Microsoft/TypeScript)
 - [Create React App](https://github.com/facebook/create-react-app)
-- [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) _(Monorepo)_
+
 - [React](https://github.com/facebook/react) _(100% [Hooks](https://reactjs.org/docs/hooks-intro.html), zero classes)_
 - [React Native](https://github.com/facebook/react-native)
 - [React Native Web](https://github.com/necolas/react-native-web)
-- [GraphQL](https://github.com/facebook/graphql)
 
 <br/>
