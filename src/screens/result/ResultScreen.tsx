@@ -1,5 +1,5 @@
 import { DashboardScreen, ExamScreen } from "@screens";
-import { useStore } from "store/StoreProvider";
+import { useStore } from "@store";
 import React, { FC } from "react";
 import { TResultScreenProps } from "./ResultScreen.type";
 import { ResultScreenView } from "./ResultScreen.view";

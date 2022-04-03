@@ -1,14 +1,15 @@
 import React, { createContext, useContext, useReducer } from "react";
+import { TStoreProvider } from "./StoreProvider.type";
 
 export const StoreContext = createContext({});
 
-export const StoreProvider = ({ children }: any) => (
+export const StoreProvider = ({ children }: TStoreProvider) => (
   <StoreContext.Provider value={useReducer(mainReducer, mainInitialState)}>
     {children}
   </StoreContext.Provider>
 );
 
-//creating useStore custom hook:
+//Creating useStore custom hook:
 export const useStore = () => useContext(StoreContext);
 
 //main reducer

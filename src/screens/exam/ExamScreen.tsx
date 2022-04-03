@@ -8,7 +8,7 @@ import {
 } from "./ExamScreen.type";
 import { Questions } from "./questions";
 import { ResultScreen } from "@screens";
-import { useStore } from "store/StoreProvider";
+import { useStore } from "@store";
 
 export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
   const [_index, _setIndex] = useState(0);
