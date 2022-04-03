@@ -8,7 +8,7 @@ import {
 } from "./ExamScreen.type";
 import { Questions } from "./questions";
 import { ResultScreen } from "@screens";
-import { useStateValue } from "AppState";
+import { useStore } from "store/StoreProvider";
 
 export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
   const [_index, _setIndex] = useState(0);
@@ -85,9 +85,9 @@ export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
     }
   };
 
-  //-----useReducer----
+  //-----useStore----
 
-  const [state, dispatch] = useStateValue();
+  const [state, dispatch] = useStore();
 
   const CountCorrectAnswers = () => {
     for (let i = 0; i < allSelectedAnswers.length; i++) {
