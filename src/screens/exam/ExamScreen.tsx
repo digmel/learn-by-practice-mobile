@@ -1,16 +1,16 @@
-import React, {FC, useState, useEffect} from 'react';
-import {ExamScreenView} from './ExamScreen.view';
+import React, { FC, useState, useEffect } from "react";
+import { ExamScreenView } from "./ExamScreen.view";
 import {
   TAnswer,
   TAnswerStatus,
   TExamScreenProps,
   TQuestions,
-} from './ExamScreen.type';
-import {Questions} from './questions';
-import {ResultScreen} from '@screens';
-import {useStateValue} from 'AppState';
+} from "./ExamScreen.type";
+import { Questions } from "./questions";
+import { ResultScreen } from "@screens";
+import { useStateValue } from "AppState";
 
-export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
+export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
   const [_index, _setIndex] = useState(0);
   const [_examData, _setExamData] = useState<TQuestions>(Questions[_index]);
   const [_showDetails, _setShowDetails] = useState(false);
@@ -27,49 +27,49 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
 
   const [_answerStatus, _setAnswerStatus] = useState<boolean>();
 
-  const [_answerA, _setAnswerA] = useState<TAnswerStatus>('Empty');
-  const [_answerB, _setAnswerB] = useState<TAnswerStatus>('Empty');
-  const [_answerC, _setAnswerC] = useState<TAnswerStatus>('Empty');
-  const [_answerD, _setAnswerD] = useState<TAnswerStatus>('Empty');
+  const [_answerA, _setAnswerA] = useState<TAnswerStatus>("Empty");
+  const [_answerB, _setAnswerB] = useState<TAnswerStatus>("Empty");
+  const [_answerC, _setAnswerC] = useState<TAnswerStatus>("Empty");
+  const [_answerD, _setAnswerD] = useState<TAnswerStatus>("Empty");
 
   const CheckAnswers = (selectedAnswer: TAnswer | String) => {
-    let AnswerStatusInList: TAnswerStatus = 'Empty';
+    let AnswerStatusInList: TAnswerStatus = "Empty";
 
     _setShowDetails(true);
 
     if (Questions[_index].answer === selectedAnswer) {
-      AnswerStatusInList = 'Correct';
+      AnswerStatusInList = "Correct";
       _setAnswerStatus(true);
       _setTestButtonDisabled(true);
       _setNextButtonDisabled(false);
     } else {
-      AnswerStatusInList = 'Wrong';
+      AnswerStatusInList = "Wrong";
       _setAnswerStatus(false);
       _setTestButtonDisabled(false);
       _setNextButtonDisabled(true);
     }
 
     switch (selectedAnswer) {
-      case 'A':
+      case "A":
         _setAnswerA(AnswerStatusInList);
         break;
-      case 'B':
+      case "B":
         _setAnswerB(AnswerStatusInList);
         break;
-      case 'C':
+      case "C":
         _setAnswerC(AnswerStatusInList);
         break;
-      case 'D':
+      case "D":
         _setAnswerD(AnswerStatusInList);
         break;
     }
   };
 
   const ClearAnswers = () => {
-    _setAnswerA('Empty');
-    _setAnswerB('Empty');
-    _setAnswerC('Empty');
-    _setAnswerD('Empty');
+    _setAnswerA("Empty");
+    _setAnswerB("Empty");
+    _setAnswerC("Empty");
+    _setAnswerD("Empty");
     setSelectedData([]);
   };
 
@@ -94,7 +94,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
       const firstSelection = allSelectedAnswers[i][0];
 
       if (firstSelection === Questions[i].answer) {
-        dispatch({type: 'increment'});
+        dispatch({ type: "increment" });
       }
     }
   };
@@ -102,20 +102,20 @@ export const ExamScreen: FC<TExamScreenProps> = ({navigation}) => {
   //-------
 
   const _onPressA = () => {
-    SaveSelectedAnswers('A');
-    CheckAnswers('A');
+    SaveSelectedAnswers("A");
+    CheckAnswers("A");
   };
   const _onPressB = () => {
-    SaveSelectedAnswers('B');
-    CheckAnswers('B');
+    SaveSelectedAnswers("B");
+    CheckAnswers("B");
   };
   const _onPressC = () => {
-    SaveSelectedAnswers('C');
-    CheckAnswers('C');
+    SaveSelectedAnswers("C");
+    CheckAnswers("C");
   };
   const _onPressD = () => {
-    SaveSelectedAnswers('D');
-    CheckAnswers('D');
+    SaveSelectedAnswers("D");
+    CheckAnswers("D");
   };
 
   const _onPressNext = () => {
