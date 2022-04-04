@@ -7,10 +7,12 @@ export const resultCounterReducer = (
   store: TResultCounterStore,
   action: TResultCounterActions
 ) => {
+  let correctAnswer = 0;
+
   switch (action.type) {
     case "incrementResult":
       return {
-        correctAnswer: store.correctAnswer + 1,
+        correctAnswer: correctAnswer + 1,
       };
     case "clearResult":
       return {

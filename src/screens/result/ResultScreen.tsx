@@ -6,6 +6,7 @@ import { ResultScreenView } from "./ResultScreen.view";
 
 export const ResultScreen: FC<TResultScreenProps> = ({ navigation }) => {
   const { store, dispatch } = useStore();
+  console.log(store.resultCounter);
 
   const _onPressGoHome = () => {
     dispatch({ type: "clearResult" });

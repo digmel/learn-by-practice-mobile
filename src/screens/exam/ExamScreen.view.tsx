@@ -1,6 +1,6 @@
-import React, {FC} from 'react';
-import {TExamScreenViewProps} from './ExamScreen.type';
-import {styles} from './ExamScreen.style';
+import React, { FC } from "react";
+import { TExamScreenViewProps } from "./ExamScreen.type";
+import { styles } from "./ExamScreen.style";
 import {
   Section,
   Screen,
@@ -11,8 +11,8 @@ import {
   color,
   size,
   ProgressBar,
-} from '@components';
-import {View} from 'react-native';
+} from "@components";
+import { View } from "react-native";
 
 export const ExamScreenView: FC<TExamScreenViewProps> = ({
   index,
@@ -41,7 +41,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
         <Header hasBack>
           <Text>Knowledge Test</Text>
         </Header>
-      }>
+      }
+    >
       <View style={styles.testView}>
         <Section>
           <Text variation="body_bold">{examData.question}</Text>
@@ -51,7 +52,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
           <List
             variation={AnswerA}
             onPress={onPressA}
-            isDisabled={isTestButtonDisabled}>
+            isDisabled={isTestButtonDisabled}
+          >
             {examData.A}
           </List>
         </Section>
@@ -60,7 +62,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
           <List
             variation={AnswerB}
             onPress={onPressB}
-            isDisabled={isTestButtonDisabled}>
+            isDisabled={isTestButtonDisabled}
+          >
             {examData.B}
           </List>
         </Section>
@@ -69,7 +72,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
           <List
             variation={AnswerC}
             onPress={onPressC}
-            isDisabled={isTestButtonDisabled}>
+            isDisabled={isTestButtonDisabled}
+          >
             {examData.C}
           </List>
         </Section>
@@ -78,7 +82,8 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
           <List
             variation={AnswerD}
             onPress={onPressD}
-            isDisabled={isTestButtonDisabled}>
+            isDisabled={isTestButtonDisabled}
+          >
             {examData.D}
           </List>
         </Section>
@@ -87,14 +92,16 @@ export const ExamScreenView: FC<TExamScreenViewProps> = ({
       <Section
         isFullWidth
         contentStyle={styles.detailsSection}
-        topSpace={size.m}>
+        topSpace={size.m}
+      >
         {showDetails && (
           <View style={styles.detailsView}>
             <View style={styles.headline}>
               <Text
                 variation="body_bold"
-                color={AnswerStatus ? color.success : color.error}>
-                {AnswerStatus ? 'Correct' : 'Wrong'}
+                color={AnswerStatus ? color.success : color.error}
+              >
+                {AnswerStatus ? "Correct" : "Wrong"}
               </Text>
             </View>
 
