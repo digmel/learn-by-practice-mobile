@@ -5,7 +5,7 @@ import { TResultScreenProps } from "./ResultScreen.type";
 import { ResultScreenView } from "./ResultScreen.view";
 
 export const ResultScreen: FC<TResultScreenProps> = ({ navigation }) => {
-  const [{ correctAnswer }, dispatch] = useStore();
+  const { store, dispatch } = useStore();
 
   const _onPressGoHome = () => {
     dispatch({ type: "clear" });
@@ -20,7 +20,7 @@ export const ResultScreen: FC<TResultScreenProps> = ({ navigation }) => {
     <ResultScreenView
       onPressGoHome={_onPressGoHome}
       onPressTryAgain={_onPressTryAgain}
-      correctAnswersValue={correctAnswer}
+      correctAnswersValue={store.resultCounter.correctAnswer}
     />
   );
 };

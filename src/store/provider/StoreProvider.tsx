@@ -1,7 +1,21 @@
-import React, { createContext, useContext, useReducer } from "react";
-import { TStoreProvider } from "./StoreProvider.type";
+import React, { createContext, Dispatch, useContext, useReducer } from "react";
+import {
+  resultCounterInitialState,
+  resultCounterReducer,
+  TMainState,
+  TMainDispatch,
+  TStoreProvider,
+} from "@store";
 
-export const StoreContext = createContext({});
+const StoreContext = createContext<any>([{}, () => {}]);
+
+const mainReducer = (state: TMainState, action: TMainDispatch) => ({
+  resultCounter: resultCounterReducer(state.resultCounter, action),
+});
+
+const mainInitialState = {
+  resultCounter: resultCounterInitialState,
+};
 
 export const StoreProvider = ({ children }: TStoreProvider) => (
   <StoreContext.Provider value={useReducer(mainReducer, mainInitialState)}>
@@ -10,26 +24,9 @@ export const StoreProvider = ({ children }: TStoreProvider) => (
 );
 
 //Creating useStore custom hook:
-export const useStore = () => useContext(StoreContext);
+export const useStore = () => {
+  const [store, dispatch] =
+    useContext<[TMainState, Dispatch<TMainDispatch>]>(StoreContext);
 
-//main reducer
-export const mainReducer = (state: any, action: any) => {
-  switch (action.type) {
-    case "increment":
-      return {
-        correctAnswer: state.correctAnswer + 1,
-      };
-    case "clear":
-      return {
-        correctAnswer: 0,
-      };
-
-    default:
-      return state;
-  }
-};
-
-//initial state
-const mainInitialState = {
-  correctAnswer: 0,
+  return { store, dispatch };
 };

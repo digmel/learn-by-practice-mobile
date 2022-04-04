@@ -85,9 +85,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
     }
   };
 
-  //-----useStore----
-
-  const [state, dispatch] = useStore();
+  const { dispatch } = useStore();
 
   const CountCorrectAnswers = () => {
     for (let i = 0; i < allSelectedAnswers.length; i++) {
@@ -98,8 +96,6 @@ export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
       }
     }
   };
-
-  //-------
 
   const _onPressA = () => {
     SaveSelectedAnswers("A");
