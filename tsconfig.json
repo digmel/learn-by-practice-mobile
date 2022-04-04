@@ -15,6 +15,7 @@
         "@assets": ["assets"],
         "@components": ["components"],
         "@router": ["router"],
+        "@store": ["store"],
         "@screens": ["screens"],
         "@storage": ["storage"],
         "@utilities": ["utilities"],
