@@ -92,7 +92,7 @@ export const ExamScreen: FC<TExamScreenProps> = ({ navigation }) => {
       const firstSelection = allSelectedAnswers[i][0];
 
       if (firstSelection === Questions[i].answer) {
-        dispatch({ type: "increment" });
+        dispatch({ type: "incrementResult" });
       }
     }
   };

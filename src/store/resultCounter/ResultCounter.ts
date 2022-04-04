@@ -1,12 +1,18 @@
-import { TResultCounterProps } from "./ResultCounter.type";
+import {
+  TResultCounterActions,
+  TResultCounterStore,
+} from "./ResultCounter.type";
 
-export const resultCounterReducer = (store: any, action: any) => {
+export const resultCounterReducer = (
+  store: TResultCounterStore,
+  action: TResultCounterActions
+) => {
   switch (action.type) {
-    case "increment":
+    case "incrementResult":
       return {
         correctAnswer: store.correctAnswer + 1,
       };
-    case "clear":
+    case "clearResult":
       return {
         correctAnswer: 0,
       };

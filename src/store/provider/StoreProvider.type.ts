@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
+import { TResultCounterStore, TResultCounterActions } from "@store";
 
 export type TStoreProvider = {
   children: ReactNode;
 };
 
 export type TMainState = {
-  resultCounter: any;
+  resultCounter: TResultCounterStore;
 };
 
-export type TMainDispatch = { type: any };
+export type TMainDispatch = TResultCounterActions;

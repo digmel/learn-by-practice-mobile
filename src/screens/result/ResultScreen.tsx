@@ -8,12 +8,12 @@ export const ResultScreen: FC<TResultScreenProps> = ({ navigation }) => {
   const { store, dispatch } = useStore();
 
   const _onPressGoHome = () => {
-    dispatch({ type: "clear" });
+    dispatch({ type: "clearResult" });
     navigation.navigate(DashboardScreen);
   };
 
   const _onPressTryAgain = () => {
-    dispatch({ type: "clear" });
+    dispatch({ type: "clearResult" });
     navigation.navigate(ExamScreen);
   };
   return (
