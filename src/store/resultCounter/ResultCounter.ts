@@ -4,7 +4,7 @@ import {
 } from "./ResultCounter.type";
 
 export const resultCounterReducer = (
-  store: TResultCounterStore,
+  store: TResultCounterStore = { correctAnswer: 0 },
   action: TResultCounterActions
 ) => {
   switch (action.type) {

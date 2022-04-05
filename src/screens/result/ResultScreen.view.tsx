@@ -1,9 +1,11 @@
-import React, {FC} from 'react';
-import {styles} from './ResultScreen.style';
-import {TResultScreenViewProps} from './ResultScreen.type';
-import CircularProgress from 'react-native-circular-progress-indicator';
-import {Screen, Button, Section, Text, size, color} from '@components';
-import {View} from 'react-native';
+import React, { FC } from "react";
+import { styles } from "./ResultScreen.style";
+import { TResultScreenViewProps } from "./ResultScreen.type";
+import CircularProgress from "react-native-circular-progress-indicator";
+import { Screen, Button, Section, Text, size, color } from "@components";
+import { View } from "react-native";
+
+const maxValue = 3;
 
 export const ResultScreenView: FC<TResultScreenViewProps> = ({
   onPressGoHome,
@@ -26,14 +28,14 @@ export const ResultScreenView: FC<TResultScreenViewProps> = ({
             inActiveStrokeColor={color.error}
             inActiveStrokeOpacity={0.8}
             textColor={color.primary}
-            maxValue={12}
-            valueSuffix={' / 12'}
+            maxValue={maxValue}
+            valueSuffix={` / ${maxValue}`}
             fontSize={size.xl}
           />
         </Section>
 
         <Section isCentered>
-          <Text textStyle={{textAlign: 'center'}} variation="body_bold">
+          <Text textStyle={{ textAlign: "center" }} variation="body_bold">
             Try again with different questions to learn more!
           </Text>
         </Section>
